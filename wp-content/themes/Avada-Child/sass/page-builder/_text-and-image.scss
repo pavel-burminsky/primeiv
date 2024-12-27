@@ -1,0 +1,38 @@
+.primeiv-text-and-image {
+    background: linear-gradient(180.03deg, rgba(245, 245, 245, 0.39) 0.03%, #FFFFFF 99.97%);
+    padding-top: 100px;
+    padding-bottom: 65px;
+
+    .primeiv-button-wrapper {
+        @media (min-width: $breakdown-to-mobile + 1) {
+            text-align: left;
+        }
+    }
+
+    .section-header {
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 19px;
+    }
+
+    .body {
+        margin-bottom: 35px;
+    }
+
+    .col {
+        @media (max-width: $breakdown-to-mobile) {
+            width: 100%;
+        }
+
+        &__text {
+            .col-inner {
+                @media (min-width: $breakdown-to-mobile + 1) {
+                    padding-right: $text-section-padding-right;
+                }
+                @media (max-width: $breakdown-to-mobile) {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}

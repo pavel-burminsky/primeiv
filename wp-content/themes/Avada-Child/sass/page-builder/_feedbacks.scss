@@ -1,0 +1,94 @@
+.primeiv-feedbacks {
+    margin-bottom: 100px;
+
+    .primeiv-section-title {
+        font-size: 38px;
+        @include section-title-font-size-mobile
+    }
+
+    &__items {
+
+        @media (min-width: $breakdown-to-mobile + 1) {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        position: relative;
+        flex-basis: calc(50% - 80px);
+        padding-top: 35px;
+        margin-top: 60px;
+        @media (min-width: $breakdown-to-mobile + 1) {
+            margin-bottom: 42px;
+            padding-bottom: 35px;
+        }
+
+        @media (max-width: $width-lg) {
+            margin-left: 40px;
+        }
+
+        @media (max-width: $breakdown-to-mobile) {
+            margin-left: 60px;
+        }
+
+        &:not(.last-blue) {
+            &:before {
+                font-family: 'Andale Mono';
+                content: '“';
+                font-size: 140px;
+                line-height: 105px;
+                color: $blue-darker;
+                margin-left: -30px;
+                z-index: 0;
+                position: absolute;
+                left: -50px;
+                top: 13px;
+            }
+        }
+
+        &__body {
+            @include font-mosterrat-bold-antialiased(500);
+
+            font-style: italic;
+            font-size: 18px;
+            line-height: 32px;
+            color: $dark;
+        }
+
+        &__author {
+            @include font-mosterrat-bold-antialiased(700);
+            font-size: 18px;
+            line-height: 22px;
+            color: $blue;
+            margin-top: 30px !important;
+        }
+    }
+
+    .last-blue {
+        background-color: $blue-darker;
+        color: #fff;
+        padding: 53px 22px 48px 41px;
+
+        @media (max-width: $breakdown-to-mobile) {
+            margin-left: 0;
+        }
+
+        &__title {
+            @include font-mosterrat-bold-antialiased(700);
+            font-size: 24px;
+            line-height: 29px;
+            color: #fff;
+            margin-top: 0;
+        }
+
+        &__body {
+            @include font-mosterrat-bold-antialiased(400);
+
+            font-size: 21px;
+            letter-spacing: -0.01em;
+            margin-bottom: 30px;
+        }
+    }
+}

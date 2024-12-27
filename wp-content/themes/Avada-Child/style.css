@@ -1,0 +1,6405 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.1
+Text Domain:  Avada
+*/
+
+html {
+	scroll-behavior: smooth;
+  }
+
+@font-face {
+    font-family: 'Fuzzy Bubbles';
+    src: url('./assets/fonts/FuzzyBubbles-Regular.woff') format('woff'),
+        url('./assets/fonts/FuzzyBubbles-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+	--primary-blue: #05518F;
+}
+
+.fusion-logo img {
+    max-width: 160px;
+}
+body:not(.fusion-header-layout-v6) .fusion-main-menu>ul>li>a {
+	height: 108px !important;
+}
+/********** Google & FB review widget popup **********/
+div#_htU4wd7u3DCAIIit8dWH_popupModel > iframe,
+div#_RxO9b0GWoHHzKkRfU06e_popupModel > iframe,
+div#_3G7JiUm4X9S9tCr3icQQ_popupModel > iframe,
+div#_BGYW0fMMMiF1UjnEBpdp_popupModel > iframe {
+  z-index: 999 !important;
+}
+
+div#_htU4wd7u3DCAIIit8dWH_popupModel #rating-model-close-Btn,
+div#_RxO9b0GWoHHzKkRfU06e_popupModel #rating-model-close-Btn,
+div#_3G7JiUm4X9S9tCr3icQQ_popupModel #rating-model-close-Btn,
+div#_BGYW0fMMMiF1UjnEBpdp_popupModel #rating-model-close-Btn {
+  z-index: 9999999 !important;
+}
+
+iframe#_htU4wd7u3DCAIIit8dWH_bigModalPopup_iframe,
+iframe#_RxO9b0GWoHHzKkRfU06e_bigModalPopup_iframe,
+iframe#_3G7JiUm4X9S9tCr3icQQ_bigModalPopup_iframe,
+iframe#_BGYW0fMMMiF1UjnEBpdp_bigModalPopup_iframe {
+  z-index: 99999 !important;
+}
+
+@media only screen and (max-width: 900px) {
+  div#_htU4wd7u3DCAIIit8dWH_popupModel,
+  div#_RxO9b0GWoHHzKkRfU06e_popupModel,
+  div#_3G7JiUm4X9S9tCr3icQQ_popupModel,
+  div#_BGYW0fMMMiF1UjnEBpdp_popupModel {
+    display: none !important;
+  }
+}
+
+/********** Location back Link **********/
+
+.location-back-link-container {
+	display: flex;
+	width: 100%;
+}
+
+.location-back-link-wrapper {
+	border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: -10px;
+	background: #fff;
+	margin-left: -30px;
+	margin-right: -30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.location-back-link {
+	color: #EC801F;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	margin-left: 24px;
+	text-decoration: underline;
+}
+
+.location-back-link:hover,
+.location-back-link:focus,
+.location-back-link-close:hover,
+.location-back-link-close:focus {
+	color: #c46a28;
+	text-decoration: none;
+}
+
+.location-back-link:focus,
+.location-back-link-close:focus {
+	outline: 1px solid #c46a28;
+}
+
+.location-back-link::before {
+	content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -24px;
+	background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='8' fill='%23EC801F'/%3E%3Cpath d='M10 11.057 6.908 8 10 4.943 9.046 4 5 8l4.046 4 .954-.943Z' fill='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.location-back-link-close {
+	margin-left: auto;
+	cursor: pointer;
+	font-size: 15px;
+	background-color: transparent;
+	border: none;
+	color: #EC801F;
+	margin-right: -6px;
+}
+
+@media (max-width: 800px) {
+	.location-back-link {
+		font-size: 13px;
+	}
+	.location-back-link-wrapper {
+		margin-top: 20px;
+		margin-bottom: -20px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.page-template-location-page #main>.fusion-row {
+		display: block;
+	}
+}
+
+
+@media(min-width: 1250px) {
+	.location-back-link-wrapper {
+	
+	}
+}
+
+/********** Cryotherapy Page **********/
+.cryotherapy-page-benefits
+  .fusion-content-boxes.content-boxes
+  .content-box-wrapper.content-wrapper {
+  min-height: unset !important;
+  padding: 15px 40px !important;
+}
+
+#cryotherapy-page-faq.cryotherapy-page-benefits
+  .fusion-content-boxes.content-boxes
+  .content-box-wrapper.content-wrapper {
+  padding: 2px 40px !important;
+}
+
+.cryotherapy-page-what-to-expect h4 span.fusion-toggle-heading,
+.cryotherapy-page-what-to-expect h4 a:hover span.fusion-toggle-heading {
+  color: #3d3b3a !important;
+}
+
+.cryotherapy-page-what-to-expect .panel-group h4 a {
+  padding: 15px 0 !important;
+}
+
+.cryotherapy-page-what-to-expect .panel-group > .fusion-panel {
+  border: none;
+}
+
+.cryotherapy-page-what-to-expect .panel-group .panel-body.toggle-content {
+  padding-left: 44px;
+}
+
+.section-custom-testimonials {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 4em 0;
+}
+
+.section-custom-testimonials .testimonial-info-wrap {
+  margin-left: 2.5em;
+  display: flex;
+  align-items: center;
+}
+
+.section-custom-testimonials .testimonial-info-wrap .testimonial-info {
+  padding: 0.5em 1.5em 0.5em 0.5em;
+  display: flex;
+}
+
+.section-custom-testimonials .testimonial-img img {
+  max-width: 190px;
+  border-radius: 50%;
+}
+
+.section-custom-testimonials .testimonial-info p.testimonial-descr {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  line-height: 1.5;
+  font-style: italic;
+  font-family: serif;
+}
+
+.section-custom-testimonials .testimonial-info p.testimonial-name {
+  margin-bottom: 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.section-custom-testimonials .testimonial-info-wrap .testimonial-info div.icon {
+  display: block !important;
+  height: 3.5em;
+  width: 3.5em;
+  margin-top: -1.5em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 37.1 28.84'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%233898d0;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3Equote-icon%3C/title%3E%3Cpath class='cls-1' d='M639.7,249.1a22,22,0,0,1,.9-6.28,16.76,16.76,0,0,1,2.91-5.62,20.92,20.92,0,0,1,5.2-4.66,29.45,29.45,0,0,1,7.72-3.41v4.28a18.59,18.59,0,0,0-7.37,3.88,7.19,7.19,0,0,0-2.34,5.28,2.53,2.53,0,0,0,.55,1.67,5.53,5.53,0,0,0,1.4,1.2c.56.35,1.16.69,1.79,1a10.5,10.5,0,0,1,1.79,1.19,5.91,5.91,0,0,1,1.4,1.72,6.27,6.27,0,0,1-1.37,7.05,7.35,7.35,0,0,1-4.76,1.54,7.84,7.84,0,0,1-3-.57A7.36,7.36,0,0,1,642,255.7a8,8,0,0,1-1.72-2.79A11,11,0,0,1,639.7,249.1Zm20.37,0a22,22,0,0,1,.9-6.28,16.76,16.76,0,0,1,2.91-5.62,21.1,21.1,0,0,1,5.2-4.66,29.45,29.45,0,0,1,7.72-3.41v4.28a18.55,18.55,0,0,0-7.32,3.88,7.19,7.19,0,0,0-2.34,5.28,2.53,2.53,0,0,0,.55,1.67,5.74,5.74,0,0,0,1.37,1.2c.55.35,1.15.69,1.79,1a9.52,9.52,0,0,1,1.8,1.19,6.16,6.16,0,0,1,1.37,1.72,6.3,6.3,0,0,1-1.35,7.05,7.23,7.23,0,0,1-4.73,1.54,8.07,8.07,0,0,1-3-.57,7,7,0,0,1-2.51-1.69,8.29,8.29,0,0,1-1.72-2.79A10.49,10.49,0,0,1,660.07,249.1Z' transform='translate(-639.7 -229.13)'/%3E%3C/svg%3E");
+}
+
+@media only screen and (max-width: 599px) {
+  .cryotherapy-page-top .fusion-text > h1 {
+    font-size: 40px !important;
+  }
+
+  .cryotherapy-page-top .fusion-text p {
+    font-size: 20px !important;
+  }
+
+  .cryotherapy-page-benefits h2,
+  .cryotherapy-page-what-to-expect h2,
+  #cryotherapy-page-faq h2 {
+    font-size: 35px !important;
+  }
+
+  .cryotherapy-page-benefits
+    .fusion-content-boxes.content-boxes
+    .content-box-wrapper.content-wrapper {
+    padding: 5px 5px !important;
+  }
+
+  .cryotherapy-page-benefits .fusion-content-boxes .fusion-column,
+  #cryotherapy-page-faq .fusion-content-boxes .fusion-column {
+    margin-bottom: 30px !important;
+  }
+
+  #cryotherapy-page-faq.cryotherapy-page-benefits
+    .fusion-content-boxes.content-boxes
+    .content-box-wrapper.content-wrapper {
+    padding: 2px 5px !important;
+  }
+
+  .section-custom-testimonials .testimonial-img img {
+    max-width: 170px;
+  }
+
+  .section-custom-testimonials .testimonial-img {
+    margin-bottom: 1.5em;
+  }
+
+  .section-custom-testimonials {
+    display: block;
+    text-align: center;
+  }
+
+  .section-custom-testimonials .testimonial-info-wrap {
+    margin-left: 0;
+  }
+
+  .section-custom-testimonials .testimonial-info p.testimonial-descr {
+    font-size: 1.1em;
+  }
+
+  .section-custom-testimonials .testimonial-info p.testimonial-name {
+    font-size: 0.9em;
+  }
+
+  .section-custom-testimonials
+    .testimonial-info-wrap
+    .testimonial-info
+    div.icon {
+    min-width: 25px;
+    min-height: 25px;
+    margin-right: 0;
+  }
+
+  .section-custom-testimonials .testimonial-info-wrap .testimonial-info {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .fusion-flex-container.cryotherapy-page-what-to-expect {
+    padding-left: 0 !important;
+  }
+
+  .fusion-flex-container.cryotherapy-page-what-to-expect
+    .fusion-builder-row.fusion-row
+    .fusion-builder-column-6
+    > .fusion-column-wrapper {
+    margin-left: 0 !important;
+  }
+
+  .fusion-flex-container.cryotherapy-page-what-to-expect
+    .fusion-builder-row.fusion-row
+    .fusion-builder-column-5 {
+    padding-right: 2em !important;
+    padding-left: 2em !important;
+  }
+}
+
+/********** Locations page **********/
+.page-id-28
+  .cryotherapy-page-benefits
+  .fusion-content-boxes.content-boxes
+  .content-box-wrapper.content-wrapper {
+  min-height: unset !important;
+  padding: 15px 30px !important;
+}
+
+#wrapper #main .post-content h1.primeiv-location-h1 {
+  text-align: center;
+}
+
+#wrapper .post-content h1#locations-main-title,
+#wrapper #main .post-content h1.primeiv-location-h1 {
+  font-size: 36px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  font-style: normal;
+  color: #05518f;
+}
+
+.locations-main-boxes .content-container {
+  font-size: 18px;
+}
+
+.fusion-content-boxes.locations-main-boxes .fusion-column {
+  margin-bottom: 5px;
+}
+
+#wpsl-wrap {
+  margin-top: 3em;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  #wpsl-radius,
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  #wpsl-results {
+  display: flex;
+  align-items: center;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  #wpsl-radius
+  label {
+  width: auto;
+  white-space: nowrap;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  .wpsl-input
+  #wpsl-search-input {
+  width: 100%;
+  padding: 8px 12px;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  .wpsl-select-wrap
+  select {
+  height: 40px;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  .wpsl-search-btn-wrap {
+  margin-bottom: 10px;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  .wpsl-search-btn-wrap {
+  margin-right: 0;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  .wpsl-search-btn-wrap
+  #wpsl-search-btn {
+  background-image: linear-gradient(to top, #c46a28, #e99941);
+  font-family: Open Sans;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0px;
+  border-width: 0px;
+  border-color: #ffffff;
+  border-style: solid;
+  border-radius: 4px;
+  text-transform: none;
+  transition: all 0.2s;
+  color: #ffffff;
+  padding: 11.5px 29px;
+  line-height: 17px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 0;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  .wpsl-search-btn-wrap
+  #wpsl-search-btn:hover {
+  background-image: linear-gradient(to top, #e99941, #c46a28);
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  > form {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  > form
+  .wpsl-input,
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  > form
+  .wpsl-select-wrap,
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  > form
+  .wpsl-search-btn-wrap {
+  display: inline-block;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  > form
+  .wpsl-input {
+  width: 100%;
+}
+
+#wpsl-wrap
+  .wpsl-wrap-custom-right-column
+  .wpsl-search.wpsl-clearfix.wpsl-filter
+  #wpsl-search-wrap
+  > form
+  .wpsl-select-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores ul {
+  padding-right: 2em;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores .wpsl-contact-details-header {
+  margin-bottom: 8px;
+}
+
+#wpsl-wrap .wpsl-direction-wrap {
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores .wpsl-contact-details-header a {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+#wpsl-wrap #wpsl-search-wrap form #wpsl-search-input,
+#wpsl-wrap #wpsl-search-wrap form .wpsl-selected-item,
+#wpsl-wrap #wpsl-search-wrap form .wpsl-dropdown {
+  border-width: 0px;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores a.wpsl-page-info-custom-btn {
+  display: inline-block;
+  line-height: 1.35;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#05518f),
+    to(#53ace0)
+  );
+  background-image: -webkit-linear-gradient(bottom, #05518f, #53ace0);
+  background-image: -moz-linear-gradient(bottom, #05518f, #53ace0);
+  background-image: -o-linear-gradient(bottom, #05518f, #53ace0);
+  background-image: linear-gradient(to top, #05518f, #53ace0);
+  color: #ffffff;
+  outline: 0;
+  transition: all 0.2s;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+  border-width: 0px;
+  border-style: solid;
+  text-transform: none;
+  padding: 9px 18px;
+  font-size: 15px;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores a.wpsl-page-info-custom-btn:hover {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#3d3b3a),
+    to(#7e7674)
+  );
+  background-image: -webkit-linear-gradient(bottom, #3d3b3a, #7e7674);
+  background-image: -moz-linear-gradient(bottom, #3d3b3a, #7e7674);
+  background-image: -o-linear-gradient(bottom, #3d3b3a, #7e7674);
+  background-image: linear-gradient(to top, #3d3b3a, #7e7674);
+  transition: all 0.2s;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores .wpsl-contact-details-header span {
+  line-height: 1.1;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores .wpsl-contact-details-phone {
+  font-weight: 600;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores .wpsl-contact-details-phone,
+#wpsl-wrap #wpsl-result-list #wpsl-stores .wpsl-contact-details-email {
+  line-height: 1.5;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores i.wpsl-custom-phone-icon,
+#wpsl-wrap #wpsl-result-list #wpsl-stores i.wpsl-custom-email-icon {
+  display: inline-block;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores i.wpsl-custom-phone-icon {
+  height: 13px;
+  width: 13px;
+  margin-right: 5px;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores i.wpsl-custom-email-icon {
+  height: 13px;
+  width: 17px;
+  margin-right: 3px;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores i.wpsl-custom-phone-icon::after,
+#wpsl-wrap #wpsl-result-list #wpsl-stores i.wpsl-custom-email-icon::after {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+h2#locations-state-title {
+  margin-top: 1.5em !important;
+  font-size: 36px !important;
+}
+
+.choose-state-btn {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores i.wpsl-custom-phone-icon::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' viewBox='0 0.5 14 14' fill='%233d3b3a'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='15' viewBox='0.237 0.809 13.524 13.524'%3E%3Cpath paint-order='stroke fill markers' fill-rule='evenodd' d='M12.676 9.686c-.828 0-1.641-.13-2.412-.384-.377-.129-.841-.01-1.072.226l-1.52 1.148C5.908 9.735 4.822 8.65 3.893 6.9l1.114-1.481c.29-.29.394-.712.27-1.108a7.69 7.69 0 0 1-.386-2.415c0-.599-.487-1.086-1.085-1.086H1.322C.724.81.237 1.296.237 1.895c0 6.858 5.58 12.438 12.439 12.438.598 0 1.085-.487 1.085-1.085v-2.477c0-.598-.487-1.085-1.085-1.085z'/%3E%3C/svg%3E%3C/svg%3E");
+}
+
+#wpsl-wrap #wpsl-result-list #wpsl-stores i.wpsl-custom-email-icon::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='15' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' viewBox='0 0.75 18 13.5' fill='%2337a4dd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='15' viewBox='0 0.875 17.5 13.125'%3E%3Cpath paint-order='stroke fill markers' fill-rule='evenodd' d='M17.168 5.209a.206.206 0 0 1 .332.16v6.99c0 .906-.735 1.64-1.64 1.64H1.64C.736 14 0 13.266 0 12.36V5.373c0-.17.195-.267.332-.16.765.594 1.78 1.35 5.267 3.882.72.526 1.938 1.634 3.151 1.627 1.22.01 2.46-1.121 3.155-1.627 3.486-2.533 4.498-3.291 5.263-3.886zM8.75 9.625c.793.014 1.935-.998 2.509-1.415 4.535-3.292 4.88-3.579 5.927-4.399a.818.818 0 0 0 .314-.646v-.65c0-.905-.735-1.64-1.64-1.64H1.64C.736.875 0 1.61 0 2.515v.65c0 .253.116.489.314.646 1.046.817 1.392 1.107 5.927 4.399.574.417 1.716 1.429 2.509 1.415z'/%3E%3C/svg%3E%3C/svg%3E");
+}
+
+@media only screen and (min-width: 676px) {
+  #wpsl-wrap
+    .wpsl-wrap-custom-right-column
+    .wpsl-search.wpsl-clearfix.wpsl-filter {
+    width: 66.5% !important;
+    float: right !important;
+  }
+
+  #wpsl-wrap #wpsl-result-list #wpsl-stores {
+    height: 576px !important;
+  }
+}
+
+@media ( max-width: 675px ) {
+  .tmm-store-locator #wpsl-wrap #wpsl-result-list #wpsl-stores {
+    height: auto !important;
+  }
+  #wpsl-wrap #wpsl-result-list #wpsl-stores {
+    height: 2000px !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #wrapper .post-content h1#locations-main-title,
+  #wrapper #main .post-content h1.primeiv-location-h1 {
+    font-size: 31px;
+  }
+  .location-mobile-bottom-menu-inner .btn-orange {
+	padding: 17px !important;
+  }
+}
+
+@media only screen and (max-width: 1029px) {
+  #wpsl-wrap #wpsl-radius-dropdown {
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  #wpsl-wrap
+    .wpsl-wrap-custom-right-column
+    .wpsl-search.wpsl-filter
+    #wpsl-search-wrap
+    > form
+    .wpsl-input {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  #wpsl-wrap
+    .wpsl-wrap-custom-right-column
+    .wpsl-search.wpsl-filter
+    #wpsl-search-wrap
+    > form {
+    flex-wrap: wrap !important;
+  }
+
+  #wpsl-wrap
+    .wpsl-wrap-custom-right-column
+    .wpsl-search.wpsl-filter
+    #wpsl-search-wrap
+    > form
+    .wpsl-select-wrap {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+
+  #wpsl-wrap
+    .wpsl-wrap-custom-right-column
+    .wpsl-search.wpsl-filter
+    #wpsl-search-wrap
+    > form
+    .wpsl-select-wrap
+    label {
+    width: 100% !important;
+  }
+
+  #wpsl-wrap
+    .wpsl-wrap-custom-right-column
+    .wpsl-search.wpsl-filter
+    #wpsl-search-wrap
+    > form
+    #wpsl-radius,
+  #wpsl-wrap
+    .wpsl-wrap-custom-right-column
+    .wpsl-search.wpsl-filter
+    #wpsl-search-wrap
+    > form
+    #wpsl-results {
+    width: 45% !important;
+    flex-wrap: wrap !important;
+  }
+
+  #wpsl-wrap
+    .wpsl-wrap-custom-right-column
+    .wpsl-search.wpsl-filter
+    #wpsl-search-wrap
+    > form
+    #wpsl-results {
+    margin-right: 0 !important;
+  }
+
+  #wpsl-wrap .wpsl-wrap-custom-right-column .wpsl-search.wpsl-filter #wpsl-search-wrap > form #wpsl-results {
+    justify-content: flex-end !important;
+  }
+
+  #wpsl-wrap .wpsl-wrap-custom-right-column .wpsl-search.wpsl-filter {
+    padding: 18px !important;
+  }
+
+  #wpsl-wrap
+    .wpsl-wrap-custom-right-column
+    .wpsl-search.wpsl-clearfix.wpsl-filter
+    .wpsl-search-btn-wrap {
+    margin-bottom: 0 !important;
+    margin-top: 10px !important;
+  }
+
+  h2#locations-state-title,
+  #wrapper .post-content h1#locations-main-title,
+  #wrapper #main .post-content h1.primeiv-location-h1 {
+    font-size: 30px !important;
+  }
+
+  #wpsl-wrap #wpsl-result-list #wpsl-stores a.wpsl-page-info-custom-btn {
+    padding: 8px 15px !important;
+    font-size: 14px !important;
+  }
+
+  #wpsl-wrap .wpsl-wrap-custom-right-column .wpsl-search.wpsl-filter #wpsl-search-wrap select,
+  #wpsl-wrap .wpsl-wrap-custom-right-column .wpsl-search.wpsl-filter #wpsl-search-wrap  .wpsl-dropdown  {
+    width: 100% !important;
+  }
+
+  #wpsl-results .wpsl-dropdown {
+    width: 100%;
+  }
+  #wpsl-form-search-form {
+    display: block !important;
+  }
+
+}
+
+@media only screen and (max-width: 994px) and (min-width: 676px) {
+  #content
+    .fusion-layout-column
+    .fusion-column-wrapper
+    #wpsl-wrap
+    #wpsl-result-list
+    #wpsl-stores {
+    height: 728px !important;
+  }
+}
+
+body.page-id-28
+  header.fusion-header-wrapper
+  nav.fusion-main-menu
+  #menu-main
+  li.book-now-menu-item,
+body.page-id-28
+  .fusion-footer
+  footer.fusion-footer-widget-area
+  .fusion-row
+  .book-now-item,
+body.page-id-28
+  header.fusion-header-wrapper
+  #mobile-menu-main
+  li.book-now-menu-item {
+  display: none !important;
+}
+
+body.page-id-28
+  header.fusion-header-wrapper
+  nav.fusion-main-menu
+  #menu-main
+  li#menu-item-265 {
+  padding-right: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  body.page-id-28
+    .fusion-footer
+    footer.fusion-footer-widget-area
+    .fusion-column.fusion-column-last {
+    display: none !important;
+  }
+
+  #wpsl-wrap #wpsl-result-list #wpsl-stores ul li {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  #wpsl-wrap
+    #wpsl-result-list
+    #wpsl-stores
+    .wpsl-contact-details
+    .wpsl-contact-details-email
+    a {
+    font-size: 13.5px !important;
+  }
+
+  #wpsl-wrap
+    #wpsl-result-list
+    #wpsl-stores
+    .wpsl-contact-details
+    .wpsl-contact-details-email
+    .wpsl-custom-email-icon {
+    height: 10px;
+    width: 12px;
+  }
+}
+
+header.fusion-header-wrapper .fusion-mobile-nav-holder .fusion-mobile-selector {
+  outline: none !important;
+}
+
+#wpsl-wrap
+  #wpsl-result-list
+  #wpsl-stores
+  .wpsl-page-info-custom-btn-wrap
+  a.wpsl-page-info-custom-btn.book-now-btn {
+  background: linear-gradient(to top, #c46a28, #e99941);
+}
+
+#wpsl-wrap
+  #wpsl-result-list
+  #wpsl-stores
+  .wpsl-page-info-custom-btn-wrap
+  a.wpsl-page-info-custom-btn.book-now-btn:hover {
+  background: linear-gradient(to top, #e99941, #c46a28);
+}
+
+@media only screen and (min-width: 1280px) {
+  #wpsl-wrap #wpsl-result-list #wpsl-stores .wpsl-page-info-custom-btn-wrap p {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  #wpsl-wrap
+    #wpsl-result-list
+    #wpsl-stores
+    .wpsl-page-info-custom-btn-wrap
+    a.wpsl-page-info-custom-btn.book-now-btn {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  #wpsl-wrap #wpsl-result-list #wpsl-stores .wpsl-page-info-custom-btn-wrap p {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+}
+
+#wpsl-wrap
+  #wpsl-result-list
+  #wpsl-stores
+  .wpsl-page-info-custom-btn-wrap
+  a.wpsl-page-info-custom-btn.book-now-btn.cs {
+  margin-left: 0;
+}
+
+/********** Individual Location Page **********/
+
+.location-mobile-bottom-menu {
+	padding: 20px 30px;
+	background: #F4F4F4;
+	position: fixed;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+	margin: 0 -30px;
+	display: none;
+}
+
+.location-mobile-bottom-menu-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.location-mobile-bottom-menu-inner .btn-orange {
+    max-width: 233px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+}
+
+.location-mobile-bottom-menu-inner div{
+	width: 33.33%;
+}
+
+.location-mobile-bottom-menu-inner .mobile-phone a {
+	font-size: 24px;
+    color: #05518F;
+	transform: scaleX(-1);
+}
+
+.location-mobile-bottom-menu-inner .mobile-phone i {
+	transform: scaleX(-1);
+}
+
+.page-template-location-page  .sub-title {
+	font-weight: 400;
+	font-size: 24px;
+	color: #05518f;
+}
+
+.page-template-location-page .main-title {
+	font-size: 32px;
+    color: #05518f;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 0.6em;
+    margin-top: 0;
+}
+
+.page-template-location-page .sidebar-menu .btn-comingsoon {
+	font-size: 15px !important;
+}
+
+.page-template-location-page .fusion-copyright-content {
+	display: block;
+}
+
+.page-template-location-page .footer-links {
+	text-align: left !important;
+	line-height: 1.4;
+	word-break: break-word;
+}
+
+.page-template-location-page .terms {
+	margin-top: 30px;
+}
+
+.page-template-location-page .footer-links a:hover {
+	color: var(--copyright_link_color) !important;
+	text-decoration: none;
+}
+
+.page-template-location-page .flex {
+	display: flex;
+}
+
+.page-template-location-page .text-center {
+	text-align: center;
+}
+
+.page-template-location-page .items-center {
+	align-items: center;
+}
+
+.page-template-location-page .semi-bold {
+	font-weight: 600;
+}
+
+.page-template-location-page .underline:not(:hover) {
+	text-decoration: underline;
+}
+
+.page-template-location-page .title-medium {
+	font-family: "Montserrat";
+    font-size: 32px;
+    line-height: 29px;
+    color: #05518f;
+    margin: 0 0 20px;
+}
+
+@media (max-width: 768px) {
+  .page-template-location-page #content .post-content .location-page-why-use-section h3,
+  .page-template-location-page #content .post-content .location-page-memberships-section .item .item-content .item-title span,
+  .page-template-location-page .faq-section .main-title,
+  .fusion-top-header .fusion-responsive-typography-calculated,
+  .page-template-location-page .title-medium {
+    font-size: 24px !important;
+  }
+  .fusion-top-header .location-page-why-use-section .content.why-content{
+    margin-top: 30px;
+  }
+}
+
+.page-template-location-page .treatment-header .tooltip-icon {
+	position: absolute;
+}
+.page-template-location-page .tooltip-icon {
+	position: relative;
+	max-width: 18px;
+	margin: 0 auto;
+}
+.page-template-location-page .tooltip-icon img {
+	cursor: pointer;
+}
+
+.page-template-location-page .hsa-wrapper {
+	position: relative;
+}
+
+.page-template-location-page .hsa-wrapper > img{
+	max-width: 173px;
+}
+
+.page-template-location-page .hsa-wrapper.mobile {
+	display: none;
+	margin-bottom: 16px;
+}
+
+.page-template-location-page .location-tootip {
+    background: #FFFFFF;
+    box-shadow: 2px 6px 8px rgb(0 0 0 / 25%);
+    border-radius: 10px;
+    padding: 13px 20px;
+    min-width: 325px;
+    position: absolute;
+    z-index: 10;
+    left: -25px;
+    top: 30px;
+	display: none;
+}
+
+.page-template-location-page .treatment-header .tooltip-icon {
+	top: 82px;
+    right: 16px;
+}
+
+.page-template-location-page .treatment-header .hsa-wrapper.mobile .tooltip-icon {
+    right: 162px !important;
+}
+
+.page-template-location-page .tooltip-icon:hover .location-tootip {
+	display: block;
+}
+
+.page-template-location-page .location-tootip::before {
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 17px 12px 0;
+    border-color: #fff transparent transparent;
+    display: block;
+    content: '';
+    position: absolute;
+    left: 22px;
+    top: -17px;
+    transform: rotate(180deg);
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.15));
+}
+
+.page-template-location-page .location-tootip p {
+	font-size: 14px !important;
+	text-align: left;
+	font-weight: 400;
+	margin-bottom: 0;
+	cursor: default;
+}
+
+.page-template-location-page .treatment-header {
+	gap: 15px;
+}
+
+.page-template-location-page .treatments-title {
+    margin-bottom: 50px;
+}
+
+.page-template-location-page .location-content h4 {
+	margin-top: 0;
+}
+
+.page-template-location-page .treatment-header p {
+	margin-bottom: 0;
+}
+
+.page-template-location-page .extra-service-title {
+	margin-bottom: 45px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-template-location-page .extra-service .image-wrapper {
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+.page-template-location-page .extra-service .info p {
+	font-family: 'Montserrat';
+	color: #05518F;
+	font-size: 21px !important;
+}
+
+.page-template-location-page .sidebar-menu {
+	position: sticky;
+	top: 80px;
+}
+
+.page-template-location-page .book-appointment {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.page-template-location-page .sidebar-menu ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.page-template-location-page .sidebar-menu ul.sidebar-sub-menu {
+    margin-top: 22px;
+    margin-left: 23px;
+    gap: 15px;
+}
+
+.page-template-location-page .sidebar-menu ul a {
+	padding-left: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+	color: #000;
+	font-size: 18px;
+	position: relative;
+}
+
+.page-template-location-page .sidebar-menu ul.sidebar-sub-menu a {
+	font-size: 16px;
+}
+
+.page-template-location-page .sidebar-menu li > a.active,
+.page-template-location-page .sidebar-menu li a:hover {
+	font-weight: 600;
+}
+
+.page-template-location-page .sidebar-menu li a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 3px;
+	height: 100%;
+	background: #58ADDE;
+	transform-origin: top;
+    transform: scaleY(0);
+	transition: all 0.2s ease-in-out;
+}
+
+.page-template-location-page .sidebar-menu li > a.active::after,
+.page-template-location-page .sidebar-menu li a:hover:after {
+	transform: scaleY(1);
+}
+
+.page-template-location-page .treatments-grid {
+	display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.page-template-location-page .treatment-item {
+	position: relative;
+	background: #fff;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+	width: 213px;
+	height: 181px;
+	cursor: pointer;
+}
+
+.page-template-location-page .boost-treatments .treatment-item {
+	height: 213px;
+}
+
+.page-template-location-page .boost-treatments .treatment-item.rounded {
+	border-radius: 50%;
+}
+
+.page-template-location-page .boost-treatments .treatment-item.rounded .treatment-info {
+	border-radius: 50%;
+	text-align: center;
+	padding: 30px;
+}
+
+.page-template-location-page .boost-treatments .treatment-item.item-info {
+	background: transparent;
+	cursor: default;
+	box-shadow: none;
+}
+
+.page-template-location-page .item-info {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page-template-location-page .item-info p {
+	margin-top: 0;
+	font-family: 'Montserrat';
+}
+
+.page-template-location-page .item-info .sub-title {
+	margin-bottom: 10px;	
+}
+
+.page-template-location-page .treatment-info {
+	position: absolute;
+	width: 100%;
+	font-size: 13.6px !important;
+	top: 0;
+	bottom: 0;
+	background: #05518F;
+	color: #fff;
+	padding: 16px 20px;
+	display: none;
+	font-family: 'Montserrat';
+}
+
+.page-template-location-page .treatment-item:hover .treatment-info {
+	display: block;
+}
+
+.page-template-location-page .treatment-icon-title {
+	margin-top: 16px;
+	font-size: 17px !important;
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	color: #05518F;
+}
+
+.page-template-location-page .icon-wrapper {
+	display: flex;
+	width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.page-template-location-page .treatment-icon {
+	text-align: center;
+}
+
+.page-template-location-page .treatment-icon img {
+  max-height: 60px;
+  width: auto;
+}
+
+.page-template-location-page .location-section .proper-section {
+	padding-top: 80px;
+}
+
+.page-template-location-page .location-section .proper-section h4 {
+	font-size: 32px;
+	margin-top: 40px;
+	font-family: 'Montserrat';
+	color: #5CAEDC;
+}
+
+.page-template-location-page .sub-nav-wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 60px;
+  background: var(--primary-blue);
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page-template-location-page .sub-nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-template-location-page .sub-nav ul li a {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
+
+.page-template-location-page .sub-nav ul li a:hover:before,
+.page-template-location-page .sub-nav ul li a.active:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: white;
+  bottom: -10px;
+  left: 0;
+}
+
+.page-template-location-page .sub-nav-inner {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.page-template-location-page .sub-nav-wrapper .logo-wrapper {
+  opacity: 0;
+  position: absolute;
+  transition: all 0.1s ease-in-out;
+  left: 0;
+}
+
+.page-template-location-page .sub-nav-wrapper.sticky-nav .logo-wrapper {
+  opacity: 1;
+}
+
+.page-template-location-page .sticky-nav {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
+
+.page-template-location-page .admin-bar .sticky-nav {
+  top: 32px;
+}
+
+.page-template-location-page .location-general-info {
+  display: flex;
+  gap: 40px;
+}
+
+#overview.comingsoon .location-general-info {
+  display: block;
+}
+
+.page-template-location-page .info-details > div {
+  margin-bottom: 15px;
+}
+
+.page-template-location-page .info-details .location-info-address,
+.page-template-location-page .info-details .location-info-phone,
+.page-template-location-page .info-details .location-info-email {
+  position: relative;
+  padding-left: 22px;
+}
+.page-template-location-page .info-details .location-info-email {
+  line-break: anywhere;
+}
+
+.page-template-location-page .info-details .location-info-address i,
+.page-template-location-page .info-details .location-info-phone i,
+.page-template-location-page .info-details .location-info-email i {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.page-template-location-page main#main .fusion-row {
+  max-width: 100%;
+  width: 100%;
+}
+
+.page-template-location-page main#main #content .post-content .fusion-row {
+  max-width: 1200px;
+}
+
+.page-template-location-page #content .post-content .separator-wrap {
+  text-align: center;
+}
+
+.page-template-location-page .faq-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page-template-location-page #content .post-content .faq-content .separator-wrap {
+	text-align: left;
+}
+
+.page-template-location-page #content .post-content .separator-wrap .separator {
+  height: 2px;
+  width: 90px;
+  background-color: #ec801f;
+  margin: auto;
+}
+
+.page-template-location-page #content .post-content .faq-content .separator-wrap .separator{
+	margin: inherit;
+}
+
+.page-template-location-page .faq-section .main-title {
+  margin-bottom: 22px;
+}
+
+.page-template-location-page #content .post-content .location-page-first-top-section {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 7px;
+}
+
+@media (max-width: 998px) {
+  .page-template-location-page #content .post-content .location-page-first-top-section {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 999px) {
+  .location-page-first-top-section .form-iframe {
+    min-height: 689px;
+  }
+}
+
+/* a fix on WP side - extra spacing around iframe form */
+.page-template-location-page #content .post-content .location-page-first-top-section .right iframe{
+  margin-top: -60px;
+  margin-bottom: -140px;
+}
+
+.page-template-location-page #content .post-content p,
+.page-template-location-page #content .post-content span,
+.page-template-location-page #content .post-content div {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left {
+  width: 70%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .comingsoon
+  .left {
+  width: 55%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .location-info-phone
+  a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .location-info-phone
+  a:hover {
+	text-decoration: none;
+  }
+
+.page-template-location-page .njt-header .njt-header-content:after {
+  display: none !important;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .info {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .location-map
+  iframe {
+	width: 100%;
+	height: 328px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .comingsoon
+  .location-map
+  iframe {
+	width: 100%;
+	height: 450px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .info
+  > div {
+  width: 50%;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .info
+  .location-general-info {
+  width: 100%;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .info
+  .google-rating {
+  width: 35%;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .right {
+  width: 35%;
+}
+
+.page-template-location-page #content .post-content .comingsoon {
+	margin-bottom: 2.5em;
+  margin-top: 4em;
+}
+
+.page-template-location-page #content .post-content .comingsoon .right {
+	width: 45%;
+}
+
+.page-template-location-page .location-page-first-top-section .right {
+	flex-direction: column;
+}
+
+.page-template-location-page .location-page-first-top-section .right .initial-visit {
+	color: #05518f;
+	font-size: 28px !important;
+	font-weight: 700;
+}
+
+.page-template-location-page .location-page-first-top-section .right .initial-visit span{
+	font-size: 54px !important;
+	position: relative;
+}
+
+.page-template-location-page .location-page-first-top-section .right iframe{
+	/* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.page-template-location-page .right .initial-visit {
+	display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 12px;
+    margin-top: 55px;
+}
+
+.page-template-location-page .right .form-text {
+  margin-top: 20px;
+}
+
+.page-template-location-page .right .form-text p{
+	text-align: center;
+	font-size: 14px !important;
+}
+
+.page-template-location-page .right .form-text a,
+.page-template-location-page .right .form-text-bottom a {
+	color: var(--body_typography-color);
+	text-decoration: underline;
+}
+
+.page-template-location-page .right .form-text a:hover,
+.page-template-location-page .right .form-text-bottom a:hover {
+	text-decoration: none;
+}
+
+.page-template-location-page .right .form-text-bottom p{
+	text-align: center;
+	font-size: 12px !important;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  h2 {
+  color: #05518f;
+  font-size: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  h1 {
+  color: #05518f;
+  font-size: 32px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.location-sidebar-contact i:after {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+} 
+.location-sidebar-contact i, 
+.page-template-location-page #content .post-content .location-page-first-top-section .left .location-general-info i {
+  height: 13px;
+  width: 14px;
+  margin-right: 12px;
+  display: inline-block;
+  transform: translateY(2px);
+}
+
+.location-sidebar-contact {
+  margin-top: 37px;
+}
+.location-sidebar-contact a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: underline;
+}
+.location-sidebar-contact a:hover {
+  text-decoration: none;
+}
+.location-sidebar-contact svg {
+  margin-right: 7px;
+  margin-bottom: -3px;
+}
+.location-sidebar-contact .location-info-address {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.location-sidebar-contact .location-info-address p {
+  margin-bottom: 10px;
+}
+
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .location-general-info
+  i::after {
+  display: block;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .location-general-info
+  i.location-info-address-icon {
+  height: 17px;
+  width: 14px;
+  margin-right: 8px;
+  transform: translateY(5px);
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .location-general-info
+  i.location-info-address-icon::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15.234' height='20' viewBox='0 0 15.234 20'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%233d3b3b;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(-61)'%3E%3Cg transform='translate(61)'%3E%3Cpath class='a' d='M68.617,0A7.626,7.626,0,0,0,61,7.617a7.549,7.549,0,0,0,1.52,4.566l5.628,7.58c.014.018.036.025.051.042a.567.567,0,0,0,.888-.042c1.621-2.163,4.591-6.2,5.734-7.725v0l.007-.009A7.617,7.617,0,0,0,68.617,0Zm0,11.727a4.109,4.109,0,1,1,4.109-4.109A4.12,4.12,0,0,1,68.617,11.727Z' transform='translate(-61)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .location-general-info
+  i.location-info-phone-icon::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='15' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' viewBox='0 0.5 14 14' fill='%233d3b3a'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='15' viewBox='0.237 0.809 13.524 13.524'%3E%3Cpath paint-order='stroke fill markers' fill-rule='evenodd' d='M12.676 9.686c-.828 0-1.641-.13-2.412-.384-.377-.129-.841-.01-1.072.226l-1.52 1.148C5.908 9.735 4.822 8.65 3.893 6.9l1.114-1.481c.29-.29.394-.712.27-1.108a7.69 7.69 0 0 1-.386-2.415c0-.599-.487-1.086-1.085-1.086H1.322C.724.81.237 1.296.237 1.895c0 6.858 5.58 12.438 12.439 12.438.598 0 1.085-.487 1.085-1.085v-2.477c0-.598-.487-1.085-1.085-1.085z'/%3E%3C/svg%3E%3C/svg%3E");
+}
+
+.page-template-location-page #content i.location-info-email-icon::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='15' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' viewBox='0 0.75 18 13.5' fill='%2337a4dd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='15' viewBox='0 0.875 17.5 13.125'%3E%3Cpath paint-order='stroke fill markers' fill-rule='evenodd' d='M17.168 5.209a.206.206 0 0 1 .332.16v6.99c0 .906-.735 1.64-1.64 1.64H1.64C.736 14 0 13.266 0 12.36V5.373c0-.17.195-.267.332-.16.765.594 1.78 1.35 5.267 3.882.72.526 1.938 1.634 3.151 1.627 1.22.01 2.46-1.121 3.155-1.627 3.486-2.533 4.498-3.291 5.263-3.886zM8.75 9.625c.793.014 1.935-.998 2.509-1.415 4.535-3.292 4.88-3.579 5.927-4.399a.818.818 0 0 0 .314-.646v-.65c0-.905-.735-1.64-1.64-1.64H1.64C.736.875 0 1.61 0 2.515v.65c0 .253.116.489.314.646 1.046.817 1.392 1.107 5.927 4.399.574.417 1.716 1.429 2.509 1.415z'/%3E%3C/svg%3E%3C/svg%3E");
+}
+
+.page-template-location-page #content .post-content .location-mobile-therapy {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.page-template-location-page #content .post-content .patient-ratings h3 {
+  color: #05518f;
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 0px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.page-template-location-page #content .post-content .location-mobile-therapy p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.page-template-location-page #content .post-content .location-book-appointment {
+  padding-top: 15px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .location-general-info
+  .location-info-address
+  p {
+  display: inline-flex;
+  margin-bottom: 0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .location-general-info
+  > div {
+  margin-bottom: 15px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .location-general-info
+  .location-map {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .location-general-info {
+  margin-bottom: 32px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  .btn-orange {
+  margin-right: 19px;
+}
+
+.page-template-location-page #content .post-content .btn-orange,
+.page-template-location-page #content .post-content .btn-blue {
+  display: inline-block;
+}
+
+.page-template-location-page #content .post-content .btn-orange,
+.page-template-location-page .before-footer .btn-orange,
+.page-template-location-page .sidebar-menu .btn-orange,
+.location-mobile-bottom-menu-inner .btn-orange {
+  background-image: linear-gradient(to top, #c46a28, #e99941);
+  font-family: Open Sans;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0px;
+  border-width: 0px;
+  border-color: #ffffff;
+  border-style: solid;
+  border-radius: 4px;
+  text-transform: none;
+  transition: all 0.2s;
+  color: #ffffff;
+  padding: 11.5px 29px;
+  line-height: 17px;
+  font-size: 16px;
+  text-transform: none;
+  margin-right: 0;
+}
+
+.page-template-location-page .sidebar-menu .btn-orange {
+	display: inline-block;
+}
+
+.page-template-location-page #content .post-content .btn-orange.btn-outline {
+  background-color: transparent;
+  background-image: none;
+  border: 2px solid #e7974a;
+  color: #ea802f;
+  margin-right: 0;
+  padding: 12px 16.5px;
+}
+
+.page-template-location-page #content .post-content .btn-orange:hover,
+.page-template-location-page .before-footer .btn-orange:hover,
+.location-mobile-bottom-menu-inner .btn-orange:hover {
+  background-image: linear-gradient(to top, #e99941, #c46a28);
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .btn-orange.btn-outline:hover {
+  color: #fff;
+  border-color: #e99941;
+}
+
+.page-template-location-page #content .post-content .btn-blue {
+  display: inline-block;
+  line-height: 1.35;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#05518f),
+    to(#53ace0)
+  );
+  background-image: -webkit-linear-gradient(bottom, #05518f, #53ace0);
+  background-image: -moz-linear-gradient(bottom, #05518f, #53ace0);
+  background-image: -o-linear-gradient(bottom, #05518f, #53ace0);
+  background-image: linear-gradient(to top, #05518f, #53ace0);
+  color: #ffffff;
+  outline: 0;
+  transition: all 0.2s;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+  border-width: 0px;
+  border-style: solid;
+  text-transform: none;
+  padding: 9px 18px;
+  font-size: 16px;
+  border: 1px solid #53ace0;
+}
+
+.page-template-location-page #content .post-content .btn-blue:hover {
+  background-color: transparent;
+  background-image: none;
+  transition: all 0.2s;
+  color: #53ace0;
+  border: 1px solid #53ace0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-google-places-reviews {
+  border: none !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1 !important;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-google-places-reviews
+  .njt-header {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-google-places-reviews
+  .njt-header
+  .njt-header-image,
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-google-places-reviews
+  .njt-header
+  .njt-header-content
+  .njt-header-title {
+  display: none !important;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-google-places-reviews
+  .njt-header
+  .njt-header-content {
+  display: flex !important;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-right: auto;
+  gap: 10px;
+  min-width: 200px;
+  justify-content: flex-end;
+}
+
+.njt-header .njt-header-content {
+  margin-left: 0!important;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-google-places-reviews {
+  padding: 0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-google-places-reviews
+  .njt-fr-starslist-container
+  .njt-fr-starslist-background {
+  display: flex !important;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-google-places-reviews
+  .njt-fr-starsnumb {
+  display: block !important;
+  text-align: center;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-google-places-reviews
+  .njt-fr-starsnumb
+  span {
+  color: #3d3b3a;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-google-places-reviews
+  .njt-fr-starsnumb
+  span:after {
+  content: "Stars";
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .google-rating
+  .njt-header
+  .njt-header-content:after {
+  margin: 0 auto !important;
+}
+
+.page-template-location-page #content .post-content .google-rating .reviews-text {
+  text-decoration: underline;
+  color: #3d3b3a;
+  font-size: 14px;
+}
+.page-template-location-page #content .post-content .google-rating .reviews-text:hover {
+  text-decoration: none;
+}
+
+.page-template-location-page .location-page-full-width-wrapper {
+  margin-left: -30px;
+  margin-right: -30px;
+  position: relative;
+}
+
+.page-template-location-page .location-sidebar-wrapper {
+    width: 320px;
+	z-index: 2;
+}
+
+.page-template-location-page
+  .location-sidebar-wrapper
+  .location-sidebar {
+  width: 100%;
+  height: 100%;
+  border-top: 6px solid;
+  border-color: #05518f;
+  padding: 28px;
+  padding-top: 45px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.page-template-location-page .location-content {
+  width: calc(100% - 320px);
+  z-index: 0;
+}
+
+.page-template-location-page .dots-bg {
+	background-repeat: repeat;
+	background-size: inherit;
+	background-image: url(assets/images/dots-background.jpg);
+}
+
+.page-template-location-page .location-section {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.page-template-location-page .location-section.location-how-it-works{
+	padding-top: 80px;
+	padding-bottom: 113px;
+}
+
+.page-template-location-page .location-section.extra-service {
+	padding-bottom: 10px;
+	padding-top: 73px;
+}
+
+.page-template-location-page .location-section.faq-section {
+	padding-top: 30px;
+}
+
+.page-template-location-page .location-section.therapies {
+	padding-bottom: 30px;
+}
+
+.page-template-location-page .location-section.videos-section {
+	padding-bottom: 20px;
+}
+
+.page-template-location-page .location-section.introductory-section {
+	padding: 0;
+}
+
+.page-template-location-page .location-section.introductory-section p,
+.page-template-location-page .location-section.introductory-section ul {
+	font-size: 18px !important;
+}
+
+.page-template-location-page .location-section.introductory-section ul {
+	column-count: 2;
+}
+
+.page-template-location-page .location-section.introductory-section ul li {
+	margin-bottom: 1rem;
+}
+
+.page-template-location-page .faq-section h4 {
+	margin-top: 40px;
+	font-size: 18px !important;
+	color: #58ADDE;
+	margin-bottom: 1rem;
+}
+.page-template-location-page .faq-content {
+	flex: 1;
+}
+
+.page-template-location-page .faq-content .questions {
+	margin-top: 40px;
+}
+.page-template-location-page .faq-content .separator {
+	margin: 0;
+}
+
+.page-template-location-page .question-item .question-content {
+	display: none;
+}
+
+.page-template-location-page .question-item .question-icon .prime-faq {
+	font-family: 'Montserrat';
+	font-weight: 300;
+	font-size: 36px;
+	width: 22px;
+	text-align: center;
+}
+
+.page-template-location-page .question-item .question-icon .prime-faq::before {
+	content: "+";
+}
+
+.page-template-location-page .question-item.active .question-icon .prime-faq::before {
+	content: "-";
+}
+
+.page-template-location-page .question-header {
+	display: flex;
+	align-items: center;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	cursor: pointer;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.page-template-location-page .question-header .question-title {
+	font-size: 18px !important;
+    color: #58ADDE;
+	font-family: 'Montserrat';
+	font-weight: 700;
+}
+
+.page-template-location-page .question-header .question-icon {
+	color: #EC801F;
+	margin-left: auto;
+	transition: all 0.3s ease;
+}
+
+.page-template-location-page .faq-cta {
+	background: #05518F;
+	flex: 1 1 100%;
+	padding: 40px;
+}
+
+.page-template-location-page .faq-cta .cta-title {
+	font-size: 24px !important;
+	color: #fff;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.page-template-location-page .faq-cta .cta-text {
+	font-size: 21px !important;
+	color: #fff;
+	font-family: 'Montserrat';
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+
+.page-template-location-page .location-treatments .semi-wrap > div:not(:last-of-type) {
+	margin-bottom: 46px;
+}
+
+.page-template-location-page .proper-section .image-wrapper {
+	margin-bottom: 90px;
+	text-align: center;
+}
+
+.page-template-location-page .description-box {
+	padding: 40px;
+	box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 30px;
+}
+
+.page-template-location-page #content .location-content .description-box p {
+	font-family: 'Montserrat';
+	color: #003560;
+	font-weight: 500;
+	font-size: 21px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .left
+  h3 {
+  font-size: 32px;
+  color: #05518f;
+  letter-spacing: 0;
+  margin-top: 10px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section {
+  margin-bottom: 2.5em;
+}
+
+.page-template-location-page .fusion-copyright-notice {
+	color: var(--copyright_link_color);
+}
+
+.page-template-location-page .fusion-copyright-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.page-template-location-page .fusion-copyright-notice a:not(:hover) {
+	text-decoration: underline;
+}
+
+.page-template-location-page .fusion-copyright-notice a:hover {
+	color: var(--copyright_link_color);
+}
+
+.page-template-location-page .tmm-copy-text .links-group {
+	gap: 5px;
+}
+
+.page-template-location-page .links-group:not(:last-child) {
+	margin-bottom: 14px;
+}
+.page-template-location-page .add-treatment {
+	background: #E8F5FC;
+	border-radius: 6px;
+	padding: 11.5px 18px;
+}
+.page-template-location-page .add-treatment .icon-list {
+	display: flex;
+	gap: 30px;
+}
+
+.page-template-location-page .add-treatment .icon-list img{
+	max-width: 15px;
+}
+
+.page-template-location-page .add-treatment .icon-list > div {
+	display: flex;
+	gap: 7px;
+	align-items: center;
+	font-size: 14px !important;
+}
+
+.page-template-location-page .add-treatment .add-treatment-title {
+	font-size: 14px !important;
+	font-weight: 700;
+	margin-bottom: 6px;
+}
+
+.page-template-location-page #content .post-content .location-page-work-section,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .left
+  .items-wrap
+  .item {
+  display: flex;
+  gap: 25px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .left {
+  width: 55%;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right {
+  width: 45%;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .left
+  .items-wrap {
+  padding-right: 3em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .left
+  .items-wrap
+  .item {
+  margin-bottom: 0.5em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .left
+  .items-wrap
+  .item
+  img {
+  max-width: 60px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .left
+  .items-wrap
+  .item
+  .item-title {
+  margin-bottom: 0.8em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .left
+  .items-wrap
+  .item
+  .item-title
+  span {
+  font-size: 24px;
+  color: #05518f;
+  letter-spacing: 0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .left
+  .items-wrap
+  .item
+  .icon {
+  padding-top: 10px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: end;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right
+  .location-hours {
+  padding: 1.8em 2.5em 2em 2.5em;
+  box-shadow: 0px 3px 6px #00000029;
+  background: #fafafa 0% 0% no-repeat padding-box;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right
+  .location-hours
+  .title
+  span {
+  font-size: 24px;
+  color: #05518f;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 700;
+  line-height: 1;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right
+  .location-hours
+  .title {
+  line-height: 1;
+  margin-bottom: 0.9em;
+  text-align: center;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right
+  .location-hours
+  table {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right
+  .location-hours
+  table
+  tr
+  td {
+  padding: 8px 15px 8px 15px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right
+  .location-hours
+  table
+  tr
+  td.wi {
+  padding-left: 25px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right
+  .location-hours
+  table.wi-off
+  tr
+  td.wi {
+  opacity: 0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right
+  .location-hours
+  table
+  .hours-row
+  .day {
+  text-align: left;
+  font-weight: 600;
+  padding-right: 40px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right
+  .location-hours
+  .main-titles {
+  color: #05518f;
+  text-align: center;
+  font-weight: 600;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-work-section
+  .right
+  .location-hours
+  .main-titles
+  td {
+  padding-bottom: 20px;
+}
+
+.location-hours .location-hours__bottom-message {
+  font-style: italic;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-why-use-section
+  h3 {
+  font-size: 32px;
+  color: #05518f;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 0.6em;
+  margin-top: 20px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-why-use-section {
+  text-align: left;
+}
+
+.page-template-location-page
+  .location-section
+  .wrap {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.page-template-location-page .location-section .semi-wrap {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-why-use-section
+  .wrap
+  .content p:not(:first-child) {
+	display: none;
+  }
+
+/* .page-template-location-page .location-page-why-use-section .see-more-btn {
+	text-decoration: underline;
+} */
+.page-template-location-page .location-page-why-use-section .see-more-btn .see-less,
+.page-template-location-page .location-page-why-use-section .see-more-why.active .see-more  {
+	display: none;
+}
+
+.page-template-location-page .location-page-why-use-section .see-more-why.active .see-less {
+	display: block;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-introductory-section {
+  text-align: center;
+  background-color: #05518f;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-introductory-section
+  .wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 3.5em 5em;
+}
+
+.page-template-location-page .location-page-introductory-section .wrap .subtitle,
+.page-template-location-page .location-page-introductory-section .wrap .subtitle span {
+  font-size: 24px !important;
+  letter-spacing: 0;
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 0.6em;
+  margin-bottom: 1em;
+}
+
+.page-template-location-page .location-page-introductory-section .wrap .subtitle {
+	margin-top: 1.6em;
+}
+
+.page-template-location-page .location-page-introductory-section .wrap .subtitle span {
+	position: relative;
+}
+
+.page-template-location-page .location-page-introductory-section .wrap .subtitle span:before {
+	font-family: 'Fuzzy Bubbles';
+	width: 60px;
+	height: 30px;
+	top: -28px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+.page-template-location-page .location-page-introductory-section .wrap .subtitle span:after {
+	content: '';
+    width: 60px;
+    height: 30px;
+	left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml,%3Csvg width='61' height='30' viewBox='0 0 61 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.00002 5C15.3925 7.58427 44.6502 22.5007 54 28' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M59.1839 2C43.9464 5.53214 12.9635 21.3388 2.34459 28.331' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+}
+
+.page-template-location-page .initial-visit span:before {
+	font-family: 'Fuzzy Bubbles';
+    font-size: 40px;
+    top: -32px;
+    left: 68%;
+    transform: translateX(-50%) rotate(349deg);
+    color: #FF0000;
+    position: absolute;
+}
+
+.page-template-location-page .initial-visit.with-sale span:after {
+	content: '';
+    width: 124px;
+    height: 53px;
+    left: 50%;
+    top: 15px;
+    transform: translateX(-50%);
+    position: absolute;
+    background-repeat: no-repeat;
+	background-image: url("data:image/svg+xml,%3Csvg width='128' height='53' viewBox='0 0 128 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.99995 6C29.9719 10.9438 93.6503 39.4796 114 50' stroke='%23FF0000' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M125.696 2C92.7353 8.47389 25.7155 37.4452 2.74546 50.2608' stroke='%23FF0000' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-introductory-section
+  .wrap
+  .content {
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-introductory-section
+  h3 {
+  font-size: 48px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+  margin-bottom: 0.4em;
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  h3 {
+  font-size: 36px;
+  color: #05518f;
+  letter-spacing: 0;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-template-location-page  #content  .post-content  .location-page-memberships-section  .item {
+  display: flex;
+  padding-top: 35px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .item
+  .icon {
+  padding-top: 12px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .item
+  .icon
+  img {
+  max-width: 42px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .item
+  .item-content
+  .item-title {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.page-template-location-page .list-columns {
+	max-width: 768px;
+	margin: 50px 0;
+}
+
+.page-template-location-page .list-columns ul{
+	column-count: 2;
+}
+
+.page-template-location-page .list-columns ul li {
+  margin: 3px 0;
+}
+
+.page-template-location-page .list-columns .column {
+	flex: 1 1 50%;
+}
+
+.page-template-location-page .therapy-wrapper {
+	background: #fafafa 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 2.5em 1.7em;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+}
+
+.page-template-location-page .therapy-wrapper.fix-h {
+	padding-bottom: 3em;
+}
+
+.page-template-location-page .therapy-wrapper .item-text p {
+	font-size: 14.5px !important;
+}
+
+.page-template-location-page .location-page-gift-certificate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #05518f;
+    color: #fff;
+    text-align: center;
+    border-radius: 999em;
+    height: 460px;
+}
+
+.page-template-location-page .gift-certificate-title {
+	font-family: 'Montserrat';
+	font-size: 30px !important;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.page-template-location-page .gift-certificate-text {
+	margin-bottom: 30px;
+	font-family: 'Montserrat';
+	font-size: 19px !important;
+	font-weight: 400;
+}
+
+.gift-certificate-button span {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  display: inline-block;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 12px 25px;
+  max-width: 242px;
+}
+
+.page-template-location-page .packages-grid {
+	margin-top: 50px;
+	display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.page-template-location-page .package-item {
+	background: #FAFAFA;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	padding-bottom: 35px;
+	display: flex;
+    flex-direction: column;
+	flex: 1 1 47%;
+	max-width: 47%;
+}
+
+.page-template-location-page .package-item-header {
+	font-size: 14px;
+	font-weight: 700;
+	color: #05518F;
+}
+
+.page-template-location-page .package-item-header {
+	padding-top: 25px;
+}
+
+.page-template-location-page .item-divider {
+	padding-top: 25px;
+	margin-bottom: 25px;
+	border-bottom: 2px solid #E5E5E5;
+}
+
+.page-template-location-page .package-item-header ul {
+	column-count: 2;
+	column-gap: 5px;
+	padding-left: 0;
+	margin: 0;
+	font-size: 13px !important;
+	list-style: none;
+	min-height: 49px;
+}
+
+.page-template-location-page .package-item-header ul li {
+	position: relative;
+	margin-left: 20px;
+}
+
+/* one item */
+.page-template-location-page .package-item-header ul li:first-child:nth-last-child(1) {
+	width: 100%;
+}
+
+.page-template-location-page .package-item-header ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.page-template-location-page .package-item-content ul {
+	column-count: 2;
+	gap: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	padding-left: 14px;
+	font-size: 14px !important;
+}
+
+.page-template-location-page .package-item-header li::before {
+	content: "";
+    position: absolute;
+    left: -20px;
+    top: 4px;
+    display: block;
+    width: 13px;
+    height: 13px;
+	background-image: url("data:image/svg+xml,%3Csvg width='14' height='12' viewBox='0 0 14 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.646.361c-.411-.482-1.08-.481-1.492 0L5.438 8.216l-2.985-3.49c-.412-.483-1.08-.483-1.492 0-.413.481-.413 1.263 0 1.745l3.73 4.363a.98.98 0 0 0 .747.362c.27 0 .54-.12.746-.362l7.462-8.727c.412-.482.412-1.264 0-1.746Z' fill='%23E7974A'/%3E%3C/svg%3E");
+}
+
+.page-template-location-page .package-item-footer {
+	color: #05518F;
+	font-weight: bold;
+	font-style: italic;
+	margin-top: auto;
+}
+
+.page-template-location-page .package-item-footer p{
+	margin-bottom: 25px;
+}
+
+.page-template-location-page .package-item-header,
+.page-template-location-page .package-item-content,
+.page-template-location-page .package-item-footer {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+
+
+.page-template-location-page .package-item-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 68px;
+	background: linear-gradient(180deg, #58ADDE 0%, #05518F 100%);
+	color: #fff;
+	font-size: 24px !important;
+	font-weight: 700;
+	padding: 0 75px;
+    text-align: center;
+    line-height: 1.1 !important;
+}
+
+.page-template-location-page .therapies-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+.page-template-location-page .therapies-grid ~ .therapies-grid {
+	margin-top: 50px;
+}
+
+.page-template-location-page .therapies-grid > div { 
+	min-width: 47%;
+  max-width: 47%;
+  flex: 1;
+}
+
+.page-template-location-page .therapies-grid > :nth-child(odd).location-page-gift-certificate {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .item
+  .item-content
+  .item-title
+  span {
+  font-size: 32px;
+  font-family: "Montserrat";
+  color: #05518f;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option {
+  width: calc(33.33% - 20px);
+  border-left-color: #00000029;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-right-color: #00000029;
+  border-right-width: 2px;
+  border-right-style: solid;
+  position: relative;
+  min-height: 407px;
+  background: #fafafa 0% 0% no-repeat padding-box;
+}
+
+.page-template-location-page #content .post-content .location-page-memberships-section .memberships-wrap .memberships-option .wrap {
+  padding: 1.8em 1.8em 7em 1.8em;
+}
+@media ( max-width: 1150px ) {
+  .page-template-location-page #content .post-content .location-page-memberships-section .memberships-wrap .memberships-option .wrap {
+    padding-bottom: 0;
+  }
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option
+  .title
+  span {
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option
+  .title {
+  text-align: center;
+  padding: 0.9em 1.5em;
+  z-index: 5;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option
+  .extra-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 83%;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option
+  .content,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option
+  .content
+  p {
+  font-size: 13px;
+  line-height: 2.2;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option
+  .price
+  .value {
+  font-size: 16px;
+  color: #ec801f;
+  text-transform: uppercase;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option
+  .price
+  .only {
+  font-size: 32px;
+  color: #05518f;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option.select
+  .title {
+  background-color: #ec801f;
+  border: 2px solid #ec801f;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option.select {
+  border-bottom-width: 2px;
+  border-bottom-color: #ec801f;
+  border-bottom-style: solid;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option.essentials
+  .title {
+  background-color: #53ace0;
+  border: 2px solid #53ace0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option.essentials {
+  border-bottom-width: 2px;
+  border-bottom-color: #53ace0;
+  border-bottom-style: solid;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option.transformation
+  .title {
+  background-color: #05518f;
+  border: 2px solid #05518f;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option.transformation {
+  border-bottom-width: 2px;
+  border-bottom-color: #05518f;
+  border-bottom-style: solid;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-memberships-section
+  .memberships-wrap
+  .memberships-option
+  .price-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.page-template-location-page #content .post-content .location-page-memberships-section .memberships-wrap .memberships-option .price-wrap .icon {
+  display: flex;
+  flex-direction: column;
+} 
+.page-template-location-page #content .post-content .location-page-memberships-section .memberships-wrap .memberships-option .price-wrap img {
+  max-width: 62px;
+  margin-top: auto;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .wrap,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .wrap,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .wrap,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .wrap {
+  background: #fafafa 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 2.5em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .item,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .item,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .item,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .item {
+  display: flex;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .item
+  .icon,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .item
+  .icon,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .item
+  .icon,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .item
+  .icon {
+  padding-top: 12px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .item
+  .icon
+  img {
+  max-width: 45px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .item
+  .icon
+  img {
+  max-width: 49px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section.nadit
+  .item
+  .icon
+  i {
+  display: inline-block;
+  width: 50px;
+  height: 45px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section.nadit
+  .item
+  .icon
+  i:before {
+  display: inline-block;
+  content: "";
+  width: 50px;
+  height: 45px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='57.261' height='50' viewBox='0 0 57.261 50'%3E%3Cg id='Group_56' data-name='Group 56' transform='translate(-4.675 -7.199)'%3E%3Cg id='intravenous-saline-drip' transform='translate(16.731 7.199)'%3E%3Cpath id='Path_28' data-name='Path 28' d='M77.594,39.523H76.209V20.485a7.075,7.075,0,1,0-14.142,0V49.878a4.324,4.324,0,0,1-4.239,4.393H52.177a4.324,4.324,0,0,1-4.239-4.394v-1.57h1.423a1.439,1.439,0,0,0,1.413-1.465V41.757l1.3-.139a8.177,8.177,0,0,0,7.179-8.256V11.593A4.324,4.324,0,0,0,55.006,7.2H38.043A4.324,4.324,0,0,0,33.8,11.593V33.361a8.177,8.177,0,0,0,7.18,8.256l1.3.14v5.09a1.439,1.439,0,0,0,1.413,1.46h1.413v1.562a7.207,7.207,0,0,0,7.066,7.324h5.651a7.206,7.206,0,0,0,7.065-7.324V20.476a4.247,4.247,0,1,1,8.488,0V39.523H71.943a1.439,1.439,0,0,0-1.413,1.464v5.857A4.394,4.394,0,0,0,73.381,51v4.736a1.414,1.414,0,1,0,2.827,0V50.981a4.4,4.4,0,0,0,2.8-4.134V40.989A1.439,1.439,0,0,0,77.6,39.523ZM36.631,16.085H56.419v14.65H36.631Zm1.413-5.958H55.006a1.442,1.442,0,0,1,1.413,1.465v1.564H36.631V11.593a1.442,1.442,0,0,1,1.413-1.465Zm5.8,28.851L41.273,38.7a5.276,5.276,0,0,1-4.636-5.039H56.41A5.276,5.276,0,0,1,51.775,38.7l-2.562.277a1.446,1.446,0,0,0-1.267,1.457v4.945H45.11V40.437a1.447,1.447,0,0,0-1.268-1.457Zm29.515,3.471h2.826v4.394a1.414,1.414,0,1,1-2.826,0Z' transform='translate(-33.804 -7.199)' fill='%2353ace0'/%3E%3C/g%3E%3Crect id='Rectangle_60' data-name='Rectangle 60' width='16.224' height='31.585' rx='8.112' transform='translate(6.345 15.202)' fill='%23fff'/%3E%3Cpath id='Path_27' data-name='Path 27' d='M67.974,46.183H66.753V44.958a1.222,1.222,0,1,0-2.443,0v1.225H63.089a1.222,1.222,0,1,0,0,2.443H64.31v1.218a1.222,1.222,0,0,0,2.443,0V48.627h1.221a1.222,1.222,0,0,0,0-2.443Z' transform='translate(-36.17 -23.789)' fill='%2353ace0'/%3E%3Cg id='Group_55' data-name='Group 55' transform='translate(4.675 13.031)'%3E%3Cg id='Group_54' data-name='Group 54' transform='translate(0 0)'%3E%3Cpath id='Path_64' data-name='Path 64' d='M7.4,32.477A9.231,9.231,0,0,0,4.675,39.05v18.2a9.3,9.3,0,1,0,18.591,0v-18.2A9.3,9.3,0,0,0,7.4,32.477ZM8.966,51.186v6.067a4.973,4.973,0,0,0,1.466,3.54A.715.715,0,0,1,9.42,61.8a6.392,6.392,0,0,1-1.885-4.551V51.186a.715.715,0,0,1,1.43,0ZM20.407,39.052v8.386H7.535V39.05a6.436,6.436,0,0,1,12.872,0Z' transform='translate(-4.675 -29.759)' fill='%2353ace0'/%3E%3C/g%3E%3C/g%3E%3Crect id='Rectangle_61' data-name='Rectangle 61' width='12.283' height='14.359' transform='translate(7.009 31.429)' fill='%2353ace0'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .item
+  .icon
+  img {
+  max-width: 39px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .item
+  .icon
+  img {
+  max-width: 49px;
+}
+
+.page-template-location-page
+  .therapies
+  .item
+  .item-content{
+  padding-left: 1.2em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .item
+  .item-content
+  .item-title,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .item
+  .item-content
+  .item-title,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .item
+  .item-content
+  .item-title,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .item
+  .item-content
+  .item-title {
+  margin-bottom: 8px;
+}
+
+.page-template-location-page .location-page-int-therapies-section .item-text {
+  font-size: 15px !important;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .item
+  .item-content
+  .item-title
+  h4,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .item
+  .item-content
+  .item-title
+  h4,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .item
+  .item-content
+  .item-title
+  h4,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .item
+  .item-content
+  .item-title
+  h4 {
+  font-size: 27px;
+  font-family: "Montserrat";
+  color: #05518f;
+  letter-spacing: 0;
+  font-weight: 600;
+  margin: 0;
+  font-weight: 700;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .info-list,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .info-list,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .info-list,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .info-list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .info-list
+  .col,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .info-list
+  .col,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .info-list
+  .col,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .info-list
+  .col {
+  /* width: 50%; */
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .info-list
+  ul,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .info-list
+  ul,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .info-list
+  ul,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .info-list
+  ul {
+  padding-left: 20px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .info-list
+  ul
+  li,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .info-list
+  ul
+  li,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .info-list
+  ul
+  li,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .info-list
+  ul
+  li {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .buttons
+  .btn-orange,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .buttons
+  .btn-orange,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .buttons
+  .btn-orange,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .buttons
+  .btn-orange {
+  margin-right: 25px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .buttons,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .buttons,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .buttons,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .buttons {
+  margin-top: 1.9em;
+  margin-bottom: 1.9em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  table,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  table,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  table,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  table {
+  width: 100%;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  table
+  tr
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  table
+  tr
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  table
+  tr
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  table
+  tr
+  td {
+  padding: 0.5em 1em;
+}
+
+.page-template-location-page .therapy-wrapper table tr td:first-child {
+	width: 222px;
+	border-bottom-left-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.page-template-location-page .therapy-wrapper  .info-list ul {
+	column-count: 2;
+	margin-top: 10px;
+}
+
+.page-template-location-page .therapy-wrapper table tr td:nth-child(2) {
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.page-template-location-page .therapy-wrapper table tr td.price,
+.page-template-location-page .therapy-wrapper table tr td.more-info {
+  width: 110px;
+  text-align: left;
+}
+
+.page-template-location-page .therapy-wrapper table tr td.more-info {
+	text-align: center;
+  }
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  table
+  tr:not(.main-titles)
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  table
+  tr:not(.main-titles)
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  table
+  tr:not(.main-titles)
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  table
+  tr:not(.main-titles)
+  td {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  table
+  .main-titles
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  table
+  .main-titles
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  table
+  .main-titles
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  table
+  .main-titles
+  td {
+  background-color: #05518f !important;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  table
+  tr.main-titles,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  table
+  tr.main-titles,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  table
+  tr.main-titles,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  table
+  tr.main-titles,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  table
+  tr.show,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  table
+  tr.show,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  table
+  tr.show,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  table
+  tr.show,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  table
+  tr:nth-child(-n + 4),
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  table
+  tr:nth-child(-n + 4),
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  table
+  tr:nth-child(-n + 4),
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  table
+  tr:nth-child(-n + 4) {
+  display: table-row;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  table
+  tr,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  table
+  tr,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  table
+  tr,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  table
+  tr {
+  display: none;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  table
+  tr:nth-child(2n + 1)
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  table
+  tr:nth-child(2n + 1)
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  table
+  tr:nth-child(2n + 1)
+  td,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  table
+  tr:nth-child(2n + 1)
+  td {
+  background-color: #70707015;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  table
+  tr
+  td.blank,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  table
+  tr
+  td.blank,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  table
+  tr
+  td.blank,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  table
+  tr
+  td.blank {
+  width: 5px;
+  background-color: #ffffff !important;
+  padding: 0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .see-more-btn,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .see-more-btn,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .see-more-btn,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .see-more-btn {
+  text-align: center;
+  margin-top: 1.8em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #53ace0;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .see-more-btn
+  a,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .see-more-btn
+  a,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .see-more-btn
+  a,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .see-more-btn
+  a {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #53ace0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .see-more-btn
+  a:hover,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .see-more-btn
+  a:hover,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .see-more-btn
+  a:hover,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .see-more-btn
+  a:hover {
+  color: #53ace0;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon:before,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon:before,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon:before,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon:before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: inline-block;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.1133 0.0566406L8 6.16995L1.88669 0.0566406L0 1.94327L8 9.94326L16 1.94327L14.1133 0.0566406Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon.less:before,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon.less:before,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon.less:before,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .see-more-btn
+  i.see-more-btn-icon.less:before {
+  transform: rotate(180deg);
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .see-more-btn
+  span.see-less,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .see-more-btn
+  span.see-less,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .see-more-btn
+  span.see-less,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .see-more-btn
+  span.see-less {
+  display: none;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .see-more-btn
+  span.hide,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .see-more-btn
+  span.hide,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .see-more-btn
+  span.hide,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .see-more-btn
+  span.hide {
+  display: none !important;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-int-therapies-section
+  .see-more-btn
+  span.show,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-inj-therapies-section
+  .see-more-btn
+  span.show,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-cryo-therapies-section
+  .see-more-btn
+  span.show,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section
+  .see-more-btn
+  span.show {
+  display: inline !important;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section {
+  /* padding: 0 2.8em; */
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  h3 {
+  font-size: 48px;
+  color: #05518f;
+  font-weight: 500;
+  letter-spacing: 0;
+  margin: 0 0 0.2em 0;
+  text-align: center;
+  font-weight: 100;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap {
+  margin-top: 2.8em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap
+  .video-item {
+  width: 46%;
+  margin-bottom: 2.2em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap
+  .video-item
+  .video {
+  margin-top: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap
+  .video-item
+  .video
+  button.video__button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  background: #ffffff;
+  transition: all 0.2s;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap
+  .video-item
+  .video
+  button.video__button
+  i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  transition: all 0.2s;
+  margin-left: 4px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap
+  .video-item
+  .video
+  button.video__button
+  i:before {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='12' viewBox='0 0 11 12'%3E%3Cpath id='Polygon_1' data-name='Polygon 1' d='M6,0l6,11H0Z' transform='translate(11) rotate(90)' fill='%2353ace0'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.2s;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap
+  .video-item
+  .video:hover
+  button.video__button {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap
+  .video-item
+  .video:hover
+  button.video__button
+  i:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='12' viewBox='0 0 11 12'%3E%3Cpath id='Polygon_1' data-name='Polygon 1' d='M6,0l6,11H0Z' transform='translate(11) rotate(90)' fill='%23ffffff'/%3E%3C/svg%3E%0A");
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap
+  .video-item
+  .video-desc {
+  min-height: 120px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap
+  .video-item
+  .video
+  iframe {
+  max-width: 100%;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-video-section
+  .videos-wrapper
+  .videos-wrap
+  .video-item
+  .video-title {
+  color: #05518f;
+  font-size: 21px;
+  letter-spacing: 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+.page-template-location-page .before-footer .fusion-row {
+	width: 100%;
+	max-width: 1200px;
+}
+
+.page-template-location-page .before-footer {
+	background-color: #05518F;
+	color: #fff;
+	padding: 62px 0;
+}
+
+.page-template-location-page .before-footer a:not(.btn-orange) {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.page-template-location-page .before-footer a:hover,
+.page-template-location-page .before-footer .location-info-phone a {
+	color: #fff;
+
+}
+
+.page-template-location-page .before-footer a:hover {
+	text-decoration: none;
+}
+
+.page-template-location-page .before-footer .content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px;
+}
+
+.page-template-location-page .before-footer .content-grid .col-1,
+.page-template-location-page .before-footer .content-grid .col-3 {
+	flex: 1;
+}
+
+.page-template-location-page .before-footer .content-grid .col-2 {
+	width: 35%;
+}
+
+.page-template-location-page .before-footer .content-grid .col-3 > .btn-orange{
+	display: inline-block;
+}
+
+.page-template-location-page .before-footer .col-title {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 22px;
+}
+
+.page-template-location-page .before-footer .col-title.social-title {
+	margin-bottom: 16px;
+}
+
+.page-template-location-page .before-footer i[class*="location-info-"] {
+	height: 17px;
+    width: 14px;
+	display: inline-block;
+    margin-right: 16px;
+}
+
+.page-template-location-page .before-footer i[class*="location-info-"] ~ div {
+	display: inline-flex;
+}
+
+.page-template-location-page .before-footer i[class*="location-info-"]:before {
+	display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+
+.page-template-location-page .before-footer i.location-info-address-icon:before {
+	transform: scale(1.5) translateY(3px);
+	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .75A8.25 8.25 0 0 0 3.75 9c0 4.357 7.35 13.575 7.665 13.973a.75.75 0 0 0 1.17 0C12.9 22.575 20.25 13.357 20.25 9A8.25 8.25 0 0 0 12 .75Zm0 10.5a3 3 0 1 1 0-5.999 3 3 0 0 1 0 5.999Z' fill='white'/%3E%3C/svg%3E");
+}
+
+.page-template-location-page .before-footer i.location-info-phone-icon:before {
+	transform: scale(1.5) translateY(2px);
+	background-image: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.29 15.33c-.574-.481-3.938-2.611-4.497-2.513-.263.046-.464.27-1.001.911a7.684 7.684 0 0 1-.817.884 7.062 7.062 0 0 1-1.558-.577A9.647 9.647 0 0 1 6.965 9.58a7.059 7.059 0 0 1-.577-1.558 7.67 7.67 0 0 1 .884-.816c.64-.538.865-.737.911-1C8.281 5.645 6.15 2.282 5.67 1.71c-.2-.238-.383-.397-.617-.397-.677 0-3.74 3.787-3.74 4.278 0 .04.065 3.984 5.045 9.05 5.067 4.98 9.01 5.046 9.05 5.046.492 0 4.28-3.063 4.28-3.74 0-.234-.16-.416-.399-.617Zm-4.196-5.486h1.312a5.255 5.255 0 0 0-5.25-5.25v1.312a3.941 3.941 0 0 1 3.938 3.938Z' fill='white'/%3E%3Cpath d='M18.375 9.844h1.313a8.541 8.541 0 0 0-8.532-8.531v1.312a7.227 7.227 0 0 1 7.219 7.219Z' fill='white'/%3E%3C/svg%3E");
+}
+
+.page-template-location-page .before-footer i.location-info-email-icon:before {
+	transform: scale(1.5) translateY(2px);
+	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m12.96 10.83-1.676 1.68c-.68.682-1.874.697-2.568 0L7.04 10.83l-6.017 6.036c.224.103.471.165.734.165h16.484c.263 0 .51-.061.733-.165L12.96 10.83Z' fill='white'/%3E%3Cpath d='M18.242 2.969H1.758c-.263 0-.51.062-.733.165l6.428 6.45.002.001v.001l2.09 2.097c.223.223.688.223.91 0l2.09-2.096v-.002h.002l6.428-6.45a1.74 1.74 0 0 0-.733-.166ZM.187 3.953A1.736 1.736 0 0 0 0 4.726v10.547c0 .279.071.539.187.773L6.214 10 .187 3.953Zm19.626 0L13.786 10l6.027 6.046c.116-.234.187-.494.187-.773V4.726c0-.279-.071-.539-.187-.773Z' fill='white'/%3E%3C/svg%3E");
+}
+
+.page-template-location-page .directions-link-wrapper a {
+	margin-left: 32px;
+}
+
+.page-template-location-page .schedule {
+	margin-top: 32px;
+}
+
+.page-template-location-page .schedule table tr > td {
+	min-width: 90px;
+}
+
+.page-template-location-page .before-footer .footer-social-media a:hover img {
+  filter: brightness(3);
+}
+
+.page-template-location-page .before-footer .footer-social-media a:not(:last-child) {
+	margin-right: 11px;
+}
+
+.page-template-location-page .before-footer .google-reviews {
+	display: flex;
+    align-items: center;
+    gap: 10px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.page-template-location-page .before-footer .review-logo {
+	display: flex;
+	font-size: 14px;
+	align-items: center;
+	gap: 10px;
+}
+
+.page-template-location-page .before-footer .njt-header .njt-fr-starsnumb {
+	font-family: "Open Sans";
+	color: #fff;
+}
+
+.page-template-location-page .before-footer .njt-google-places-reviews-wap,
+.page-template-location-page .before-footer .njt-header {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.page-template-location-page .before-footer .njt-header-image {
+	display: none;
+}
+
+.page-template-location-page .before-footer .njt-header-content {
+	margin: 0;
+}
+
+.page-template-location-page .before-footer .review-title {
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.page-template-location-page .before-footer .njt-header-title a {
+	display: none;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer {
+  background-image: url(/wp-content/uploads/2020/10/dots-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4.5em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer
+  .wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer
+  .footer-title,
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer
+  .footer-subtitle {
+  text-align: center;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer
+  .footer-title {
+  margin-bottom: 0.1em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer
+  .footer-title
+  span {
+  font-family: "Montserrat";
+  font-size: 32px;
+  font-weight: 700;
+  color: #05518f;
+  letter-spacing: 0;
+  margin-bottom: 0.5em;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer
+  .footer-subtitle
+  span {
+  font-size: 24px;
+  color: #05518f;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer
+  .wrap
+  .footer-social-media
+  img {
+  max-width: 185px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer
+  .wrap
+  .footer-social-media
+  a {
+  display: inline-block;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer
+  .wrap
+  .footer-social-media
+  a.fb {
+  margin-right: 30px;
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-custom-footer
+  .wrap
+  .footer-social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.8em;
+}
+
+.page-template-location-page
+  .njt-google-places-reviews-wap
+  .njt-fr-starslist-wrapper
+  .njt-fr-star {
+  background: url("../img/rate-star-button.svg") 0 0 no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21.673' height='20.616' viewBox='0 0 21.673 20.616'%3E%3Cg id='gold-star' transform='translate(1.35 1.42)'%3E%3Cpath id='Path_7' data-name='Path 7' d='M15.349,59.353,9.486,56.27,3.623,59.353l1.119-6.529L0,48.2l6.554-.953,2.932-5.941,2.932,5.941,6.554.953L14.23,52.824Z' transform='translate(0 -41.307)' fill='%23ffd800' stroke='%23ffd800' stroke-width='1.257'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: contain;
+}
+
+.page-template-location-page
+  .njt-google-places-reviews-wap
+  .njt-fr-starslist-wrapper
+  .njt-fr-starslist-background
+  .njt-fr-star {
+  background: url("../img/rate-star-button.svg") 0 0 no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21.673' height='20.616' viewBox='0 0 21.673 20.616'%3E%3Cg id='white-star' transform='translate(1.35 1.42)'%3E%3Cpath id='Path_7' data-name='Path 7' d='M15.349,59.353,9.486,56.27,3.623,59.353l1.119-6.529L0,48.2l6.554-.953,2.932-5.941,2.932,5.941,6.554.953L14.23,52.824Z' transform='translate(0 -41.307)' fill='%23fff' stroke='%23ffd800' stroke-width='1.257'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: contain;
+}
+
+.ilpd-benefits-suptitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  text-transform: uppercase;
+  color: #58adde;
+  margin-bottom: 16px !important;
+}
+
+.location-how-it-works {
+  background-image: url(assets/images/dots-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding: 40px 1.5em 0;
+}
+
+.location-how-it-works .wrap {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.location-how-it-works .wrap > div {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.location-how-it-works .wrap .how h3 {
+  font-size: 28px;
+  color: #05518f;
+  margin: 0 0 30px;
+  text-align: center;
+}
+.location-how-it-works .how-it-works-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 70px;
+    gap: 65px;
+	margin-bottom: 55px;
+}
+.location-how-it-works .how-it-works-grid > div {
+	flex-basis: 100%;
+}
+.location-how-it-works .wrap .how > div {
+  position: relative;
+  width: 100%;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.location-how-it-works .how img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.location-how-it-works .how .item-title {
+  font-size: 24px !important;
+  line-height: 1 !important;
+  letter-spacing: -0.01em;
+  color: #05518f;
+  margin-bottom: 20px;
+}
+.location-how-it-works .how p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #3d3b3a;
+  text-align: left;
+}
+.location-how-it-works .why > div {
+  background: #ffffff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+.location-how-it-works .why h3 {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 29px;
+  color: #05518f;
+  margin: 0 0 20px;
+}
+.location-how-it-works .why .comparison {
+  display: flex;
+  flex-wrap: wrap;
+}
+.location-how-it-works .why .comparison > :nth-child(1) {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.location-how-it-works .why .comparison > :nth-child(2),
+.location-how-it-works .why .comparison > :nth-child(3) {
+  flex: 0 0 50%;
+  max-width: 50%;
+  background: #f6f6f6;
+  border: 2px solid #fff;
+}
+.location-how-it-works .why .comparison h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3d3b3a;
+  margin-bottom: 10px;
+}
+.location-how-it-works .why .comparison .info {
+	padding-top: 40px;
+  }
+.location-how-it-works .why .comparison p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 16px !important;
+  line-height: 21px !important;
+  color: #3d3b3a;
+}
+.location-how-it-works .why .comparison .cell {
+  text-align: center;
+}
+.location-how-it-works .why .comparison .cell span {
+  display: block;
+  border-bottom: 4px solid #fff;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  text-transform: uppercase;
+  color: #05518f;
+  padding: 10px 0;
+}
+.location-how-it-works .why .comparison .cell p {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  color: #05518f;
+}
+.location-how-it-works .why .comparison .cell img {
+  margin: 30px 0;
+}
+.location-how-it-works .why .top .cell img {
+  width: calc(100% - 40px);
+  max-width: 141px;
+}
+.location-how-it-works .why .bottom .cell img {
+  width: calc(100% - 20px);
+  max-width: 141px;
+}
+.location-video-section {
+  max-width: 900px;
+  width: 100%;
+  margin: 60px auto 0;
+}
+.location-video-section .thumb {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.location-video-section .thumb img {
+  width: 100%;
+  height: auto;
+}
+.location-video-section .thumb:before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.2s;
+  position: absolute;
+}
+.location-video-section .thumb:after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url("/wp-content/uploads/2022/02/play.png");
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.location-video-section .thumb:hover:before {
+  background: rgba(0, 0, 0, 0.4);
+}
+.location-video-section .iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.location-video-section .iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-template-location-page .mobile-collapse {
+	  display: none;
+	  cursor: pointer;
+}
+
+.page-template-location-page .mobile-collapse .mobile-collapse-icon {
+	transition: all 0.3s;
+}
+
+.page-template-location-page .mobile-collapse.active .mobile-collapse-icon {
+	  transform: rotate(90deg);
+}
+
+.page-template-location-page .mobile-collapse .collapse-wrapper {
+	border-bottom: 1px solid #CCCCCC;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.page-template-location-page .mobile-collapse .mobile-collapse-title{
+	font-size: 21px !important;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #05518f;
+}
+
+.page-template-location-page .mobile-collapse .mobile-collapse-icon{
+	color: #58ADDE;
+}
+
+.page-template-location-page .testimonials.dots-bg {
+	margin-left: -30px;
+	margin-right: -30px;
+}
+
+.page-template-location-page .testimonials-wrapper {
+	  padding-top: 60px;
+	  padding-bottom: 45px;
+	  margin: 0 auto;
+	  max-width: 1200px;
+}
+
+.before-footer .location-info-address,
+.before-footer .location-info-phone,
+.before-footer .location-info-email {
+  position: relative;
+  padding-left: 27px;
+}
+
+.before-footer .location-info-address i,
+.before-footer .location-info-phone i,
+.before-footer .location-info-email i {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.page-id-23 .fusion-container-anchor .fusion-fullwidth .fusion-builder-row .fusion-layout-column {
+    padding-bottom: 25px;
+}
+
+@media (min-width: 992px) {
+
+	.page-template-location-page #content .post-content .location-page-introductory-section .wrap .content {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	.page-template-location-page .faq-cta {
+		max-width: 330px;
+	}
+  .location-how-it-works {
+    padding: 80px 1.5em;
+  }
+  .location-how-it-works .why .bottom .info {
+	padding-right: 80px !important;
+  }
+	.location-how-it-works .how-it-works-grid > div {
+		flex-basis: 28%;
+	}
+  .location-how-it-works .wrap .how {
+    flex: 0 0 45%;
+    max-width: 45%;
+    padding-right: 30px;
+    padding-top: 40px;
+  }
+  .location-how-it-works .wrap .how > div {
+    padding-left: 85px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .location-how-it-works .wrap .how h3 {
+    font-size: 34px;
+    text-align: left;
+  }
+  .location-how-it-works .wrap .how img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .location-how-it-works .wrap .why {
+    flex: 0 0 55%;
+    max-width: 55%;
+    padding-left: 30px;
+  }
+  .location-how-it-works .wrap .why > div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .location-how-it-works .why .comparison > :nth-child(1) {
+    flex: 0 0 34%;
+    max-width: 100%;
+    padding-right: 20px;
+  }
+  .location-how-it-works .why .comparison > :nth-child(2),
+  .location-how-it-works .why .comparison > :nth-child(3) {
+	flex: 0 0 31.5%;
+    max-width: 31.5%;
+  }
+  .location-how-it-works .why .comparison p {
+    font-size: 13px !important;
+  }
+  .location-how-it-works .why .top .comparison > :nth-child(1) {
+    border-bottom: 2px solid #f6f6f6;
+  }
+  .location-how-it-works .why .bottom .comparison > :nth-child(1) {
+    border-top: 2px solid #f6f6f6;
+  }
+  .location-video-section {
+    margin: 120px auto 40px;
+    padding: 0 1.5em;
+  }
+}
+
+@media (min-width: 1440px) {
+	.page-template-location-page .location-section .semi-wrap {
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+	  }
+}
+
+@media(min-width: 1200px) {
+	/* .page-template-location-page .before-footer .content-grid .col-3 {
+		padding-left: 25px;
+	}
+	.page-template-location-page .before-footer .content-grid .col-1 {
+		flex: 1 1 60px;
+	} */
+}
+
+@media only screen and (max-width: 1150px) {
+  .page-template-location-page #content .post-content .location-page-memberships-section .memberships-wrap .memberships-option {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 1040px) {
+	.page-template-location-page #content .post-content .location-page-first-top-section .location-map iframe {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (max-width: 999px) {
+	/* .mobile-collapse-content {
+		display: none;
+	} */
+	.page-template-location-page #content .post-content .location-page-work-section .right {
+		justify-content: center;
+	}
+
+	.page-template-location-page .package-item-title {
+		padding: 0 36px;
+	}
+	.location-how-it-works .main-title {
+		text-align: center;
+	}
+	.page-template-location-page .location-section {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.page-template-location-page .list-columns ul,
+	.page-template-location-page .therapy-wrapper .info-list ul,
+	.page-template-location-page .package-item-header ul,
+	.page-template-location-page .package-item-content ul {
+		column-count: 1;
+	}
+	.page-template-location-page .location-section.services {
+		padding-top: 30px;
+	}
+	.page-template-location-page .hsa-wrapper.desktop {
+		display: none;
+	}
+	.page-template-location-page .hsa-wrapper.mobile {
+		display: block;
+	}
+	.page-template-location-page #content .post-content .comingsoon .right {
+		width: 100%;
+	}
+	.page-template-location-page .location-general-info {
+		flex-direction: column;
+	}
+	.page-template-location-page #content .post-content .location-page-first-top-section .left .location-general-info {
+		margin-bottom: 0;
+	}
+	.page-template-location-page #content .post-content .location-book-appointment {
+		text-align: center;
+	}
+	.page-template-location-page .location-tootip {
+		left: -283px;
+	}
+	.page-template-location-page .location-tootip::before {
+		left: 280px;
+	}
+
+	.page-template-location-page .therapy-wrapper .location-tootip {
+		left: 50%;
+		transform: translateX(-57%);
+	}
+
+	.page-template-location-page .therapy-wrapper .location-tootip::before {
+		left: 174px;
+	}
+
+	.page-template-location-page .hsa-wrapper.mobile .location-tootip {
+		left: 50%;
+		transform: translateX(-47%);
+	}
+	.page-template-location-page .hsa-wrapper.mobile .location-tootip::before {
+		left: 140px;
+	}
+
+	.page-template-location-page .location-page-gift-certificate {
+		height: 460px;
+		width: 460px;
+		max-width: 460px;
+		margin: 0 auto;
+		padding: 25px;
+	}
+
+	.page-template-location-page .package-item {
+		width: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	.page-template-location-page #content .post-content .location-page-video-section .videos-wrapper .videos-wrap .video-item {
+		width: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+
+	.page-template-location-page #content .post-content .google-rating .njt-google-places-reviews .njt-header .njt-header-content {
+		text-align: center;
+		margin: auto;
+		justify-content: center;
+	}
+	.page-template-location-page #content .post-content .patient-ratings h3,
+	.page-template-location-page .left .google-rating {
+		text-align: center;
+	}
+
+	.page-template-location-page .location-section .wrap {
+		padding: 0 30px;
+	}
+
+	.page-template-location-page .before-footer .content-grid > div {
+		width: 100% !important;
+	}
+
+	.page-template-location-page .terms {
+		text-align: left;
+	}
+
+	.page-template-location-page .faq-cta {
+		text-align: center;
+	}
+
+  .page-template-location-page #content .post-content .location-page-first-top-section {
+    flex-wrap: wrap;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left
+    > div {
+    width: 100%;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .right {
+    width: 100%;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-work-section {
+    display: block;
+    margin-top: 3em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-work-section
+    .left {
+    width: 100%;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-work-section
+    .right {
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-why-use-section
+    .wrap {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-introductory-section
+    .wrap {
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-memberships-section
+    .memberships-wrap {
+    display: block;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-memberships-section
+    .memberships-wrap
+    .memberships-option {
+    width: 60%;
+    min-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
+    min-height: 430px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-video-section
+    .wrap
+    .videos-wrap {
+    display: block;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-video-section
+    .wrap
+    .videos-wrap
+    .video-item {
+    width: 100%;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .right
+    .location-map
+    iframe {
+	width: 100%;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-video-section
+    .wrap
+    .videos-wrap
+    .video-item
+    .video-desc {
+    min-height: unset;
+    margin-bottom: 1.8em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-video-section
+    .wrap
+    .videos-wrap
+    .video-item {
+    margin-bottom: 3em;
+  }
+}
+
+@media(min-width: 1000px){
+  .page-template-location-page #content .post-content .location-page-first-top-section .left .location-general-info .location-map {
+    max-width: 400px;
+    flex: 0 0 400px;
+  }
+  .page-template-location-page #content .post-content .location-page-first-top-section .left .location-general-info .info-details {
+    max-width: calc(100% - 400px);
+    flex: 0 0 calc(100% - 400px);
+  }
+}
+
+@media only screen and (max-width: 699px) {
+	.page-template-location-page .package-item-footer br {
+		display: none;
+	}
+	.page-template-location-page .extra-service-title,
+	.page-template-location-page .extra-service .info p {
+		text-align: left;
+	}
+	.page-template-location-page .location-section.introductory-section ul {
+		column-count: 1;
+	}
+	.page-template-location-page .fusion-copyright-content {
+		padding-bottom: 100px;
+	}
+	.location-mobile-bottom-menu {
+		display: block;
+	}
+	.location-mobile-bottom-menu-inner div{
+		width: 0;
+	}
+	.location-mobile-bottom-menu-inner  div.mobile-appointment {
+		width: 70%;
+        margin-right: 70px;
+	}
+	.location-how-it-works .how-it-works-grid > div {
+		text-align: center;
+	}
+	.page-template-location-page .treatment-item:not(.rounded) {
+		flex: 1 1 47%;
+	}
+	.page-template-location-page .treatment-item.item-info{
+		height: auto;
+	}
+	.boost-treatments .treatments-grid {
+		justify-content: center;
+	}
+	.page-template-location-page .package-item {
+		max-width: 100%;
+	}
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section
+    .wrap,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-inj-therapies-section
+    .wrap,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-cryo-therapies-section
+    .wrap,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-tb-therapies-section
+    .wrap {
+    padding: 1.5em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section
+    .info-list,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-inj-therapies-section
+    .info-list,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-cryo-therapies-section
+    .info-list,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-tb-therapies-section
+    .info-list {
+    display: block;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section
+    .info-list
+    .col,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-inj-therapies-section
+    .info-list
+    .col,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-cryo-therapies-section
+    .info-list
+    .col,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-tb-therapies-section
+    .info-list
+    .col {
+    width: 100%;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section
+    table
+    tr
+    td.price,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-inj-therapies-section
+    table
+    tr
+    td.price,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-cryo-therapies-section
+    table
+    tr
+    td.price,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-tb-therapies-section
+    table
+    tr
+    td.price {
+    width: 80px;
+  }
+}
+
+@media (max-width: 570px) {
+	.page-template-location-page .treatment-item:not(.rounded) {
+		flex: 1 1 100%;
+	}
+	.page-template-location-page .therapy-wrapper .buttons {
+		display: flex;
+		align-items: stretch;
+	}
+	.page-template-location-page .therapy-wrapper .buttons a {
+		margin-bottom: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 549px) {
+	.page-template-location-page #content .post-content .location-page-video-section .videos-wrapper h3 {
+		font-size: 35px;
+	}
+	.page-template-location-page .question-header .question-title {
+		font-size: 17px !important;
+	}
+	.page-template-location-page .treatment-info {
+		font-size: 15px !important;
+	}
+	.page-template-location-page .rounded .treatment-info{
+		font-size: 14px !important;
+	}
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left
+    h2 {
+    font-size: 16px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left
+    h1 {
+    font-size: 28px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left
+    .info {
+    display: block;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left
+    .info
+    > div {
+    width: 100%;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left
+    .info
+    > div.google-rating {
+    margin-bottom: 2em;
+    width: 100%;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left
+    div.buttons {
+    text-align: center;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left
+    .btn-orange {
+    margin-right: 0;
+    margin-top: 1em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-work-section
+    .left
+    h3 {
+    font-size: 27px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-work-section
+    .left
+    .items-wrap {
+    padding-right: 0;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-work-section
+    .right
+    .location-hours
+    .title
+    span {
+    font-size: 22px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-work-section
+    .right
+    .location-hours
+    table
+    tr
+    td {
+    padding: 8px !important;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-work-section
+    .right
+    .location-hours {
+    padding: 1.5em 0.8em 1.5em 0.8em !important;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-why-use-section
+    h3 {
+    font-size: 27px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-introductory-section
+    h3 {
+    font-size: 32px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-memberships-section {
+    padding-bottom: 4em;
+	padding-top: 2em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-memberships-section
+    h3 {
+    font-size: 32px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-memberships-section
+    .item
+    .item-content
+    .item-title
+    span {
+    font-size: 27px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-memberships-section
+    .memberships-wrap
+    .memberships-option {
+    min-width: 300px;
+    min-height: 475px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-inj-therapies-section,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-cryo-therapies-section,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-tb-therapies-section {
+    padding: 4.5em 0;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section
+    .item
+    .item-content
+    .item-title
+    h4,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-inj-therapies-section
+    .item
+    .item-content
+    .item-title
+    h4,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-cryo-therapies-section
+    .item
+    .item-content
+    .item-title
+    h4,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-tb-therapies-section
+    .item
+    .item-content
+    .item-title
+    h4 {
+    font-size: 27px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-memberships-section
+    .memberships-wrap
+    .memberships-option
+    .price
+    .only {
+    font-size: 27px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-video-section
+    .wrap
+    h3 {
+    font-size: 35px;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-video-section {
+    /* padding: 0; */
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-custom-footer
+    .footer-title
+    span {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-custom-footer
+    .footer-subtitle
+    span {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-video-section {
+    margin-top: 0;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-custom-footer
+    .wrap
+    .footer-social-media
+    img {
+    max-width: 150px;
+  }
+
+  .page-template-location-page #content .post-content .btn-blue {
+    margin-right: 0;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-memberships-section {
+    padding-bottom: 3.5em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section {
+    padding-top: 0;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-inj-therapies-section,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-cryo-therapies-section,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-tb-therapies-section {
+    padding: 0 0 3.5em 0;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section
+    .wrap,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-inj-therapies-section
+    .wrap,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-cryo-therapies-section
+    .wrap,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-tb-therapies-section
+    .wrap {
+    padding: 1.5em 1em;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-memberships-section
+    .memberships-wrap
+    .memberships-option.transformation {
+    margin-bottom: 0;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-work-section
+    .right
+    .location-hours
+    table
+    tr
+    td {
+    font-size: 15px !important;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section
+    .buttons
+    .btn-orange,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-inj-therapies-section
+    .buttons
+    .btn-orange,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-cryo-therapies-section
+    .buttons
+    .btn-orange,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-tb-therapies-section
+    .buttons
+    .btn-orange {
+    font-size: 14px !important;
+    margin-right: 13px !important;
+  }
+
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-int-therapies-section
+    .buttons
+    .btn-blue,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-inj-therapies-section
+    .buttons
+    .btn-blue,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-cryo-therapies-section
+    .buttons
+    .btn-blue,
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-tb-therapies-section
+    .buttons
+    .btn-blue {
+    font-size: 14px !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 1250px) {
+	.page-template-location-page .before-footer .fusion-row,
+	.page-template-location-page .testimonials-wrapper {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.page-template-location-page .mobile-collapse-content:not(.active){
+		display: none;
+	}
+	.page-template-location-page .sub-nav-wrapper {
+		display: none;
+	}
+	.page-template-location-page .mobile-collapse {
+		padding: 0 30px;
+		display: block;
+	}
+	.page-template-location-page .mobile-collapse .collapse-wrapper{
+		justify-content: space-between;
+		display: flex;
+	}
+	.page-template-location-page .location-sidebar-wrapper {
+		display: none;
+	}
+	.page-template-location-page .location-content {
+		width: 100%;
+	}
+	.page-template-location-page .location-section .semi-wrap {
+		padding: 0 30px;
+	}
+
+	.page-template-location-page .before-footer .content-grid {
+		gap: 30px;
+	}
+}
+
+@media (max-width: 1150px ) and (min-width: 999px) {
+	.page-template-location-page #content .post-content .location-page-first-top-section .left {
+		width: 70%;
+	}
+	.page-template-location-page #content .post-content .comingsoon .left {
+		width: 55%;
+	}
+
+	.page-template-location-page #content .post-content .location-page-first-top-section .right {
+		flex: 1;
+	}
+}
+
+body.page-template-location-page
+  header.fusion-header-wrapper
+  nav.fusion-main-menu
+  #menu-main
+  li.book-now-menu-item,
+body.page-template-location-page
+  .fusion-footer
+  footer.fusion-footer-widget-area
+  .fusion-row
+  .book-now-item,
+body.page-template-location-page
+  header.fusion-header-wrapper
+  #mobile-menu-main
+  li.book-now-menu-item {
+  display: none !important;
+}
+
+body.page-template-location-page
+  header.fusion-header-wrapper
+  nav.fusion-main-menu
+  #menu-main
+  li#menu-item-265 {
+  padding-right: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  body.page-template-location-page
+    .fusion-footer
+    footer.fusion-footer-widget-area
+    .fusion-column.fusion-column-last {
+    display: none !important;
+  }
+}
+
+.wpsl-select-wrap #wpsl-radius .wpsl-dropdown {
+  width: 100px;
+}
+
+.ilp-awards {
+  margin-top: 40px;
+}
+.ilp-awards div {
+  padding: 15px;
+  text-align: center;
+}
+.ilp-awards img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+}
+@media (min-width: 768px) {
+  .ilp-awards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    max-width: 515px;
+  }
+  .ilp-awards div {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-tb-therapies-section.ilp-mobileiv
+  .item
+  .icon
+  img {
+  max-width: 50px;
+}
+
+.page-template-location-page .ilp-mobileiv .buttons {
+  padding-left: 70px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left {
+    padding-right: 50px;
+  }
+}
+
+.page-template-location-page
+  #content
+  .post-content
+  .location-page-first-top-section
+  .left
+  > div {
+  width: 100%;
+}
+
+#locations-page-custom-soon-section {
+  background-position: top center !important;
+}
+
+@media only screen and (max-width: 800px) {
+  #locations-page-custom-soon-section {
+    background-size: unset !important;
+    background-repeat: repeat-y !important;
+  }
+}
+
+.location-coming-soon {
+  padding-top: 67px;
+  position: relative;
+  padding-left: 130px;
+  margin-bottom: 35px;
+}
+.location-coming-soon div {
+  width: 322px;
+  height: 148px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg width='322' height='131' viewBox='0 0 322 131' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M147.136 109.85L168.422 66.4259L39.1407 97.0442L147.136 109.85Z' fill='%23FED74E'/%3E%3Cpath d='M184.423 0.74446L166.668 39.0008L282.584 17.1693L184.423 0.74446Z' fill='%23FED74E'/%3E%3Cg clip-path='url(%23clip0_0:1)'%3E%3Cpath d='M280.819 66.6316L40.4314 96.9428L42.0946 47.1568L282.482 16.8417L280.819 66.6316Z' fill='%23FFE662'/%3E%3Cpath d='M74.5591 76.334C72.8271 76.5507 71.2053 76.3752 69.694 75.8075C68.1985 75.2378 66.9549 74.3549 65.9631 73.1586C64.9849 71.9445 64.3719 70.5238 64.1242 68.8963C63.8765 67.2688 64.0433 65.7585 64.6247 64.3654C65.2196 62.9545 66.1518 61.7913 67.4212 60.8757C68.7065 59.9581 70.2152 59.391 71.9473 59.1743C73.6793 58.9576 75.2931 59.1341 76.7886 59.7038C78.2841 60.2734 79.5289 61.1643 80.523 62.3764C81.5147 63.5727 82.1345 64.9845 82.3822 66.612C82.6299 68.2395 82.4563 69.7587 81.8614 71.1696C81.2641 72.5646 80.3307 73.72 79.0613 74.6356C77.7919 75.5512 76.2912 76.1173 74.5591 76.334ZM74.0613 73.0632C75.0465 72.94 75.9027 72.6074 76.6298 72.0656C77.3546 71.508 77.8781 70.7984 78.2004 69.9369C78.5386 69.0734 78.6295 68.1281 78.4732 67.1011C78.3168 66.074 77.9469 65.1864 77.3635 64.4382C76.7959 63.688 76.0811 63.1414 75.2193 62.7984C74.355 62.4396 73.4303 62.3218 72.4451 62.4451C71.4599 62.5683 70.6049 62.9088 69.8801 63.4664C69.153 64.0082 68.6203 64.7109 68.2821 65.5744C67.9598 66.4359 67.8769 67.3802 68.0332 68.4072C68.1895 69.4343 68.5515 70.3229 69.1191 71.0731C69.7025 71.8213 70.4264 72.3748 71.2907 72.7336C72.1525 73.0766 73.0761 73.1865 74.0613 73.0632ZM91.2437 57.0499C92.7215 56.865 94.0379 56.9499 95.193 57.3046C96.364 57.6572 97.312 58.2471 98.0371 59.0742C98.7621 59.9013 99.2184 60.9311 99.406 62.1635C99.5912 63.3802 99.4596 64.4835 99.0111 65.4735C98.5603 66.4478 97.8239 67.2484 96.802 67.8754C95.7936 68.4846 94.5505 68.8816 93.0727 69.0665L89.7119 69.487L90.4082 74.0613L86.5468 74.5444L84.0215 57.9535L91.2437 57.0499ZM92.382 65.9648C93.542 65.8196 94.3866 65.4644 94.9159 64.899C95.4428 64.3178 95.6365 63.569 95.497 62.6526C95.3551 61.7203 94.9449 61.0471 94.2665 60.6328C93.5858 60.2027 92.6654 60.0602 91.5054 60.2053L88.3591 60.599L89.2357 66.3584L92.382 65.9648ZM116.222 67.692L116.691 70.7732L103.772 72.3894L101.246 55.7985L113.855 54.221L114.324 57.3022L105.553 58.3996L106.101 62.0022L113.848 61.033L114.302 64.0194L106.556 64.9885L107.14 68.8281L116.222 67.692ZM132.54 51.8834L135.065 68.4743L131.895 68.8709L122.043 59.8386L123.577 69.9116L119.763 70.3888L117.238 53.7978L120.432 53.3983L130.26 62.4336L128.726 52.3605L132.54 51.8834ZM136.488 51.3895L140.349 50.9064L142.874 67.4973L139.013 67.9804L136.488 51.3895ZM159.611 48.4965L162.136 65.0875L158.966 65.4841L149.114 56.4517L150.648 66.5248L146.834 67.0019L144.309 50.411L147.503 50.0114L157.331 59.0467L155.797 48.9737L159.611 48.4965ZM176.056 54.6269L179.583 54.1856L180.608 60.9167C179.806 61.7095 178.836 62.3621 177.7 62.8746C176.563 63.3872 175.391 63.719 174.184 63.8701C172.452 64.0868 170.839 63.9182 169.346 63.3643C167.85 62.7946 166.607 61.9116 165.615 60.7154C164.637 59.5013 164.023 58.0726 163.773 56.4293C163.522 54.786 163.688 53.2678 164.269 51.8748C164.864 50.4639 165.806 49.3076 167.093 48.4058C168.379 47.4882 169.895 46.92 171.643 46.7014C173.105 46.5185 174.469 46.5974 175.736 46.9381C177.002 47.2788 178.111 47.8646 179.064 48.6955L176.931 51.2809C175.549 50.1818 174.016 49.7376 172.332 49.9483C171.267 50.0815 170.355 50.421 169.596 50.9668C168.837 51.5126 168.289 52.2172 167.951 53.0807C167.613 53.9442 167.523 54.8974 167.682 55.9403C167.838 56.9673 168.208 57.855 168.791 58.6031C169.375 59.3513 170.107 59.9039 170.987 60.2607C171.88 60.5997 172.852 60.7037 173.9 60.5724C175.013 60.4333 175.978 60.071 176.795 59.4857L176.056 54.6269ZM196.748 61.047C195.429 61.212 194.124 61.1982 192.832 61.0057C191.553 60.7953 190.496 60.4525 189.663 59.9771L190.534 56.9215C191.328 57.3535 192.242 57.6658 193.275 57.8586C194.309 58.0514 195.318 58.0861 196.303 57.9628C197.4 57.8257 198.186 57.5663 198.662 57.1846C199.136 56.7872 199.332 56.3199 199.25 55.7827C199.19 55.3876 198.982 55.0836 198.626 54.8706C198.283 54.6397 197.853 54.4761 197.337 54.3797C196.836 54.2814 196.158 54.1891 195.303 54.1028C193.986 53.9616 192.899 53.7916 192.043 53.5928C191.187 53.394 190.415 52.9995 189.726 52.4095C189.053 51.8174 188.632 50.9683 188.464 49.8623C188.317 48.8984 188.447 47.9966 188.853 47.1567C189.257 46.3011 189.949 45.5785 190.928 44.9891C191.923 44.3977 193.183 44.0065 194.709 43.8157C195.773 43.6825 196.833 43.6787 197.889 43.8042C198.944 43.9298 199.889 44.1819 200.724 44.5605L199.976 47.6249C198.303 46.9487 196.695 46.707 195.154 46.8998C194.073 47.035 193.297 47.3092 192.826 47.7224C192.37 48.1337 192.186 48.6237 192.272 49.1925C192.359 49.7614 192.718 50.1512 193.349 50.3621C193.994 50.5551 194.948 50.7095 196.213 50.825C197.53 50.9662 198.616 51.1362 199.472 51.335C200.328 51.5338 201.092 51.9214 201.762 52.4976C202.449 53.0719 202.876 53.9121 203.045 55.0181C203.189 55.9662 203.051 56.869 202.631 57.7267C202.225 58.5665 201.524 59.2822 200.529 59.8736C199.534 60.465 198.274 60.8561 196.748 61.047ZM214.546 58.8203C212.814 59.037 211.193 58.8615 209.681 58.2938C208.186 57.7241 206.942 56.8412 205.95 55.6449C204.972 54.4308 204.359 53.0101 204.111 51.3826C203.864 49.7551 204.03 48.2448 204.612 46.8517C205.207 45.4408 206.139 44.2776 207.408 43.362C208.694 42.4444 210.202 41.8773 211.934 41.6606C213.666 41.4439 215.28 41.6204 216.776 42.19C218.271 42.7597 219.516 43.6506 220.51 44.8627C221.502 46.0589 222.122 47.4708 222.369 49.0983C222.617 50.7258 222.443 52.245 221.849 53.6559C221.251 55.0509 220.318 56.2063 219.048 57.1219C217.779 58.0375 216.278 58.6036 214.546 58.8203ZM214.048 55.5495C215.034 55.4263 215.89 55.0937 216.617 54.5519C217.342 53.9943 217.865 53.2847 218.188 52.4232C218.526 51.5597 218.617 50.6144 218.46 49.5874C218.304 48.5603 217.934 47.6727 217.351 46.9245C216.783 46.1743 216.068 45.6277 215.206 45.2847C214.342 44.9259 213.417 44.8081 212.432 44.9313C211.447 45.0546 210.592 45.395 209.867 45.9527C209.14 46.4945 208.607 47.1972 208.269 48.0607C207.947 48.9222 207.864 49.8664 208.02 50.8935C208.177 51.9206 208.539 52.8092 209.106 53.5594C209.69 54.3076 210.414 54.8611 211.278 55.2199C212.14 55.5629 213.063 55.6728 214.048 55.5495ZM234.657 56.3042C232.925 56.5209 231.304 56.3454 229.792 55.7777C228.297 55.208 227.053 54.3251 226.062 53.1288C225.083 51.9147 224.47 50.494 224.223 48.8665C223.975 47.239 224.142 45.7287 224.723 44.3356C225.318 42.9247 226.25 41.7615 227.52 40.8459C228.805 39.9283 230.314 39.3612 232.046 39.1445C233.778 38.9278 235.391 39.1043 236.887 39.6739C238.382 40.2436 239.627 41.1345 240.621 42.3466C241.613 43.5428 242.233 44.9547 242.481 46.5822C242.728 48.2097 242.555 49.7289 241.96 51.1398C241.362 52.5348 240.429 53.6902 239.16 54.6058C237.89 55.5214 236.39 56.0875 234.657 56.3042ZM234.16 53.0334C235.145 52.9102 236.001 52.5776 236.728 52.0358C237.453 51.4782 237.977 50.7686 238.299 49.9071C238.637 49.0436 238.728 48.0983 238.572 47.0713C238.415 46.0442 238.045 45.1566 237.462 44.4084C236.894 43.6582 236.18 43.1116 235.318 42.7686C234.453 42.4098 233.529 42.292 232.543 42.4152C231.558 42.5385 230.703 42.8789 229.979 43.4366C229.251 43.9784 228.719 44.6811 228.381 45.5446C228.058 46.4061 227.975 47.3503 228.132 48.3774C228.288 49.4045 228.65 50.2931 229.217 51.0433C229.801 51.7915 230.525 52.345 231.389 52.7038C232.251 53.0468 233.174 53.1567 234.16 53.0334ZM259.422 36.0092L261.948 52.6001L258.777 52.9967L248.926 43.9644L250.459 54.0375L246.645 54.5146L244.12 37.9237L247.314 37.5241L257.142 46.5594L255.609 36.4863L259.422 36.0092Z' fill='%230E558E'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_0:1'%3E%3Crect width='317.631' height='112.547' fill='white' transform='matrix(0.999623 0.0274482 -0.0333876 0.999443 4.48901 9.20837)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  position: absolute;
+  left: -40px;
+  top: -25px;
+}
+.location-coming-soon span {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #0e558e;
+}
+.location-cs-section {
+  text-align: center;
+  background-color: #05518f;
+  margin-left: -30px;
+  margin-right: -30px;
+  color: #fff;
+  font-family: Montserrat;
+  padding: 70px 20px 60px 20px;
+}
+.location-cs-section .cs-bl-1 {
+  font-weight: bold !important;
+  font-size: 32px !important;
+  line-height: 39px !important;
+  margin-bottom: 15px;
+}
+.location-cs-section .cs-bl-2 {
+  font-weight: 300 !important;
+  font-size: 34px !important;
+  line-height: 42px !important;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.location-cs-section .cs-bl-2:after,
+.location-cs-section .cs-bl-7:after {
+  content: "";
+  display: block;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 50px);
+  border-bottom: 2px solid #e69749;
+}
+.location-cs-section .cs-bl-3 {
+  font-weight: 600 !important;
+  font-size: 19px !important;
+  line-height: 26px !important;
+  margin-bottom: 30px;
+}
+.location-cs-section .cs-bl-4 {
+  font-weight: 600 !important;
+  font-size: 28px !important;
+  line-height: 36px !important;
+  margin-bottom: 40px;
+}
+.location-cs-section .cs-bl-5 {
+  margin-bottom: 20px;
+}
+.location-cs-section .cs-bl-6 {
+  margin-bottom: 40px;
+}
+.location-cs-section .cs-bl-6 p {
+  font-size: 16px !important;
+  line-height: 20px !important;
+}
+.location-cs-section .cs-bl-6 a {
+  color: #fff;
+  text-decoration: underline;
+}
+.location-cs-section .cs-bl-6 a:hover {
+  text-decoration: none;
+}
+.location-cs-section .cs-bl-7 {
+  font-weight: bold !important;
+  font-size: 26px !important;
+  line-height: 36px !important;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.location-cs-section .location-cs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+.location-cs-section .location-cs-list div {
+  flex: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.location-cs-section .location-cs-list div span {
+  display: inline-block;
+  padding-left: 58px;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_9:89)'%3E%3Cpath d='M15 30C23.2706 30 30 23.2712 30 15C30 13.5724 29.8007 12.1655 29.4061 10.8182C29.2117 10.1556 28.5199 9.77509 27.8555 9.96948C27.1924 10.1633 26.813 10.8575 27.0068 11.5201C27.3337 12.6395 27.5 13.8107 27.5 15C27.5 21.8924 21.8924 27.5 15 27.5C8.1076 27.5 2.5 21.8924 2.5 15C2.5 8.1076 8.1076 2.5 15 2.5C17.5049 2.5 19.9149 3.23242 21.9693 4.61761C22.5412 5.00366 23.3188 4.85199 23.7042 4.28009C24.09 3.70758 23.9395 2.9306 23.367 2.54486C20.8981 0.880127 18.0051 0 15 0C6.72943 0 0 6.72882 0 15C0 23.2712 6.72943 30 15 30Z' fill='white'/%3E%3Cpath d='M27.8662 2.86623L15 15.7318L10.8838 11.6162C10.3955 11.1283 9.60451 11.1283 9.11623 11.6162C8.62825 12.1045 8.62825 12.8955 9.11623 13.3838L14.1162 18.3838C14.3607 18.6283 14.6799 18.75 15 18.75C15.3201 18.75 15.6394 18.6283 15.8838 18.3838L29.6338 4.6338C30.1218 4.14552 30.1218 3.35451 29.6338 2.86623C29.1455 2.37825 28.3545 2.37825 27.8662 2.86623Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_9:89'%3E%3Crect width='30' height='30' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 15px 5px;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+}
+.locations-tagline {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #58adde;
+  margin-bottom: 20px;
+}
+@media (min-width: 640px) {
+  .location-cs-section .location-cs-list div {
+    flex: 50%;
+    max-width: 50%;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .location-cs-section .location-cs-list > :nth-child(even) {
+    transform: translateX(50px);
+  }
+  .location-cs-section .cs-bl-1 {
+    font-size: 32px !important;
+    line-height: 39px !important;
+  }
+  .location-cs-section .cs-bl-2 {
+    font-size: 48px !important;
+    line-height: 59px !important;
+  }
+  .location-cs-section .cs-bl-3 {
+    font-size: 24px !important;
+    line-height: 29px !important;
+    margin-bottom: 60px;
+  }
+  .location-cs-section .cs-bl-4 {
+    font-size: 44px !important;
+    line-height: 54px !important;
+  }
+  .location-cs-section .cs-bl-6 {
+    margin-bottom: 90px;
+  }
+  .location-cs-section .cs-bl-7 {
+    font-size: 32px !important;
+    line-height: 39px !important;
+    margin-bottom: 50px;
+  }
+  .location-cs-section .location-cs-list div span {
+    background-position: left top;
+    background-size: 30px;
+    font-size: 20px !important;
+    display: block;
+  }
+}
+@media (min-width: 550px) {
+  .page-template-location-page
+    #content
+    .post-content
+    .location-page-first-top-section
+    .left
+    .info
+    .location-general-info {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home .hero-h1,
+  .home .treatments-h1 {
+    font-size: 40px;
+  }
+}
+
+/* can be used for all big h1 headers */
+@media (min-width: 800px) and (max-width: 940px) {
+  .tmm-h1 {
+    font-size: 46px !important;
+  }
+}
+@media (max-width: 500px) {
+  .tmm-h1 {
+    font-size: 40px !important;
+  }
+}
+@media (max-width: 375px) {
+  .tmm-h1 {
+    font-size: 36px !important;
+  }
+}
+@media (max-width: 350px) {
+  .tmm-h1 {
+    font-size: 30px !important;
+  }
+}
+
+/********** Main Navigation Menu **********/
+
+body header.fusion-is-sticky .fusion-main-menu > ul > li > a {
+  height: 108px;
+}
+
+body header.fusion-is-sticky .fusion-header,
+body header.fusion-is-sticky .fusion-header-sticky-height {
+  height: 108px;
+  max-height: 108px;
+}
+
+@media only screen and (max-width: 800px) {
+  .fusion-header-wrapper .fusion-row {
+    display: flex;
+    align-items: end;
+  }
+
+  .fusion-header-wrapper .fusion-logo a {
+    display: inline-block;
+    max-width: 129px;
+  }
+
+  nav.fusion-mobile-nav-holder {
+    margin-left: auto;
+    position: relative;
+    width: 50px;
+    height: 46px;
+  }
+
+  nav.fusion-mobile-nav-holder > button > span {
+    font-family: var(--mobile_menu_typography-font-family);
+  }
+
+  nav.fusion-mobile-nav-holder > ul li a,
+  nav.fusion-mobile-nav-holder > ul > li.fusion-mobile-nav-item > a,
+  nav.fusion-mobile-nav-holder > button span {
+    font-size: 14px !important;
+  }
+
+  nav.fusion-mobile-nav-holder > button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  nav.fusion-mobile-nav-holder > button[aria-expanded="true"] {
+    width: 300px;
+  }
+
+  nav.fusion-mobile-nav-holder > button[aria-expanded="false"] {
+    width: 50px;
+    border-left: 0 none;
+  }
+
+  nav.fusion-mobile-nav-holder
+    > button[aria-expanded="false"]
+    ~ #mobile-menu-main,
+  nav.fusion-mobile-nav-holder > button[aria-expanded="false"] > span {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  nav.fusion-mobile-nav-holder #mobile-menu-main {
+    position: absolute;
+    width: 300px;
+    right: 0;
+    z-index: 100;
+    top: 42px;
+  }
+
+  .fusion-mobile-menu-design-classic.fusion-header-v1
+    nav.fusion-mobile-nav-holder {
+    margin-top: 0;
+  }
+}
+
+@media(max-width: 1400px){
+  .page-template-location-page .therapies-grid > div { 
+    flex: 0 0 47%;
+  }
+}
+
+@media(max-width: 992px){
+  .page-template-location-page .therapies-grid > div { 
+    min-width: unset;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.fusion-blog-archive .pagination {
+  margin-bottom: 40px;
+}
+
+.single-related-posts .fusion-rollover-title {
+  line-height: 1 !important;
+}
+.single-related-posts .fusion-rollover-title .fusion-rollover-title-link {
+  font-size: 14px;
+  line-height: 14px;
+}
+@media(max-width: 992px){
+  .single-related-posts .fusion-rollover-title {
+    margin-top: 0;
+  }
+  .single-related-posts .fusion-rollover-title .fusion-rollover-title-link {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+@media(max-width: 768px){
+  .fusion-body.blog .fusion-page-title-bar,
+  .fusion-body.blog .fusion-page-title-row{
+    min-height: auto !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .fusion-body.blog .fusion-post-title {
+    font-size: 30px !important;
+    font-weight: 300 !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .one-column-on-mobile {
+    --awb-columns: 1 !important;
+    --awb-column-spacing: 0 !important;
+    --awb-column-min-width: auto !important;
+  }
+}
+
+
+#wpsl-gmap .wpsl-info-window strong a:focus-visible{
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .avada-responsive:not(.rtl):not(.avada-menu-highlight-style-background) .fusion-header-v1 .fusion-main-menu>ul>li {
+    padding-right: 6px !important;
+  }
+
+  .avada-responsive:not(.rtl):not(.avada-menu-highlight-style-background) .fusion-header-v1 .fusion-main-menu>ul>li:last-child {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,59 @@
+.primeiv-quotes {
+    font-family: 'Andale Mono';
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: $breakdown-to-mobile) {
+            display: block;
+        }
+    }
+
+    &__item {
+        flex-basis: calc(33% - 22.5px);
+        text-align: center;
+        margin-bottom: 42px;
+        margin-top: 60px;
+        position: relative;
+        @media (max-width: $breakdown-to-mobile) {
+            margin-bottom: 100px;
+        }
+
+        &__title {
+            margin-top: 0;
+            margin-bottom: 30px;
+            color: $blue-darker !important;
+            @include font-mosterrat-bold-antialiased(300);
+            font-weight: 300 !important;
+            font-size: 40px !important;
+            line-height: 49px !important;
+            position: relative;
+            z-index: 1;
+
+
+            @media (max-width: $width-lmd) {
+                font-size: 32px !important;
+                line-height: 46px !important;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__image {
+            max-height: 40px;
+            width: auto;
+        }
+    }
+
+    &__big-quote {
+        font-size: 140px;
+        line-height: 105px;
+        color: $blue-darker;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: -50px;
+        left: 0;
+        z-index: 0;
+    }
+}

@@ -1,0 +1,680 @@
+body.ninjateam_page_ninjagoogleplacereviewspro #wpfooter {
+  position: relative;
+}
+th#avatar,
+th#rating,
+th#time {
+  color: #0073aa;
+}
+th#avatar {
+  width: 10%;
+}
+th#rating {
+  width: 20%;
+}
+th#time {
+  width: 15%;
+}
+input#njt-autocomplete-snippet {
+  display: block;
+  margin: 0 6px;
+  float: left;
+  height: 28px !important;
+}
+.njt_gg_reviews_add_location_wrap {
+  margin: 10px 0;
+}
+.njt_google_reviews_add_business_btns > .button {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1280px) {
+  input#njt-autocomplete-snippet {
+    width: 285px;
+  }
+}
+
+.google-reviews-thumbnail {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 60px;
+}
+
+.google-reviews-info h3 {
+  margin: 0 0 4px 0;
+}
+
+.google-reviews-thumbnail img {
+  border-radius: 50%;
+}
+
+/*ON/OFF BUTTON STYLE*/
+
+#nta-wa-switch:checked + label.red {
+  background: #eca9a7;
+}
+#nta-wa-switch:checked + label.red:after {
+  background: #d9534f;
+}
+#nta-wa-switch:checked + label.green {
+  background: #aedcae;
+}
+#nta-wa-switch:checked + label.green:after {
+  background: #5cb85c;
+}
+#nta-wa-switch:checked + label:after {
+  left: calc(100% - 18px);
+}
+#nta-wa-switch + label {
+  background: #ddd;
+  border-radius: 20px;
+}
+#nta-wa-switch + label:after {
+  background: #fff;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 2px;
+}
+
+.nta-wa-switch-control input[type="checkbox"] {
+  display: none;
+}
+.nta-wa-switch-control input[type="checkbox"] + label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+.nta-wa-switch-control input[type="checkbox"] + label:after,
+input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* Style for creat badge shortcode */
+
+.form-njt-create-badge,
+.form-njt-google-rich-snippet {
+  display: flex;
+}
+.form-njt-create-badge .njt-create-badge {
+  width: 50%;
+}
+.form-njt-create-badge .badge-place-review {
+  width: 50%;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  .form-njt-create-badge,
+  .form-njt-google-rich-snippet {
+    display: block;
+  }
+  .form-njt-create-badge .njt-create-badge,
+  .form-njt-create-badge .badge-place-review {
+    width: 100%;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@-webkit-keyframes ani-fb-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-moz-keyframes ani-fb-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes ani-fb-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.clear {
+  clear: both;
+}
+.njt-fr-stars .njt-fr-starslist-wrapper {
+  font-size: 0;
+  line-height: 0;
+  float: left;
+  width: 106px;
+  height: 24px;
+}
+.hide-head {
+  padding-top: 0;
+}
+.hide-head:before {
+  height: 0;
+}
+.njt-google-places-reviews-wap {
+  overflow: hidden;
+}
+.njt-google-places-reviews-wap {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.21);
+  font-family: Roboto;
+  padding: 15px;
+  border-top: 8px solid #4285f4;
+  font-size: 14px;
+  line-height: 24px;
+}
+.njt-header {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+}
+.njt-header-badge {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.njt-header:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.njt-header .njt-header-content {
+  margin-left: 90px;
+}
+.njt-header .njt-header-content:after {
+  content: "";
+  width: 61px;
+  height: 20px;
+  background: url(../../frontend/img/Google_2015_logo.svg) 0 0 no-repeat;
+  display: block;
+  margin-top: 2px;
+  background-size: 100%;
+}
+.njt-header-image {
+  width: 80px;
+  overflow: hidden;
+  height: 80px;
+  position: relative;
+  float: left;
+}
+.njt-header .njt-fr-starsnumb {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 10px;
+  color: #e7711b;
+  font-weight: 500;
+}
+.njt-header .njt-fr-starsnumb span {
+  font-size: 24px;
+  line-height: 38px;
+}
+.njt-header-image img {
+  height: 80px;
+  max-width: 500px;
+  min-width: 100%;
+  transform: translate(-50%, 0);
+  left: 50%;
+  position: absolute;
+}
+.njt-header .njt-header-title {
+  color: #434a54;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 24px;
+}
+.njt-header .njt-header-title a {
+  color: #434a54;
+  text-decoration: none;
+  box-shadow: none;
+  border: none;
+  font-weight: 700;
+  transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+}
+.njt-header .njt-header-title a:hover {
+  color: #e7711b;
+}
+.njt-header .njt-fr-starslist-wrapper {
+  display: inline-block;
+  height: auto;
+  padding-top: 9px;
+  background: unset !important;
+}
+.njt-google-places-reviews-wap
+  .njt-fr-starslist-wrapper
+  .njt-fr-starslist-current {
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.njt-google-places-reviews-wap .njt-fr-starslist-wrapper .njt-fr-star {
+  background: url("../img/rate-star-button.svg") 0 0 no-repeat;
+  width: 18px;
+  height: 18px;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.njt-google-places-reviews-wap
+  .njt-fr-starslist-wrapper
+  .njt-fr-starslist-background
+  .njt-fr-star {
+  background-image: url(../img/rate-star-button-gray.svg);
+}
+.njt-google-places-reviews-wap
+  .njt-fr-starslist-wrapper
+  .njt-fr-starslist-container {
+  position: relative;
+  font-size: 0;
+  height: 18px;
+  display: inline-block;
+}
+.njt-disabled-shadow {
+  box-shadow: none;
+}
+.badge-place-review .nta-browser {
+  display: none;
+  margin: 5px auto;
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+.badge-place-review .njt-header {
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+}
+.badge-place-review .njt-google-places-reviews-wap {
+  padding-bottom: 0px;
+}
+.badge-place-review-shortcode {
+  width: 80%;
+  margin: 50px auto;
+}
+/* Style for ggreview setting */
+@media only screen and (max-width: 1024px) {
+  .form-table.njt-google-rich-snippet,
+  .njt-example-gg-rich-snippet-gg-rv {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .njt-creat-shortcode #location_id,
+  .njt-creat-shortcode .shorecode-content {
+    width: 100% !important;
+  }
+  .njt-creat-shortcode #btn-create-shortcode {
+    margin-top: 10px;
+  }
+}
+.browser-border {
+  border: 6px solid #e7ecf2;
+  border-radius: 6px;
+}
+.browser-ui-element {
+  height: 18px;
+  background-color: #ffffff;
+  border: 1px solid #e7ecf2;
+  border-radius: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.nta-browser {
+  margin: 15px auto 0;
+  margin-left: 50px;
+  border: 6px solid #e7ecf2;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.05);
+}
+.nta-browser .browser-top {
+  background-color: #e7ecf2;
+  border: 6px solid #e7ecf2;
+  border-radius: 6px;
+  border-width: 2px;
+  border-radius: 2px 2px 0 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 52px;
+  margin: -5px auto;
+  box-sizing: border-box;
+}
+.nta-browser .browser-top .circle {
+  border: 5px solid #d8d8d8;
+  border-radius: 5px;
+  margin-right: 2px;
+  display: inline-block;
+}
+.nta-browser .browser-top .red-circle {
+  border-color: #e44054;
+}
+.nta-browser .browser-top .yellow-circle {
+  border-color: #ffe372;
+}
+.nta-browser .browser-top .green-circle {
+  border-color: #7ed321;
+}
+.nta-browser .browser-top .arrow-buttons {
+  width: 8%;
+  height: 18px;
+  background-color: #ffffff;
+  border: 1px solid #e7ecf2;
+  border-radius: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 2%;
+}
+.nta-browser .browser-top .search-box {
+  height: 18px;
+  background-color: #ffffff;
+  border: 1px solid #e7ecf2;
+  border-radius: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 85%;
+  margin-left: 2.5%;
+}
+.circle-div {
+  margin-left: 3px;
+  margin-bottom: 2px;
+  display: block;
+}
+.browser-ui-block {
+  margin-top: 0.35em;
+  display: block;
+}
+/* search result */
+.nta-searchresult {
+  margin: 50px 10px;
+}
+.nta-searchresult h2 {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgb(29, 1, 189);
+  margin-bottom: 0px;
+  margin-top: 0;
+  text-decoration: none;
+}
+.nta-searchresult p {
+  font-size: 13px;
+  margin-top: 0px;
+  color: rgb(82, 82, 82);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.nta-searchresult .nta-link-snippet button {
+  font-size: 10px;
+  line-height: 14px;
+  color: #3c4043 transparent;
+  margin-bottom: 0px;
+  padding: 0px;
+  border-width: 0px;
+  background-color: white;
+}
+.nta-searchresult .nta-link-snippet {
+  font-size: 14px;
+  line-height: 14px;
+  color: #3c4043;
+  font-style: normal;
+  margin-bottom: 0px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#njt-plugin-settings .nav-tab-active,
+.nav-tab-active:focus,
+.nav-tab-active:focus:active,
+.nav-tab-active:hover {
+  background-color: #ffff !important;
+  border-bottom: 1px solid #ffff;
+}
+
+#njt-plugin-settings .njt-plugin-pane.hide-if-js,
+#njt-plugin-options-form {
+  background-color: #ffff;
+}
+
+#njt-plugin-settings .form-table {
+  margin-top: 0;
+}
+#njt-plugin-settings .pd-0-20 {
+  padding: 0 20px;
+}
+/* shortcode-switch */
+.shortcode-switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+.shortcode-switch input {
+  display: none;
+}
+.shortcode-switch .slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.shortcode-switch .slider:before {
+  background-color: #fff;
+  bottom: 2px;
+  content: "";
+  height: 16px;
+  left: 2px;
+  position: absolute;
+  transition: 0.4s;
+  width: 16px;
+}
+.shortcode-switch input:checked + .slider {
+  background-color: #66bb6a;
+}
+.shortcode-switch input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.shortcode-switch .slider.round {
+  border-radius: 34px;
+}
+.shortcode-switch .slider.round:before {
+  border-radius: 50%;
+}
+input[name="column_shortcode"] {
+  display: none;
+}
+input[name="column_shortcode"]:checked + label {
+  background-color: #e2e4e7;
+  color: #00669b;
+  border-color: #016087;
+  box-shadow: inset 0 2px 5px -3px #016087;
+}
+.wrappert {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-heading {
+  border-bottom: 1px solid #ccc !important;
+  padding-bottom: 5px !important;
+}
+.table-heading label {
+  font-size: 20px !important;
+}
+/* location */
+.njt-gg-review-remove-location {
+  color: #b52727 !important;
+  border-color: #b52727 !important;
+  justify-content: center !important;
+}
+.add-new-location {
+  display: inline-block;
+  position: relative;
+}
+.add-new-location .dropdown-menu {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  border-radius: 4px;
+  padding: 0;
+  margin: 2px 0 0 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  min-width: 115px;
+  right: auto;
+  display: none;
+  border-width: 1px;
+  border-style: solid;
+  color: #0071a1;
+  border-color: #0071a1;
+  background: #f3f5f6;
+  vertical-align: top;
+}
+.add-new-location .dropdown-menu ul {
+  margin: 0;
+}
+.add-new-location .dropdown-menu ul li {
+  margin: 0;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.add-new-location .dropdown-menu ul li:hover {
+  background: #f1f1f1;
+  border-color: #016087;
+  color: #016087;
+  border-radius: 4px;
+}
+.nta-list-location {
+  padding-top: 20px !important;
+  margin-top: 19px;
+}
+.nta-list-location .nta-wrap {
+  display: flex;
+  align-items: center;
+}
+.nta-list-location .nta-wrap .wp-heading-inline {
+  padding: 0;
+}
+.nta-list-location .njt-location-autocomplete-snippet.regular-text:first-child,
+.regular-text.njt_ggrv_placeID {
+  margin-left: 0 !important;
+}
+.nta-wrap .nta-text-heading{
+  display: inline-block;
+  font-size: 23px;
+  font-weight: 400;
+  margin: 0;
+  margin-right: 5px;
+  padding: 9px 0 4px 0;
+  line-height: 1.3;
+}
+.nta-mgr-r20{
+  margin-right: 20px;
+}
+/* creat shortcode */
+.nta-carousel-option {
+  padding: 0 !important;
+  padding-left: 50px !important;
+}
+.nta-table-carousel {
+  border-left: 1px solid #ccc !important;
+  padding-left: 10px;
+}
+/* style for rate star */
+.snippet-rate-vote {
+  display: flex;
+}
+.snippet-rate-vote .njt-fr-starslist-wrapper {
+  display: inline-block;
+  height: auto;
+  background: unset !important;
+}
+.nta-searchresult .nta-descriptions {
+  margin-bottom: 0;
+}
+.snippet-rate-vote .njt-fr-starsnumb {
+  display: none;
+}
+.snippet-rate-vote .njt-fr-starslist-wrapper .njt-fr-starslist-current {
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.snippet-rate-vote .njt-fr-starslist-wrapper .njt-fr-star {
+  background: url("../img/rate-star-button.svg") 0 0 no-repeat;
+  width: 12px;
+  height: 12px;
+  background-size: 100%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.snippet-rate-vote
+  .njt-fr-starslist-wrapper
+  .njt-fr-starslist-background
+  .njt-fr-star {
+  background-image: url(../img/rate-star-button-gray.svg);
+}
+.snippet-rate-vote .njt-fr-starslist-wrapper .njt-fr-starslist-container {
+  position: relative;
+  font-size: 0;
+  height: 18px;
+  display: inline-block;
+}
+.toplevel_page_minja-team-menu .wp-menu-image.dashicons-before img {
+  width: 16px;
+}
+.nta-error-ggrick {
+  padding-top: 10px;
+}
+.nta-error-ggrick #message {
+  margin: 0;
+}
+.nta-input-error {
+  border-color: #dc3232 !important;
+}

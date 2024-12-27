@@ -1,0 +1,73 @@
+// todo - old code is used - it requires refactoring
+.primeiv-faq {
+    padding-top: 80px;
+    margin-bottom: 100px;
+
+    h4 {
+        margin-top: 40px;
+        font-size: 18px !important;
+        color: #58ADDE;
+        margin-bottom: 1rem;
+    }
+
+    .primeiv-section-title {
+        font-size: 38px;
+        @include section-title-font-size-mobile
+    }
+}
+
+.questions {
+    margin-top: 60px;
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.question-item .question-icon {
+    color: #EC801F;
+    margin-left: auto;
+    transition: all 0.3s ease;
+
+    i {
+        -webkit-font-smoothing: inherit;
+    }
+
+    .prime-faq {
+        @include font-mosterrat-bold-antialiased(300);
+        font-size: 36px;
+        width: 22px;
+        text-align: center;
+
+        &:before {
+            content: "+";
+        }
+    }
+}
+
+.question-item .question-content {
+    display: none;
+}
+
+.faq-section {
+    .question-title {
+        font-size: 18px !important;
+        @include font-mosterrat-bold-antialiased(700);
+        color: #58ADDE;
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.question-item.active .question-icon .prime-faq::before {
+    content: "-";
+}

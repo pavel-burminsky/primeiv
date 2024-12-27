@@ -1,0 +1,1 @@
+<div class="location-map"><?php echo $args['map_iframe']; ?></div>

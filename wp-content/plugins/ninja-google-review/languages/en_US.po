@@ -1,0 +1,483 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ninja Google Place Reviews Pro\n"
+"POT-Creation-Date: 2019-07-02 15:21+0700\n"
+"PO-Revision-Date: 2019-07-02 15:21+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ninja-google-reviews.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: includes/classes/google.php:161 includes/classes/helper.php:8
+msgid " out of 5 stars"
+msgstr ""
+
+#: includes/classes/njt-core.php:62
+msgid "General"
+msgstr ""
+
+#: includes/classes/njt-core.php:64
+msgid "Google Places API Key"
+msgstr ""
+
+#: includes/classes/njt-core.php:65
+#, php-format
+msgid ""
+"API keys are managed through the <a href=\"%1$s\" class=\"new-window\" "
+"target=\"_blank\">Google API Console</a>. For more information please <a "
+"href=\"%2$s\" class=\"new-window\" target=\"_blank\">review these steps</a>. "
+"Or view <a href=\"%3$s\" class=\"new-window\" target=\"_blank\">full video "
+"tutorial</a>."
+msgstr ""
+
+#: includes/classes/njt-core.php:69
+msgid "Yes"
+msgstr ""
+
+#: includes/classes/njt-core.php:72
+msgid "Google Rich Snippet"
+msgstr ""
+
+#: includes/classes/njt-core.php:74 includes/options.php:32
+msgid "Create badge "
+msgstr ""
+
+#: includes/classes/njt-core.php:103 includes/classes/njt-core.php:263
+msgid "Settings"
+msgstr ""
+
+#: includes/classes/njt-core.php:111
+msgid "Support"
+msgstr ""
+
+#: includes/classes/njt-core.php:120
+msgid "Cache cleared"
+msgstr ""
+
+#: includes/classes/njt-core.php:122
+msgid "Error: Transient ID not set. Cache not cleared."
+msgstr ""
+
+#: includes/classes/njt-core.php:257
+msgid "Locations"
+msgstr ""
+
+#: includes/classes/shortcode-badge.php:102
+msgid ""
+"<strong>INVALID REQUEST</strong>: Google Place ID not set, Please check again"
+msgstr ""
+
+#: includes/classes/shortcode-badge.php:109 includes/classes/shortcode.php:122
+#: includes/classes/widget-badge.php:143 includes/classes/widget.php:155
+msgid ""
+"<strong>INVALID REQUEST</strong>: No reviews found, please check with "
+"settings Place ID again <a href=\""
+msgstr ""
+
+#: includes/classes/shortcode.php:114 includes/classes/widget.php:123
+msgid ""
+"<strong>INVALID REQUEST</strong>: Please check that this widget has a Google "
+"Place ID set."
+msgstr ""
+
+#: includes/classes/widget-badge.php:37 includes/classes/widget.php:41
+msgid "Display user reviews for any location found on Google Places."
+msgstr ""
+
+#: includes/classes/widget-badge.php:167 includes/classes/widget.php:179
+#, php-format
+msgid ""
+"<p><strong>Notice: </strong>No Google Places API key detected. You will need "
+"to create an API key to use Google Places Reviews. API keys are managed "
+"through the <a href=\"%1$s\" class=\"new-window\" target=\"_blank\">Google "
+"API Console</a>. For more information please see <a href=\"%2$s\"  target="
+"\"_blank\"  class=\"new-window\" title=\"Google Places API Introduction"
+"\">this article</a>.</p> <p>Once you have obtained your API key enter it in "
+"the <a href=\"%3$s\" title=\"Google Places Reviews Plugin Settings\">plugin "
+"settings page</a>.</p>"
+msgstr ""
+
+#: includes/options.php:18 includes/views/badge-form.php:60
+msgid "Shortcode"
+msgstr ""
+
+#: includes/options.php:22
+msgid "Create shortcode "
+msgstr ""
+
+#: includes/options.php:28
+msgid "Badge"
+msgstr ""
+
+#: includes/views/badge-form.php:10 includes/views/google-rich.php:23
+#: includes/views/shortcode-form.php:9 includes/views/widget-badge-form.php:15
+#: includes/views/widget-form.php:17
+msgid "Location"
+msgstr ""
+
+#: includes/views/badge-form.php:27 includes/views/shortcode-form.php:112
+#: includes/views/widget-badge-form.php:59 includes/views/widget-form.php:163
+msgid "Box Shadow"
+msgstr ""
+
+#: includes/views/badge-form.php:35 includes/views/shortcode-form.php:157
+#: includes/views/widget-badge-form.php:65 includes/views/widget-form.php:184
+msgid "Cache Data:"
+msgstr ""
+
+#: includes/views/badge-form.php:40 includes/views/shortcode-form.php:163
+#: includes/views/widget-badge-form.php:69 includes/views/widget-form.php:188
+msgid "None"
+msgstr ""
+
+#: includes/views/badge-form.php:41 includes/views/shortcode-form.php:164
+#: includes/views/widget-badge-form.php:70 includes/views/widget-form.php:189
+msgid "1 Hour"
+msgstr ""
+
+#: includes/views/badge-form.php:42 includes/views/shortcode-form.php:165
+#: includes/views/widget-badge-form.php:71 includes/views/widget-form.php:190
+msgid "3 Hours"
+msgstr ""
+
+#: includes/views/badge-form.php:43 includes/views/shortcode-form.php:166
+#: includes/views/widget-badge-form.php:72 includes/views/widget-form.php:191
+msgid "6 Hours"
+msgstr ""
+
+#: includes/views/badge-form.php:44 includes/views/shortcode-form.php:167
+#: includes/views/widget-badge-form.php:73 includes/views/widget-form.php:192
+msgid "12 Hours"
+msgstr ""
+
+#: includes/views/badge-form.php:45 includes/views/shortcode-form.php:168
+#: includes/views/widget-badge-form.php:74 includes/views/widget-form.php:193
+msgid "1 Day"
+msgstr ""
+
+#: includes/views/badge-form.php:46 includes/views/shortcode-form.php:169
+#: includes/views/widget-badge-form.php:75 includes/views/widget-form.php:194
+msgid "2 Days"
+msgstr ""
+
+#: includes/views/badge-form.php:47 includes/views/shortcode-form.php:170
+#: includes/views/widget-badge-form.php:76 includes/views/widget-form.php:195
+msgid "1 Week"
+msgstr ""
+
+#: includes/views/google-rich.php:14
+msgid "Location Lookup"
+msgstr ""
+
+#: includes/views/google-rich.php:37
+msgid "Location Place ID"
+msgstr ""
+
+#: includes/views/google-rich.php:46
+msgid "Rich Name"
+msgstr ""
+
+#: includes/views/google-rich.php:54
+msgid "Rich Descriptions"
+msgstr ""
+
+#: includes/views/location.php:21 ninja-google-reviews.php:38
+msgid "Remove"
+msgstr ""
+
+#: includes/views/location.php:24
+msgid "Get New Reviews"
+msgstr ""
+
+#: includes/views/location.php:29
+#, php-format
+msgid "View Reviews (%1$d)"
+msgstr ""
+
+#: includes/views/location.php:37
+msgid "Add Location"
+msgstr ""
+
+#: includes/views/shortcode-badge.php:4
+#: includes/views/shortcode-detail-update.php:4
+#: includes/views/widget-badge.php:4
+#: includes/views/widget-posttype-fontend.php:5 ninja-google-reviews.php:763
+msgid "Sorry, this business does not have a proper Place ID set."
+msgstr ""
+
+#: includes/views/shortcode-detail-update.php:37
+#: includes/views/widget-posttype-fontend.php:33
+#, php-format
+msgid ""
+"<a href=\"%1$s\" class=\"leave-review\" target=\"_blank\" class=\"new-window"
+"\">Write a review</a>"
+msgstr ""
+
+#: includes/views/shortcode-detail-update.php:73
+#: includes/views/widget-posttype-fontend.php:66
+msgid "View this profile."
+msgstr ""
+
+#: includes/views/shortcode-detail-update.php:94
+#: includes/views/widget-posttype-fontend.php:87
+msgid "Read more"
+msgstr ""
+
+#: includes/views/shortcode-detail-update.php:110
+#: includes/views/widget-posttype-fontend.php:103
+#, php-format
+msgid "Read All %d Reviews"
+msgstr ""
+
+#: includes/views/shortcode-detail-update.php:134
+#: includes/views/widget-posttype-fontend.php:113
+#, php-format
+msgid ""
+"There are no reviews yet for this business. <a href=\"%1$s\" class=\"leave-"
+"review\" target=\"_blank\">Be the first to review</a>"
+msgstr ""
+
+#: includes/views/shortcode-form.php:26 includes/views/widget-form.php:56
+msgid "Review Options"
+msgstr ""
+
+#: includes/views/shortcode-form.php:31 includes/views/widget-form.php:62
+msgid "Minimum Review Rating:"
+msgstr ""
+
+#: includes/views/shortcode-form.php:35 includes/views/widget-form.php:69
+msgid "No filter"
+msgstr ""
+
+#: includes/views/shortcode-form.php:36 includes/views/shortcode-form.php:142
+#: includes/views/widget-form.php:73
+msgid "5 Stars"
+msgstr ""
+
+#: includes/views/shortcode-form.php:37 includes/views/widget-form.php:77
+msgid "4 Stars"
+msgstr ""
+
+#: includes/views/shortcode-form.php:38 includes/views/widget-form.php:81
+msgid "3 Stars"
+msgstr ""
+
+#: includes/views/shortcode-form.php:39 includes/views/widget-form.php:85
+msgid "2 Stars"
+msgstr ""
+
+#: includes/views/shortcode-form.php:40 includes/views/widget-form.php:89
+msgid "1 Star"
+msgstr ""
+
+#: includes/views/shortcode-form.php:51 includes/views/widget-form.php:98
+msgid "Limit Number of Reviews:"
+msgstr ""
+
+#: includes/views/shortcode-form.php:63
+msgid "Characters review limit"
+msgstr ""
+
+#: includes/views/shortcode-form.php:75 includes/views/widget-form.php:122
+msgid "Hide Business Information"
+msgstr ""
+
+#: includes/views/shortcode-form.php:89
+msgid "Enable write a review button"
+msgstr ""
+
+#: includes/views/shortcode-form.php:99
+msgid "Write a review button name"
+msgstr ""
+
+#: includes/views/shortcode-form.php:125 includes/views/widget-form.php:170
+msgid "Carousel"
+msgstr ""
+
+#: includes/views/shortcode-form.php:137 includes/views/widget-form.php:176
+msgid "Column"
+msgstr ""
+
+#: includes/views/shortcode-form.php:141
+msgid "No column"
+msgstr ""
+
+#: includes/views/shortcode-form.php:143
+msgid "4 column"
+msgstr ""
+
+#: includes/views/shortcode-form.php:144
+msgid "3 column"
+msgstr ""
+
+#: includes/views/shortcode-form.php:145 includes/views/widget-form.php:178
+msgid "1 Column"
+msgstr ""
+
+#: includes/views/shortcode-form.php:146 includes/views/widget-form.php:179
+msgid "2 Column"
+msgstr ""
+
+#: includes/views/shortcode-form.php:188
+msgid "Shortcode:"
+msgstr ""
+
+#: includes/views/text.php:23
+msgid "Auto Update Reviews"
+msgstr ""
+
+#: includes/views/text.php:33
+msgid "Schedule Update Reviews"
+msgstr ""
+
+#: includes/views/text.php:44
+msgid "Time to update"
+msgstr ""
+
+#: includes/views/widget-badge-form.php:2 includes/views/widget-form.php:2
+msgid "Widget Title"
+msgstr ""
+
+#: includes/views/widget-badge-form.php:56 includes/views/widget-form.php:144
+msgid "Advanced Options:"
+msgstr ""
+
+#: includes/views/widget-badge-form.php:95 includes/views/widget-form.php:214
+msgid "Clear"
+msgstr ""
+
+#: includes/views/widget-badge-form.php:95 includes/views/widget-form.php:214
+msgid "Clear Cache"
+msgstr ""
+
+#: includes/views/widget-form.php:104
+msgid "Characters reivew limit"
+msgstr ""
+
+#: includes/views/widget-form.php:110
+msgid "Display Options"
+msgstr ""
+
+#: includes/views/widget-form.php:129
+msgid "Hide \"x out of 5 stars\" text"
+msgstr ""
+
+#: includes/views/widget-form.php:137
+msgid "Hide Google logo"
+msgstr ""
+
+#: includes/views/widget-form.php:150
+msgid "Enable button write"
+msgstr ""
+
+#: includes/views/widget-form.php:155
+msgid "Button write name"
+msgstr ""
+
+#: ninja-google-reviews.php:161
+msgid "Got errors with nonce, please refresh and try again."
+msgstr ""
+
+#: ninja-google-reviews.php:163
+msgid "Are you sure?"
+msgstr ""
+
+#: ninja-google-reviews.php:164
+msgid "The Location ID is invalid."
+msgstr ""
+
+#: ninja-google-reviews.php:165
+msgid "Updated."
+msgstr ""
+
+#: ninja-google-reviews.php:221
+msgid "<p style=\"color: orange; padding:0; margin:0;\">More Plugins</p>"
+msgstr ""
+
+#: ninja-google-reviews.php:224
+msgid "More Plugins"
+msgstr ""
+
+#: ninja-google-reviews.php:308
+msgid "Can not find Location ID, please try again."
+msgstr ""
+
+#: ninja-google-reviews.php:415
+msgid "successfully."
+msgstr ""
+
+#: ninja-google-reviews.php:417
+msgid "No reviews found."
+msgstr ""
+
+#: ninja-google-reviews.php:422
+msgid "Please try again."
+msgstr ""
+
+#: ninja-google-reviews.php:483
+msgid "Njt Google Reviews"
+msgstr ""
+
+#: ninja-google-reviews.php:531
+msgid "Reviews"
+msgstr ""
+
+#: ninja-google-reviews.php:569
+msgid "Select Location"
+msgstr ""
+
+#: ninja-google-reviews.php:583
+msgid "Select Rating"
+msgstr ""
+
+#: ninja-google-reviews.php:632
+msgid "Avatar"
+msgstr ""
+
+#: ninja-google-reviews.php:633
+msgid "Title"
+msgstr ""
+
+#: ninja-google-reviews.php:634
+msgid "Rating"
+msgstr ""
+
+#: ninja-google-reviews.php:636
+msgid "Time"
+msgstr ""
+
+#: ninja-google-reviews.php:725
+msgid "Google Reviews Reminder"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Ninja Google Place Reviews Pro"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://ninjateam.org"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Google Places Reviews help you display your business reviews and ratings on "
+"your website. Keep your business expertise trusted."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "NinjaTeam"
+msgstr ""

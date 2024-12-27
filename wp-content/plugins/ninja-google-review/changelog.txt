@@ -1,0 +1,90 @@
+Jan 20, 2021 - Version 2.4.1
+- Fixed: Reviews with Emojis not saved
+- Fixed: Conflict with plugin Ninja Yelp Reviews 
+- Fixed: Conflict Google API with theme Enfold
+
+Nov 13, 2020 - Version 2.4
+- Added: Support WPML and Polylang
+
+Oct 27, 2020 - Version 2.3.3
+- Fixed: bug JQMIGRATE: jQuery.fn.toggle(handler, handler...) is deprecated
+
+Sep 7, 2020 - Version 2.3.2
+- Fixed: Compatible with WordPress latest version
+
+Jul 10, 2020 – Version 2.3.1
+- Added: Spanish translation (thanks to aabenitezpy)
+
+Jun 3, 2020 - Version 2.3
+- Added: Some fields for Google Rich Snippet
+
+May 11, 2020 - Version 2.2.1
+- Fixed: Google Rich Snippet 
+- Fixed: Some bugs
+
+Apr 22, 2020 – Version 2.2
+- Added: Live preview for Badge and Rich snippet
+- Improved: Layout
+- Fixed: Some bugs
+
+Mar 18, 2020 - Version 2.1.2
+- Fixed: Conflict with Insight Theme
+- Fixed: Schema bug
+
+Mar 4, 2020 - Version 2.1.1
+- Fixed: Responsive on mobile for carousel 
+
+Mar 3, 2020 - Version 2.1
+- Added: Carousel autoplay
+- Fixed: Some bugs
+
+Sep 19, 2019 – Version 2.0.1
+- Fixed: Notice appears on header
+
+Sep 6, 2019 – Version 2.0
+- Added: Add location using Place ID
+
+Sep 4, 2019 – Version 1.9
+- Improved: Google Rich Snippet
+- Added: Option Turn off Google Rich Snippet 
+
+Jul 2, 2019 – Version 1.8
+- Added: Translation files (thanks to viridiar)
+- Fixed: Responsive on mobile (thanks to viridiar)
+- Fixed: Load default avatar
+- Fixed: Get reviewer time from API
+
+Jun 13, 2019 - Version 1.7.1
+- Fixed: Error of not showing all reviews when using Schedule
+
+Apr 16, 2019 - Version 1.7
+- Fixed: Billing account bugs
+- Updated: Documentation
+
+Apr 15, 2019 - Version 1.6
+- Fixed: Excess requests
+
+Feb 27, 2019 - Version 1.5
+- Added: Save Reviews in Database
+- Added: Auto Update Reviews
+- Added: Locations Menu
+- Fixed: Display widget only 1
+
+Feb 18, 2019 - Version 1.4
+- Fixed: Widget error in detecting API key
+- Fixed: Google Rich Snippet not save
+
+Jan 31, 2019 - Version 1.3
+- Improved: Backend display
+- Fixed: CSS on Carousel Style
+- Fixed: Some small bugs
+
+Dec 25, 2018 - Version 1.2
+- Fixed: Javascript error on Firefox
+
+Sep 28, 2018 - Version 1.1
+- Improved: Clean code
+- Fixed: Some bugs
+
+Feb 7, 2017 - Version 1.0
+- Version 1.0 Initial Release

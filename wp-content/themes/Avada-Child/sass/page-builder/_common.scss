@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Bhavuka';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bhavuka'), url('assets/fonts/Bhavuka/Bhavuka-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: andale mono;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Andale Mono'), url('assets/fonts/Andalemo/Andalemo.woff') format('woff')
+}
+
+@mixin section-title-font-size-mobile() {
+    @media (max-width: $width-sm) {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@mixin font-mosterrat-bold-antialiased($font-weight) {
+    font-weight: $font-weight;
+    font-family: 'Montserrat';
+    -webkit-font-smoothing: antialiased;
+}
+
+// make content full width
+.page-template-page-builder {
+    #main {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+
+        .fusion-row {
+            max-width: none;
+        }
+    }
+
+    .container {
+        width: auto;
+        max-width: 1440px !important;
+        padding: 0 $container-padding-big !important;
+
+        @media (max-width: $width-lmd) {
+            padding: 0 $container-padding !important;
+        }
+
+        @media (max-width: $breakdown-to-mobile) {
+            padding: 0 $container-padding-small !important;
+        }
+    }
+}
+
+.cols {
+    display: flex;
+    vertical-align: middle;
+
+    @media (max-width: $width-md) {
+        flex-wrap: wrap;
+    }
+
+    .col {
+        display: flex;
+        flex-basis: 50%;
+        padding: 0;
+
+        @media (max-width: $width-md) {
+            flex-basis: 100%;
+        }
+    }
+
+    .col-inner {
+        width: 100%;
+    }
+}
+
+.primeiv-section-subtitle,
+.primeiv-section-title {
+    text-align: center;
+    @media (max-width: $breakdown-to-mobile) {
+        text-align: left;
+    }
+}
+
+.primeiv-section-title {
+    &:after {
+        content: '';
+        display: block;
+        width: 108px;
+        height: 2px;
+        background-color: $orange;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+}
+
+.above-header {
+    @include font-mosterrat-bold-antialiased(700);
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue;
+    margin-bottom: 3px !important;
+}
+
+.below-header {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: $dark;
+    margin-bottom: 30px !important;
+}
+
+.primeiv-button-wrapper {
+    text-align: center;
+}
+
+.primeiv-button {
+    span {
+        min-width: 255px;
+        min-height: 51px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+.section-header {
+    font-weight: 700 !important;
+    color: $blue-darker !important;
+    margin-bottom: 8px;
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.image-with-border {
+    flex-direction: column;
+
+    .col-inner {
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            z-index: 0;
+            position: absolute;
+            background-color: $blue;
+        }
+
+        img {
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    &.with-border-right {
+        .col-inner {
+            width: calc(100% - 11%);
+            margin-right: 80px;
+            margin-bottom: 60px;
+
+            &:after {
+                width: 60%;
+                height: 100%;
+                right: -13%;
+                bottom: -11%;
+            }
+        }
+    }
+
+    &.with-border-right-dark {
+        .col-inner {
+            width: calc(100% - 11%);
+            margin-right: 80px;
+            margin-bottom: 60px;
+
+            &:after {
+                width: 63%;
+                height: 49%;
+                right: -10%;
+                bottom: -13%;
+                background-color: $blue-darker;
+            }
+        }
+    }
+
+    &.with-border-left {
+        .col-inner {
+            width: calc(100% - 11%);
+            margin-left: 80px;
+            margin-top: 60px;
+
+            &:after {
+                width: 63%;
+                height: 49%;
+                left: -10%;
+                top: -13%;
+                background-color: $blue;
+            }
+        }
+    }
+}

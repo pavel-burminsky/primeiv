@@ -1,0 +1,2453 @@
+# Copyright (C) 2024 Impress.org
+# This file is distributed under the GPL-2.0+.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Business Reviews 1.9.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-business-reviews\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-06-04T13:24:40+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: wp-business-reviews\n"
+
+#. Plugin Name of the plugin
+#: wp-business-reviews.php
+#: includes/admin/class-admin-menu.php:174
+#: includes/admin/class-system-info.php:54
+msgid "WP Business Reviews"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: wp-business-reviews.php
+msgid "https://wpbusinessreviews.com"
+msgstr ""
+
+#. Description of the plugin
+#: wp-business-reviews.php
+msgid "A WordPress plugin for showcasing your best reviews in style."
+msgstr ""
+
+#. Author of the plugin
+#: wp-business-reviews.php
+msgid "Impress.org"
+msgstr ""
+
+#. Author URI of the plugin
+#: wp-business-reviews.php
+msgid "https://impress.org"
+msgstr ""
+
+#: config/config-admin-pages.php:23
+#: config/config-admin-pages.php:24
+msgid "Builder"
+msgstr ""
+
+#: config/config-admin-pages.php:30
+#: config/config-admin-pages.php:31
+#: views/plugin-settings/toolbar.php:2
+msgid "Settings"
+msgstr ""
+
+#: config/config-admin-pages.php:37
+#: config/config-admin-pages.php:38
+msgid "System Info"
+msgstr ""
+
+#: config/config-builder-facebook.php:22
+#: config/config-builder-google-places.php:13
+#: config/config-builder-review-tag.php:13
+#: includes/admin/class-admin-review-editor.php:392
+#: includes/class-post-types.php:183
+#: includes/class-post-types.php:210
+msgid "Review Source"
+msgstr ""
+
+#: config/config-builder-facebook.php:33
+msgid "Facebook Page"
+msgstr ""
+
+#. translators: platform name, number of reviews, link to documentation
+#: config/config-builder-facebook.php:44
+#: config/config-builder-google-places.php:55
+#: config/config-builder-trust-pilot.php:48
+#: config/config-builder-yp.php:55
+#: config/config-builder-zomato.php:55
+msgid "%1$s returns up to %2$s reviews at a time. Have more reviews? Learn %3$show to add other reviews%4$s."
+msgstr ""
+
+#: config/config-builder-facebook.php:45
+#: config/config-plugin-settings.php:94
+#: includes/class-platform-manager.php:135
+msgid "Facebook"
+msgstr ""
+
+#: config/config-builder-google-places.php:23
+msgid "Powered by Google"
+msgstr ""
+
+#: config/config-builder-google-places.php:30
+#: config/config-builder-yelp.php:30
+#: config/config-builder-yp.php:30
+#: config/config-builder-zomato.php:30
+msgid "Search Terms"
+msgstr ""
+
+#: config/config-builder-google-places.php:32
+msgid "Defines the terms used when searching the Google Places API."
+msgstr ""
+
+#: config/config-builder-google-places.php:33
+msgid "Business Name or Place ID"
+msgstr ""
+
+#: config/config-builder-google-places.php:37
+#: config/config-builder-yelp.php:37
+#: config/config-builder-yp.php:37
+#: config/config-builder-zomato.php:37
+msgid "Location"
+msgstr ""
+
+#: config/config-builder-google-places.php:39
+msgid "Defines the location used when searching the Google Places API."
+msgstr ""
+
+#: config/config-builder-google-places.php:40
+#: config/config-builder-yelp.php:40
+#: config/config-builder-yp.php:40
+msgid "City, State"
+msgstr ""
+
+#: config/config-builder-google-places.php:45
+#: config/config-builder-trust-pilot.php:38
+#: config/config-builder-yelp.php:45
+#: config/config-builder-yp.php:45
+#: config/config-builder-zomato.php:45
+msgid "Search"
+msgstr ""
+
+#: config/config-builder-google-places.php:56
+#: config/config-plugin-settings.php:59
+#: includes/class-platform-manager.php:134
+msgid "Google"
+msgstr ""
+
+#: config/config-builder-review-tag.php:21
+#: includes/admin/class-admin-review-columns.php:86
+msgid "Tags"
+msgstr ""
+
+#: config/config-builder-review-tag.php:23
+msgid "Determines which reviews are included in the collection based on Review Tag."
+msgstr ""
+
+#: config/config-builder-settings.php:13
+#: includes/admin/class-admin-menu.php:175
+#: includes/class-post-types.php:122
+msgid "Reviews"
+msgstr ""
+
+#: config/config-builder-settings.php:17
+msgid "Review Components"
+msgstr ""
+
+#: config/config-builder-settings.php:19
+msgid "Defines the visible components of a review."
+msgstr ""
+
+#: config/config-builder-settings.php:30
+#: includes/admin/class-admin-review-editor.php:209
+#: includes/class-post-types.php:138
+msgid "Reviewer Image"
+msgstr ""
+
+#: config/config-builder-settings.php:31
+#: includes/admin/class-admin-review-editor.php:217
+msgid "Reviewer Name"
+msgstr ""
+
+#: config/config-builder-settings.php:32
+#: config/config-builder-settings.php:137
+#: includes/admin/class-admin-review-columns.php:84
+#: includes/admin/class-admin-review-editor.php:244
+msgid "Rating"
+msgstr ""
+
+#: config/config-builder-settings.php:33
+#: includes/admin/class-admin-review-editor.php:237
+#: includes/admin/class-admin-review-editor.php:272
+msgid "Recommendation"
+msgstr ""
+
+#: config/config-builder-settings.php:34
+msgid "Timestamp"
+msgstr ""
+
+#: config/config-builder-settings.php:35
+msgid "Platform Icon"
+msgstr ""
+
+#: config/config-builder-settings.php:36
+#: includes/admin/class-admin-review-editor.php:118
+#: includes/admin/class-admin-review-editor.php:338
+msgid "Review Content"
+msgstr ""
+
+#: config/config-builder-settings.php:40
+msgid "Maximum Characters"
+msgstr ""
+
+#: config/config-builder-settings.php:42
+msgid "Defines the maximum character limit before the review is truncated. An empty or 0 value will display the full contents of the review provided by the platform API."
+msgstr ""
+
+#: config/config-builder-settings.php:44
+msgid "Unlimited"
+msgstr ""
+
+#: config/config-builder-settings.php:47
+msgid "Line Breaks"
+msgstr ""
+
+#: config/config-builder-settings.php:49
+msgid "Determines whether line breaks within the review content are displayed. Not all reviews have line breaks."
+msgstr ""
+
+#: config/config-builder-settings.php:52
+#: includes/admin/health-check/class-health-check-debug-data.php:171
+#: includes/admin/health-check/class-health-check-debug-data.php:179
+#: includes/admin/health-check/class-health-check-debug-data.php:183
+#: includes/admin/health-check/class-health-check-debug-data.php:187
+#: includes/admin/health-check/class-health-check-debug-data.php:191
+#: includes/admin/health-check/class-health-check-debug-data.php:195
+#: includes/admin/health-check/class-health-check-debug-data.php:199
+#: includes/admin/health-check/class-health-check-debug-data.php:203
+#: includes/admin/health-check/class-health-check-debug-data.php:207
+#: includes/admin/health-check/class-health-check-debug-data.php:211
+msgid "Enabled"
+msgstr ""
+
+#: config/config-builder-settings.php:53
+#: config/config-plugin-settings.php:282
+#: includes/admin/class-system-info.php:303
+#: includes/admin/health-check/class-health-check-debug-data.php:171
+#: includes/admin/health-check/class-health-check-debug-data.php:179
+#: includes/admin/health-check/class-health-check-debug-data.php:183
+#: includes/admin/health-check/class-health-check-debug-data.php:187
+#: includes/admin/health-check/class-health-check-debug-data.php:191
+#: includes/admin/health-check/class-health-check-debug-data.php:195
+#: includes/admin/health-check/class-health-check-debug-data.php:199
+#: includes/admin/health-check/class-health-check-debug-data.php:203
+#: includes/admin/health-check/class-health-check-debug-data.php:207
+#: includes/admin/health-check/class-health-check-debug-data.php:211
+msgid "Disabled"
+msgstr ""
+
+#: config/config-builder-settings.php:59
+msgid "Presentation"
+msgstr ""
+
+#: config/config-builder-settings.php:68
+#: includes/admin/class-admin-collection-columns.php:64
+msgid "Style"
+msgstr ""
+
+#: config/config-builder-settings.php:70
+msgid "Styles the appearance of reviews."
+msgstr ""
+
+#: config/config-builder-settings.php:73
+#: includes/admin/class-admin-collection-columns.php:99
+msgid "Light"
+msgstr ""
+
+#: config/config-builder-settings.php:74
+#: includes/admin/class-admin-collection-columns.php:100
+msgid "Dark"
+msgstr ""
+
+#: config/config-builder-settings.php:75
+#: includes/admin/class-admin-collection-columns.php:101
+msgid "Transparent"
+msgstr ""
+
+#: config/config-builder-settings.php:79
+#: includes/admin/class-admin-collection-columns.php:65
+msgid "Format"
+msgstr ""
+
+#: config/config-builder-settings.php:81
+msgid "Defines the format in which reviews are displayed."
+msgstr ""
+
+#: config/config-builder-settings.php:84
+#: includes/admin/class-admin-collection-columns.php:115
+msgid "Gallery"
+msgstr ""
+
+#: config/config-builder-settings.php:85
+#: includes/admin/class-admin-collection-columns.php:123
+msgid "Carousel"
+msgstr ""
+
+#: config/config-builder-settings.php:86
+#: includes/admin/class-admin-collection-columns.php:119
+msgid "List"
+msgstr ""
+
+#: config/config-builder-settings.php:90
+msgid "Maximum Columns"
+msgstr ""
+
+#: config/config-builder-settings.php:92
+msgid "Defines the maximum number of columns in the responsive gallery. Fewer columns may be shown based on available width."
+msgstr ""
+
+#: config/config-builder-settings.php:95
+msgid "Auto Fit"
+msgstr ""
+
+#: config/config-builder-settings.php:96
+msgid "1 Column"
+msgstr ""
+
+#: config/config-builder-settings.php:97
+msgid "2 Columns"
+msgstr ""
+
+#: config/config-builder-settings.php:98
+msgid "3 Columns"
+msgstr ""
+
+#: config/config-builder-settings.php:99
+msgid "4 Columns"
+msgstr ""
+
+#: config/config-builder-settings.php:103
+msgid "Maximum Slides Per View"
+msgstr ""
+
+#: config/config-builder-settings.php:105
+msgid "Defines the maximum number of slides visible in the carousel at one time. Fewer slides may be shown based on available width."
+msgstr ""
+
+#: config/config-builder-settings.php:108
+msgid "1 Slide"
+msgstr ""
+
+#: config/config-builder-settings.php:109
+msgid "2 Slides"
+msgstr ""
+
+#: config/config-builder-settings.php:110
+msgid "3 Slides"
+msgstr ""
+
+#: config/config-builder-settings.php:111
+msgid "4 Slides"
+msgstr ""
+
+#: config/config-builder-settings.php:112
+msgid "5 Slides"
+msgstr ""
+
+#: config/config-builder-settings.php:113
+msgid "6 Slides"
+msgstr ""
+
+#: config/config-builder-settings.php:117
+msgid "Maximum Reviews"
+msgstr ""
+
+#: config/config-builder-settings.php:119
+msgid "Defines the maximum number of reviews in the collection, up to 24. Fewer reviews may be shown based on availability."
+msgstr ""
+
+#: config/config-builder-settings.php:126
+#: config/config-builder-settings.php:143
+msgid "Order"
+msgstr ""
+
+#: config/config-builder-settings.php:131
+msgid "Order By"
+msgstr ""
+
+#: config/config-builder-settings.php:133
+msgid "Defines the parameter by which reviews are ordered."
+msgstr ""
+
+#: config/config-builder-settings.php:136
+#: includes/admin/class-admin-review-editor.php:288
+#: includes/admin/class-admin-review-editor.php:315
+msgid "Review Date"
+msgstr ""
+
+#: config/config-builder-settings.php:138
+msgid "Post ID"
+msgstr ""
+
+#: config/config-builder-settings.php:139
+msgid "Menu Order"
+msgstr ""
+
+#: config/config-builder-settings.php:145
+msgid "Defines the ascending or descending order of reviews."
+msgstr ""
+
+#: config/config-builder-settings.php:148
+msgid "Descending"
+msgstr ""
+
+#: config/config-builder-settings.php:149
+msgid "Ascending"
+msgstr ""
+
+#: config/config-builder-settings.php:155
+msgid "Filters"
+msgstr ""
+
+#: config/config-builder-settings.php:160
+msgid "Minimum Rating"
+msgstr ""
+
+#: config/config-builder-settings.php:162
+msgid "Determines the visibility of reviews based on rating."
+msgstr ""
+
+#: config/config-builder-settings.php:165
+msgid "No minimum rating"
+msgstr ""
+
+#: config/config-builder-settings.php:166
+msgid "5.0 or positive recommendation"
+msgstr ""
+
+#: config/config-builder-settings.php:167
+msgid "4.0"
+msgstr ""
+
+#: config/config-builder-settings.php:168
+msgid "3.0"
+msgstr ""
+
+#: config/config-builder-settings.php:169
+msgid "2.0"
+msgstr ""
+
+#: config/config-builder-settings.php:170
+msgid "1.0 or negative recommendation"
+msgstr ""
+
+#: config/config-builder-settings.php:174
+#: includes/admin/class-admin-review-editor.php:225
+msgid "Review Type"
+msgstr ""
+
+#: config/config-builder-settings.php:176
+msgid "Determines the visibility of reviews based on type."
+msgstr ""
+
+#: config/config-builder-settings.php:179
+msgid "Ratings and recommendations"
+msgstr ""
+
+#: config/config-builder-settings.php:180
+msgid "Recommendations only"
+msgstr ""
+
+#: config/config-builder-settings.php:181
+msgid "Ratings only"
+msgstr ""
+
+#: config/config-builder-settings.php:185
+msgid "Blank Reviews"
+msgstr ""
+
+#: config/config-builder-settings.php:187
+msgid "Determines the visibility of reviews without content."
+msgstr ""
+
+#: config/config-builder-settings.php:190
+msgid "Include reviews without text"
+msgstr ""
+
+#: config/config-builder-settings.php:191
+msgid "Exclude reviews without text"
+msgstr ""
+
+#: config/config-builder-trust-pilot.php:13
+msgid "Trustpilot Review Source"
+msgstr ""
+
+#: config/config-builder-trust-pilot.php:23
+msgid "Powered by Trustpilot"
+msgstr ""
+
+#: config/config-builder-trust-pilot.php:30
+msgid "Business Domain (URL)"
+msgstr ""
+
+#: config/config-builder-trust-pilot.php:32
+msgid "Look up your business by the primary business domain URL."
+msgstr ""
+
+#: config/config-builder-trust-pilot.php:33
+msgid "example.com"
+msgstr ""
+
+#: config/config-builder-trust-pilot.php:49
+#: config/config-plugin-settings.php:124
+#: includes/class-platform-manager.php:136
+msgid "Trustpilot"
+msgstr ""
+
+#: config/config-builder-woocommerce.php:27
+msgid "No Products with Reviews Found"
+msgstr ""
+
+#: config/config-builder-woocommerce.php:32
+msgid "WooCommerce Review Source"
+msgstr ""
+
+#: config/config-builder-woocommerce.php:42
+msgid "Powered by WooCommerce"
+msgstr ""
+
+#: config/config-builder-woocommerce.php:49
+msgid "Products with Reviews"
+msgstr ""
+
+#: config/config-builder-woocommerce.php:52
+msgid "Select a product with reviews to build this collection."
+msgstr ""
+
+#: config/config-builder-woocommerce.php:57
+#: includes/blocks/components/select/index.js:29
+msgid "Select"
+msgstr ""
+
+#: config/config-builder-yelp.php:13
+msgid "Yelp Review Source"
+msgstr ""
+
+#: config/config-builder-yelp.php:23
+msgid "Powered by Yelp"
+msgstr ""
+
+#: config/config-builder-yelp.php:32
+msgid "Defines the terms used when searching the Yelp API."
+msgstr ""
+
+#: config/config-builder-yelp.php:33
+#: config/config-builder-yp.php:33
+msgid "Business Name"
+msgstr ""
+
+#: config/config-builder-yelp.php:39
+msgid "Defines the location used when searching the Yelp API."
+msgstr ""
+
+#. translators: platform name, number of reviews, link to documentation
+#: config/config-builder-yelp.php:55
+msgid "%1$s returns up to %2$s reviews at a time in a given language. Have more reviews? Learn %3$show to add other reviews%4$s."
+msgstr ""
+
+#: config/config-builder-yelp.php:56
+#: config/config-plugin-settings.php:172
+#: includes/class-platform-manager.php:138
+msgid "Yelp"
+msgstr ""
+
+#: config/config-builder-yp.php:13
+msgid "YP Review Source"
+msgstr ""
+
+#: config/config-builder-yp.php:23
+msgid "Powered by YP"
+msgstr ""
+
+#: config/config-builder-yp.php:32
+msgid "Defines the terms used when searching the YP API."
+msgstr ""
+
+#: config/config-builder-yp.php:39
+msgid "Defines the location used when searching the YP API."
+msgstr ""
+
+#: config/config-builder-yp.php:56
+msgid "Yellow Pages"
+msgstr ""
+
+#: config/config-builder-zomato.php:13
+msgid "Zomato Review Source"
+msgstr ""
+
+#: config/config-builder-zomato.php:23
+msgid "Powered by Zomato"
+msgstr ""
+
+#: config/config-builder-zomato.php:32
+msgid "Defines the restaurant name used when searching the Zomato API."
+msgstr ""
+
+#: config/config-builder-zomato.php:33
+msgid "Restaurant Name"
+msgstr ""
+
+#: config/config-builder-zomato.php:39
+msgid "Defines the location used when searching the Zomato API."
+msgstr ""
+
+#: config/config-builder-zomato.php:40
+msgid "City"
+msgstr ""
+
+#: config/config-builder-zomato.php:56
+#: config/config-plugin-settings.php:233
+#: includes/class-platform-manager.php:140
+msgid "Zomato"
+msgstr ""
+
+#: config/config-plugin-settings.php:31
+#: config/config-plugin-settings.php:34
+msgid "Platforms"
+msgstr ""
+
+#. translators: link to documentation
+#: config/config-plugin-settings.php:37
+msgid "Need help? Get started with our %1$svideo tutorials%2$s."
+msgstr ""
+
+#: config/config-plugin-settings.php:41
+msgid "Platform Settings"
+msgstr ""
+
+#: config/config-plugin-settings.php:45
+msgid "Active Review Platforms"
+msgstr ""
+
+#: config/config-plugin-settings.php:47
+msgid "Define which review platforms are visible throughout the plugin. Only the selected platforms appear in Settings and Collections."
+msgstr ""
+
+#: config/config-plugin-settings.php:60
+msgid "Google Review Settings"
+msgstr ""
+
+#. translators: link to documentation
+#: config/config-plugin-settings.php:63
+msgid "Need help? View a tutorial on %1$sConnecting to Google%2$s."
+msgstr ""
+
+#: config/config-plugin-settings.php:70
+#: config/config-plugin-settings.php:105
+#: config/config-plugin-settings.php:129
+#: config/config-plugin-settings.php:153
+#: config/config-plugin-settings.php:183
+#: config/config-plugin-settings.php:213
+#: config/config-plugin-settings.php:244
+msgid "Platform Status"
+msgstr ""
+
+#: config/config-plugin-settings.php:77
+msgid "Google Places API Key"
+msgstr ""
+
+#. translators: link to documentation
+#: config/config-plugin-settings.php:81
+msgid "Define the API key required to retrieve Google reviews. To get an API key, %1$svisit Google%2$s and create a new key with Places and billing enabled."
+msgstr ""
+
+#: config/config-plugin-settings.php:95
+msgid "Facebook Review Settings"
+msgstr ""
+
+#. translators: link to documentation
+#: config/config-plugin-settings.php:98
+msgid "Need help? View a tutorial on %1$sConnecting to Facebook%2$s."
+msgstr ""
+
+#: config/config-plugin-settings.php:112
+msgid "Facebook User Token"
+msgstr ""
+
+#: config/config-plugin-settings.php:116
+msgid "Facebook Pages"
+msgstr ""
+
+#: config/config-plugin-settings.php:118
+msgid "Connect to Facebook with a role of Admin, Editor, Moderator, Advertiser, or Analyst and grant the \"Manage Pages\" permission in order to display reviews from that Page."
+msgstr ""
+
+#: config/config-plugin-settings.php:125
+msgid "Trustpilot Review Settings"
+msgstr ""
+
+#: config/config-plugin-settings.php:136
+msgid "Trustpilot API Key"
+msgstr ""
+
+#: config/config-plugin-settings.php:138
+msgid "Define the API Key required to retrieve Trustpilot reviews."
+msgstr ""
+
+#: config/config-plugin-settings.php:148
+#: includes/class-platform-manager.php:137
+msgid "WooCommerce"
+msgstr ""
+
+#: config/config-plugin-settings.php:149
+msgid "WooCommerce Review Settings"
+msgstr ""
+
+#: config/config-plugin-settings.php:162
+msgid "WooCommerce needs to be installed and activated in order to connect to WP Business Reviews. Once it is activated please click \"Save Changes\" below to recheck the connection status."
+msgstr ""
+
+#: config/config-plugin-settings.php:173
+msgid "Yelp Review Settings"
+msgstr ""
+
+#. translators: link to documentation
+#: config/config-plugin-settings.php:176
+msgid "Need help? View a tutorial on %1$sConnecting to Yelp%2$s."
+msgstr ""
+
+#: config/config-plugin-settings.php:191
+msgid "Yelp API Key"
+msgstr ""
+
+#. translators: link to documentation
+#: config/config-plugin-settings.php:195
+msgid "Define the API Key required to retrieve Yelp reviews. To get an API Key, %1$screate a Yelp App%2$s and then copy the API key provided on the 'Manage App' page."
+msgstr ""
+
+#: config/config-plugin-settings.php:208
+#: includes/class-platform-manager.php:139
+msgid "YP"
+msgstr ""
+
+#: config/config-plugin-settings.php:209
+msgid "YP Review Settings"
+msgstr ""
+
+#: config/config-plugin-settings.php:220
+msgid "YP API Key"
+msgstr ""
+
+#: config/config-plugin-settings.php:222
+msgid "Define the API Key required to retrieve YP reviews. While the Yellow Pages API has discontinued registration of new API keys, existing API keys may still be used to access reviews."
+msgstr ""
+
+#: config/config-plugin-settings.php:234
+msgid "Zomato Review Settings"
+msgstr ""
+
+#. translators: link to documentation
+#: config/config-plugin-settings.php:237
+msgid "Need help? View a tutorial on %1$sConnecting to Zomato%2$s."
+msgstr ""
+
+#: config/config-plugin-settings.php:251
+msgid "Zomato API Key"
+msgstr ""
+
+#. translators: link to documentation
+#: config/config-plugin-settings.php:255
+msgid "Define the API Key required to retrieve Zomato reviews. To get an API key, %1$svisit Zomato for Developers%2$s and generate an API key."
+msgstr ""
+
+#: config/config-plugin-settings.php:270
+#: config/config-plugin-settings.php:273
+msgid "Advanced"
+msgstr ""
+
+#: config/config-plugin-settings.php:274
+msgid "Advanced Settings"
+msgstr ""
+
+#: config/config-plugin-settings.php:277
+#: includes/admin/class-system-info.php:101
+msgid "Automatic Refresh"
+msgstr ""
+
+#: config/config-plugin-settings.php:279
+msgid "Choose how often to run the background process that checks for new reviews. If disabled, new reviews only get added to collections when manually refreshed."
+msgstr ""
+
+#: config/config-plugin-settings.php:283
+#: includes/admin/class-system-info.php:300
+msgid "Daily"
+msgstr ""
+
+#: config/config-plugin-settings.php:284
+#: includes/admin/class-system-info.php:297
+msgid "Weekly"
+msgstr ""
+
+#: config/config-plugin-settings.php:289
+msgid "Uninstall Behavior"
+msgstr ""
+
+#: config/config-plugin-settings.php:293
+msgid "Keep all plugin settings, collections, and reviews."
+msgstr ""
+
+#: config/config-plugin-settings.php:294
+msgid "Remove all plugin settings, collections, and reviews."
+msgstr ""
+
+#: includes/admin/class-admin-collection-columns.php:62
+#: includes/admin/class-admin-review-columns.php:82
+msgid "Title"
+msgstr ""
+
+#: includes/admin/class-admin-collection-columns.php:63
+#: includes/admin/class-admin-review-columns.php:85
+#: includes/admin/class-admin-review-editor.php:366
+msgid "Platform"
+msgstr ""
+
+#: includes/admin/class-admin-collection-columns.php:66
+#: includes/admin/class-admin-review-columns.php:87
+msgid "Date"
+msgstr ""
+
+#: includes/admin/class-admin-collection-columns.php:67
+#: includes/admin/class-admin-review-columns.php:88
+msgid "Shortcode"
+msgstr ""
+
+#: includes/admin/class-admin-collection-columns.php:102
+msgid "Unstyled"
+msgstr ""
+
+#: includes/admin/class-admin-collection-columns.php:145
+#: includes/admin/class-admin-review-columns.php:181
+#: views/builder/toolbar.php:40
+msgid "Copy Shortcode"
+msgstr ""
+
+#: includes/admin/class-admin-footer.php:46
+msgid "Thanks for using WP Business Reviews. Follow the conversation on %sTwitter%s."
+msgstr ""
+
+#: includes/admin/class-admin-menu.php:74
+#: includes/class-post-types.php:295
+msgid "Review Tags"
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:138
+msgid "Collection saved successfully."
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:152
+msgid "1 collection moved to the Trash."
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:167
+msgid "%1$sWP Business Reviews database update complete.%2$s Thank you for updating to the latest version!"
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:185
+msgid "%1$sWP Business Reviews database update in progress.%2$s You may navigate away from this page while the update completes."
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:203
+msgid "%1$sWP Business Reviews v%2$s requires a database update.%3$s This update ensures compatibility with new features and functionality of the plugin. Please make a complete backup before proceeding."
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:209
+msgid "Run Database Update"
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:229
+msgid "Settings not saved. At least one platform must remain active."
+msgstr ""
+
+#: includes/admin/class-admin-notices.php:243
+msgid "Settings saved successfully."
+msgstr ""
+
+#. translators: 1: support link 2: closing anchor tag 3: system info link 4: closing anchor tag
+#: includes/admin/class-admin-notices.php:259
+msgid "An error occurred while requesting Facebook page tokens. Please %1$scontact support%2$s with a copy of your %3$ssystem info%4$s for assistance."
+msgstr ""
+
+#. translators: 1: platform link 2: closing anchor tag
+#: includes/admin/class-admin-notices.php:280
+msgid "Having problems with Facebook Connect? We updated our plugin to reflect new changes in Facebook API. Please %1$sDisconnect Facebook%2$s and then reconnect again."
+msgstr ""
+
+#: includes/admin/class-admin-review-columns.php:81
+msgid "Image"
+msgstr ""
+
+#: includes/admin/class-admin-review-columns.php:83
+msgid "Reviewer"
+msgstr ""
+
+#: includes/admin/class-admin-review-columns.php:167
+msgid "Reviewed"
+msgstr ""
+
+#: includes/admin/class-admin-review-columns.php:337
+msgid "Filter by platform"
+msgstr ""
+
+#: includes/admin/class-admin-review-columns.php:367
+msgid "Unrated"
+msgstr ""
+
+#: includes/admin/class-admin-review-columns.php:391
+#: includes/admin/class-admin-review-editor.php:276
+msgid "Positive"
+msgstr ""
+
+#: includes/admin/class-admin-review-columns.php:391
+#: includes/admin/class-admin-review-editor.php:280
+msgid "Negative"
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:127
+msgid "Review Meta"
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:210
+msgid "Displays a photo or avatar of the reviewer. For best results, use a 120x120 pixel square image."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:226
+msgid "Determines whether the review displays a rating or recommendation type."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:229
+msgid "Star Rating"
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:233
+#: includes/admin/class-admin-review-editor.php:264
+msgid "Numerical Rating"
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:245
+msgid "Defines the rating associated with the review. Rating style is based on the selected platform."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:265
+msgid "Define the numerical rating as a whole number or decimal value. Intended for use with a Zomato review source."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:273
+msgid "Defines the positive or negative nature of the recommendation. Intended for use with a Facebook review source."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:289
+msgid "Enter the date of the review."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:316
+msgid "This review date cannot be changed because the review was delivered from the platform API."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:327
+msgid "Review URL"
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:328
+msgid "Links to the URL of the full review if it exists on another website. This URL may be used if the full review is truncated."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:340
+msgid "Review content goes here..."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:368
+msgid "Select a platform to determine how the review is displayed and organized."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:373
+#: includes/class-platform-manager.php:142
+msgid "Custom"
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:394
+msgid "Select a review source to include this review in existing collections."
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:456
+msgid "Set Image"
+msgstr ""
+
+#: includes/admin/class-admin-review-editor.php:457
+msgid "Reset"
+msgstr ""
+
+#: includes/admin/class-license.php:88
+#: includes/admin/class-license.php:91
+msgid "License"
+msgstr ""
+
+#: includes/admin/class-license.php:92
+msgid "License Settings"
+msgstr ""
+
+#: includes/admin/class-license.php:95
+msgid "License Key"
+msgstr ""
+
+#. translators: 1: customer account link, 2: closing anchor tag
+#: includes/admin/class-license.php:99
+msgid "Enter the license key found within your %1$sWP Business Reviews account%2$s, where you can also manage the active sites connected to your license. Need help? Reach out to our support team via live chat or our contact form."
+msgstr ""
+
+#: includes/admin/class-license.php:148
+#: includes/admin/class-license.php:196
+msgid "An error occurred, please try again."
+msgstr ""
+
+#: includes/admin/class-license.php:162
+msgid "Your license key expired on %s."
+msgstr ""
+
+#: includes/admin/class-license.php:170
+msgid "Your license key has been disabled."
+msgstr ""
+
+#: includes/admin/class-license.php:175
+msgid "The license key entered is not a valid license."
+msgstr ""
+
+#: includes/admin/class-license.php:181
+msgid "Your license is not active for this URL."
+msgstr ""
+
+#: includes/admin/class-license.php:186
+msgid "This appears to be an invalid license key for %s."
+msgstr ""
+
+#: includes/admin/class-license.php:191
+msgid "Your license key has reached its activation limit."
+msgstr ""
+
+#: includes/admin/class-plugin-updater.php:247
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+
+#: includes/admin/class-plugin-updater.php:255
+msgid "There is a new version of %1$s available. %2$sView version %3$s details%4$s or %5$supdate now%6$s."
+msgstr ""
+
+#: includes/admin/class-plugin-updater.php:509
+msgid "You do not have permission to install plugin updates"
+msgstr ""
+
+#: includes/admin/class-plugin-updater.php:509
+msgid "Error"
+msgstr ""
+
+#: includes/admin/class-system-info.php:57
+msgid "WPBR Plugin Version"
+msgstr ""
+
+#: includes/admin/class-system-info.php:61
+msgid "WPBR Database Version"
+msgstr ""
+
+#: includes/admin/class-system-info.php:65
+msgid "Upgraded From"
+msgstr ""
+
+#: includes/admin/class-system-info.php:69
+msgid "Active Platforms"
+msgstr ""
+
+#: includes/admin/class-system-info.php:73
+msgid "Connected Platforms"
+msgstr ""
+
+#: includes/admin/class-system-info.php:77
+msgid "Platforms Failing Auto Refresh"
+msgstr ""
+
+#: includes/admin/class-system-info.php:81
+msgid "Total Reviews"
+msgstr ""
+
+#: includes/admin/class-system-info.php:85
+msgid "Total Collections"
+msgstr ""
+
+#: includes/admin/class-system-info.php:89
+msgid "Total Review Sources"
+msgstr ""
+
+#: includes/admin/class-system-info.php:93
+msgid "Last Refreshed Review Source Count"
+msgstr ""
+
+#: includes/admin/class-system-info.php:97
+msgid "Last Scheduled Event"
+msgstr ""
+
+#: includes/admin/class-system-info.php:111
+msgid "Admin AJAX"
+msgstr ""
+
+#: includes/admin/class-system-info.php:112
+msgid "Accessible"
+msgstr ""
+
+#: includes/admin/class-system-info.php:112
+msgid "Inaccessible"
+msgstr ""
+
+#: includes/admin/class-system-info.php:119
+msgid "Host Name"
+msgstr ""
+
+#: includes/admin/class-system-info.php:188
+#: includes/admin/class-system-info.php:205
+#: includes/admin/class-system-info.php:222
+msgid "None"
+msgstr ""
+
+#: includes/admin/class-system-info.php:281
+msgid "No events found"
+msgstr ""
+
+#: includes/admin/class-system-info.php:306
+#: includes/admin/health-check/class-health-check-debug-data.php:159
+#: includes/admin/health-check/class-health-check-debug-data.php:163
+#: includes/admin/health-check/class-health-check-debug-data.php:167
+#: includes/admin/health-check/class-health-check-debug-data.php:171
+#: includes/admin/health-check/class-health-check-debug-data.php:175
+#: includes/admin/health-check/class-health-check-debug-data.php:179
+#: includes/admin/health-check/class-health-check-debug-data.php:183
+#: includes/admin/health-check/class-health-check-debug-data.php:187
+#: includes/admin/health-check/class-health-check-debug-data.php:191
+#: includes/admin/health-check/class-health-check-debug-data.php:195
+#: includes/admin/health-check/class-health-check-debug-data.php:199
+#: includes/admin/health-check/class-health-check-debug-data.php:203
+#: includes/admin/health-check/class-health-check-debug-data.php:207
+#: includes/admin/health-check/class-health-check-debug-data.php:211
+#: includes/admin/health-check/class-health-check-debug-data.php:623
+msgid "Undefined"
+msgstr ""
+
+#. translators: %s: Latest WordPress version number.
+#. translators: %s: Latest plugin version number.
+#. translators: %s: Latest theme version number.
+#: includes/admin/health-check/class-health-check-debug-data.php:63
+#: includes/admin/health-check/class-health-check-debug-data.php:575
+#: includes/admin/health-check/class-health-check-debug-data.php:600
+#: includes/admin/health-check/class-health-check-debug-data.php:665
+msgid "( Latest version: %s )"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:71
+msgid "WordPress"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:74
+#: includes/admin/health-check/class-health-check-debug-data.php:612
+msgid "Version"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:78
+msgid "Language"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:82
+msgid "Home URL"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:86
+msgid "Site URL"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:90
+msgid "Permalink Structure"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:94
+msgid "Is this site using HTTPS?"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:95
+#: includes/admin/health-check/class-health-check-debug-data.php:99
+#: includes/admin/health-check/class-health-check-debug-data.php:107
+#: includes/admin/health-check/class-health-check-debug-data.php:449
+#: includes/admin/health-check/class-health-check-debug-data.php:454
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:95
+#: includes/admin/health-check/class-health-check-debug-data.php:99
+#: includes/admin/health-check/class-health-check-debug-data.php:107
+#: includes/admin/health-check/class-health-check-debug-data.php:449
+#: includes/admin/health-check/class-health-check-debug-data.php:454
+msgid "No"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:98
+msgid "Can anyone register on this site?"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:102
+msgid "Default Comment Status"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:106
+msgid "Is this a multisite?"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:112
+msgid "Server"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:113
+msgid "The options shown below relate to your server setup. If changes are required, you may need your web host's assistance."
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:117
+msgid "Active Theme"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:121
+msgid "Other Themes"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:126
+msgid "Active Plugins"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:131
+msgid "Inactive Plugins"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:136
+msgid "Must-Use Plugins"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:141
+msgid "Drop-Ins"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:142
+msgid "Drop-ins are single files that replace or enhance WordPress features in ways that are not possible for traditional plugins"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:146
+msgid "Database"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:150
+msgid "Media Handling"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:154
+msgid "WordPress Constants"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:155
+msgid "These values represent values set in your websites code which affect WordPress in various ways that may be of importance when seeking help with your site."
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:216
+msgid "Filesystem Permissions"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:217
+msgid "The status of various locations WordPress needs to write files in various scenarios."
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:220
+msgid "Main WordPress Directory"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:221
+#: includes/admin/health-check/class-health-check-debug-data.php:225
+#: includes/admin/health-check/class-health-check-debug-data.php:229
+#: includes/admin/health-check/class-health-check-debug-data.php:233
+#: includes/admin/health-check/class-health-check-debug-data.php:237
+#: includes/admin/health-check/class-health-check-debug-data.php:686
+msgid "Writable"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:221
+#: includes/admin/health-check/class-health-check-debug-data.php:225
+#: includes/admin/health-check/class-health-check-debug-data.php:229
+#: includes/admin/health-check/class-health-check-debug-data.php:233
+#: includes/admin/health-check/class-health-check-debug-data.php:237
+#: includes/admin/health-check/class-health-check-debug-data.php:686
+msgid "Not writable"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:224
+msgid "Content Directory"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:228
+msgid "Uploads Directory"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:232
+msgid "Plugins Directory"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:236
+msgid "Themes Directory"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:257
+#: includes/admin/health-check/class-health-check-debug-data.php:272
+msgid "User Count"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:261
+msgid "Site Count"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:265
+msgid "Network Count"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:283
+#: includes/admin/health-check/class-health-check-debug-data.php:290
+msgid "Communication with WordPress.org"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:285
+msgid "WordPress.org is reachable"
+msgstr ""
+
+#. translators: %1$s: The IP address WordPress.org resolves to. %2$s: The error returned by the lookup.
+#: includes/admin/health-check/class-health-check-debug-data.php:293
+msgid "Unable to reach WordPress.org at %1$s: %2$s"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:302
+msgid "Create Loopback Requests"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:318
+msgid "Active Editor"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:331
+msgid "Imagick Module Version"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:335
+msgid "ImageMagick Version"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:351
+msgid "Imagick Resource Limits"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:363
+msgid "GD Version"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:364
+msgid "GD not available"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:370
+msgid "Not available"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:372
+msgid "Unable to determine if Ghostscript is installed"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:375
+msgid "Ghostscript Version"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:381
+msgid "Server Architecture"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:382
+msgid "Unable to determine server architecture"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:385
+msgid "Web Server Software"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:386
+msgid "Unable to determine what web server software is used"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:389
+msgid "PHP Version"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:390
+msgid "Unable to determine PHP version"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:393
+msgid "(Supports 64bit values)"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:393
+msgid "(Does not support 64bit values)"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:398
+msgid "PHP SAPI"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:399
+msgid "Unable to determine PHP SAPI"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:404
+msgid "Server Settings"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:405
+msgid "Unable to determine some settings as the ini_get() function has been disabled"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:409
+msgid "PHP Max Input Variables"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:413
+msgid "PHP Time Limit"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:417
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:421
+msgid "Max Input Time"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:425
+msgid "Upload Max Filesize"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:429
+msgid "PHP Post Max Size"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:437
+#: includes/admin/health-check/class-health-check-debug-data.php:442
+msgid "cURL Version"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:443
+msgid "Your server does not support cURL"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:448
+msgid "SUHOSIN Installed"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:453
+msgid "Is the Imagick library available?"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:466
+msgid "htaccess rules"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:467
+msgid "Custom rules have been added to your htaccess file"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:467
+msgid "Your htaccess file only contains core WordPress features"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:489
+msgid "Extension"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:493
+msgid "Server Version"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:497
+msgid "Client Version"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:501
+msgid "Database User"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:506
+msgid "Database Host"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:511
+msgid "Database Name"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:516
+msgid "Database Prefix"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:527
+#: includes/admin/health-check/class-health-check-debug-data.php:558
+#: includes/admin/health-check/class-health-check-debug-data.php:648
+msgid "No version or author information available"
+msgstr ""
+
+#. translators: %1$s: Plugin version number. %2$s: Plugin author name.
+#. translators: %1$s: Theme version number. %2$s: Theme author name.
+#: includes/admin/health-check/class-health-check-debug-data.php:531
+#: includes/admin/health-check/class-health-check-debug-data.php:562
+#: includes/admin/health-check/class-health-check-debug-data.php:652
+msgid "Version %1$s by %2$s"
+msgstr ""
+
+#. translators: %s: Plugin author name.
+#. translators: %s: Theme author name.
+#: includes/admin/health-check/class-health-check-debug-data.php:535
+#: includes/admin/health-check/class-health-check-debug-data.php:566
+#: includes/admin/health-check/class-health-check-debug-data.php:656
+msgid "By %s"
+msgstr ""
+
+#. translators: %s: Plugin version number.
+#. translators: %s: Theme version number.
+#: includes/admin/health-check/class-health-check-debug-data.php:539
+#: includes/admin/health-check/class-health-check-debug-data.php:570
+#: includes/admin/health-check/class-health-check-debug-data.php:660
+msgid "Version %s"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:607
+msgid "Name"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:617
+msgid "Author"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:622
+msgid "Author Website"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:626
+msgid "Parent Theme"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:627
+msgid "Not a child theme"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:630
+msgid "Supported Theme Features"
+msgstr ""
+
+#. translators: %1$s: Theme name. %2$s: Theme slug.
+#: includes/admin/health-check/class-health-check-debug-data.php:673
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-debug-data.php:685
+msgid "Must-Use Plugins Directory"
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-loopback.php:76
+msgid "The loopback request to your site failed, this may prevent WP_Cron from working, along with theme and plugin editors."
+msgstr ""
+
+#. translators: %1$d: The HTTP response code. %2$s: The error message returned.
+#: includes/admin/health-check/class-health-check-loopback.php:79
+msgid "Error encountered: (%1$d) %2$s"
+msgstr ""
+
+#. translators: %d: The HTTP response code returned.
+#: includes/admin/health-check/class-health-check-loopback.php:92
+msgid "The loopback request returned an unexpected status code, %d, this may affect tools such as WP_Cron, or theme and plugin editors."
+msgstr ""
+
+#: includes/admin/health-check/class-health-check-loopback.php:100
+msgid "The loopback request to your site completed successfully."
+msgstr ""
+
+#: includes/builder/class-builder-inspector.php:134
+msgid "Define the length of each review up to 160 characters, which is the maximum length returned by Yelp."
+msgstr ""
+
+#: includes/builder/class-builder-inspector.php:142
+msgid "Define the length of each review up to 150 characters, which is the maximum length returned by Zomato."
+msgstr ""
+
+#: includes/builder/class-builder-inspector.php:149
+msgid "Define the length of each review. Some platforms, such as Yelp and Zomato, may be limited to a truncated review excerpt."
+msgstr ""
+
+#: includes/builder/class-builder.php:182
+#: includes/serializer/class-collection-serializer.php:61
+msgid "Untitled Collection"
+msgstr ""
+
+#: includes/builder/class-builder.php:183
+msgid "Enter a collection title"
+msgstr ""
+
+#: includes/class-assets.php:139
+msgid "Copied!"
+msgstr ""
+
+#: includes/class-assets.php:197
+#: includes/blocks/components/review/index.js:66
+msgid "via"
+msgstr ""
+
+#: includes/class-assets.php:198
+#: includes/blocks/components/review/index.js:78
+msgid "recommends"
+msgstr ""
+
+#: includes/class-assets.php:199
+#: includes/blocks/components/review/index.js:77
+msgid "doesn't recommend"
+msgstr ""
+
+#: includes/class-assets.php:200
+#: includes/blocks/components/review/index.js:159
+msgid "Read more"
+msgstr ""
+
+#: includes/class-assets.php:201
+msgid "Rated"
+msgstr ""
+
+#: includes/class-assets.php:209
+#: views/field/partials/types/facebook-pages-select.php:33
+msgid "Get Reviews"
+msgstr ""
+
+#: includes/class-assets.php:210
+msgid "Reset Search"
+msgstr ""
+
+#: includes/class-assets.php:211
+msgid "Refresh Reviews"
+msgstr ""
+
+#: includes/class-assets.php:212
+msgid "Not Yet Rated"
+msgstr ""
+
+#: includes/class-assets.php:213
+msgid "This collection cannot be saved yet. Please select a review source and get reviews before saving."
+msgstr ""
+
+#: includes/class-assets.php:214
+msgid "Collection refreshed successfully. New reviews are highlighted in the collection preview."
+msgstr ""
+
+#: includes/class-assets.php:215
+msgid "Collection refreshed successfully, however no new reviews are available at this time."
+msgstr ""
+
+#: includes/class-cron-scheduler.php:49
+msgid "Once Weekly"
+msgstr ""
+
+#: includes/class-platform-manager.php:141
+#: includes/class-platform-selector.php:72
+msgid "Tagged"
+msgstr ""
+
+#: includes/class-plugin.php:90
+msgid "WPBR Blocks"
+msgstr ""
+
+#: includes/class-post-types.php:59
+msgctxt "Post Type General Name"
+msgid "Collections"
+msgstr ""
+
+#: includes/class-post-types.php:60
+msgctxt "Post Type Singular Name"
+msgid "Collection"
+msgstr ""
+
+#: includes/class-post-types.php:61
+#: includes/class-post-types.php:66
+msgid "Collections"
+msgstr ""
+
+#: includes/class-post-types.php:62
+#: includes/class-post-types.php:89
+msgid "Collection"
+msgstr ""
+
+#: includes/class-post-types.php:63
+msgid "Collection Archives"
+msgstr ""
+
+#: includes/class-post-types.php:64
+msgid "Collection Attributes"
+msgstr ""
+
+#: includes/class-post-types.php:65
+msgid "Parent Collection:"
+msgstr ""
+
+#: includes/class-post-types.php:67
+msgid "Add New Collection"
+msgstr ""
+
+#: includes/class-post-types.php:68
+#: includes/blocks/collection/select.js:27
+msgid "Add Collection"
+msgstr ""
+
+#: includes/class-post-types.php:69
+msgid "New Collection"
+msgstr ""
+
+#: includes/class-post-types.php:70
+msgid "Edit Collection"
+msgstr ""
+
+#: includes/class-post-types.php:71
+msgid "Update Collection"
+msgstr ""
+
+#: includes/class-post-types.php:72
+msgid "View Collection"
+msgstr ""
+
+#: includes/class-post-types.php:73
+msgid "View Collections"
+msgstr ""
+
+#: includes/class-post-types.php:74
+msgid "Search Collections"
+msgstr ""
+
+#: includes/class-post-types.php:75
+#: includes/class-post-types.php:136
+#: includes/class-post-types.php:196
+msgid "Not found"
+msgstr ""
+
+#: includes/class-post-types.php:76
+#: includes/class-post-types.php:137
+#: includes/class-post-types.php:197
+msgid "Not found in Trash"
+msgstr ""
+
+#: includes/class-post-types.php:77
+#: includes/class-post-types.php:198
+msgid "Featured Image"
+msgstr ""
+
+#: includes/class-post-types.php:78
+#: includes/class-post-types.php:199
+msgid "Set featured image"
+msgstr ""
+
+#: includes/class-post-types.php:79
+#: includes/class-post-types.php:200
+msgid "Remove featured image"
+msgstr ""
+
+#: includes/class-post-types.php:80
+#: includes/class-post-types.php:201
+msgid "Use as featured image"
+msgstr ""
+
+#: includes/class-post-types.php:81
+#: includes/class-post-types.php:142
+#: includes/class-post-types.php:202
+msgid "Insert into item"
+msgstr ""
+
+#: includes/class-post-types.php:82
+#: includes/class-post-types.php:143
+#: includes/class-post-types.php:203
+msgid "Uploaded to this item"
+msgstr ""
+
+#: includes/class-post-types.php:83
+msgid "Collections list"
+msgstr ""
+
+#: includes/class-post-types.php:84
+msgid "Collections list navigation"
+msgstr ""
+
+#: includes/class-post-types.php:85
+#: includes/class-post-types.php:146
+#: includes/class-post-types.php:206
+msgid "Filter items list"
+msgstr ""
+
+#: includes/class-post-types.php:120
+msgctxt "Post Type General Name"
+msgid "Single Reviews"
+msgstr ""
+
+#: includes/class-post-types.php:121
+msgctxt "Post Type Singular Name"
+msgid "Review"
+msgstr ""
+
+#: includes/class-post-types.php:123
+#: includes/class-post-types.php:154
+#: includes/blocks/review/index.js:8
+msgid "Review"
+msgstr ""
+
+#: includes/class-post-types.php:124
+msgid "Review Archives"
+msgstr ""
+
+#: includes/class-post-types.php:125
+msgid "Review Attributes"
+msgstr ""
+
+#: includes/class-post-types.php:126
+msgid "Parent Review:"
+msgstr ""
+
+#: includes/class-post-types.php:127
+msgid "Single Reviews"
+msgstr ""
+
+#: includes/class-post-types.php:128
+msgid "Add New Review"
+msgstr ""
+
+#: includes/class-post-types.php:129
+#: views/admin/blank-slate/wpbr-review.php:9
+#: includes/blocks/review/select.js:27
+msgid "Add Review"
+msgstr ""
+
+#: includes/class-post-types.php:130
+msgid "New Review"
+msgstr ""
+
+#: includes/class-post-types.php:131
+msgid "Edit Review"
+msgstr ""
+
+#: includes/class-post-types.php:132
+msgid "Update Review"
+msgstr ""
+
+#: includes/class-post-types.php:133
+msgid "View Review"
+msgstr ""
+
+#: includes/class-post-types.php:134
+msgid "View Reviews"
+msgstr ""
+
+#: includes/class-post-types.php:135
+msgid "Search Reviews"
+msgstr ""
+
+#: includes/class-post-types.php:139
+msgid "Set Reviewer Image"
+msgstr ""
+
+#: includes/class-post-types.php:140
+msgid "Remove reviewer's image"
+msgstr ""
+
+#: includes/class-post-types.php:141
+msgid "Use as reviewer's image"
+msgstr ""
+
+#: includes/class-post-types.php:144
+msgid "Reviews list"
+msgstr ""
+
+#: includes/class-post-types.php:145
+msgid "Reviews list navigation"
+msgstr ""
+
+#: includes/class-post-types.php:180
+msgctxt "Post Type General Name"
+msgid "Review Sources"
+msgstr ""
+
+#: includes/class-post-types.php:181
+msgctxt "Post Type Singular Name"
+msgid "Review Source"
+msgstr ""
+
+#: includes/class-post-types.php:182
+#: includes/class-post-types.php:187
+msgid "Review Sources"
+msgstr ""
+
+#: includes/class-post-types.php:184
+msgid "Review Source Archives"
+msgstr ""
+
+#: includes/class-post-types.php:185
+msgid "Review Source Attributes"
+msgstr ""
+
+#: includes/class-post-types.php:186
+msgid "Parent Review Source:"
+msgstr ""
+
+#: includes/class-post-types.php:188
+msgid "Add New Review Source"
+msgstr ""
+
+#: includes/class-post-types.php:189
+msgid "Add Review Source"
+msgstr ""
+
+#: includes/class-post-types.php:190
+msgid "New Review Source"
+msgstr ""
+
+#: includes/class-post-types.php:191
+msgid "Edit Review Source"
+msgstr ""
+
+#: includes/class-post-types.php:192
+msgid "Update Review Source"
+msgstr ""
+
+#: includes/class-post-types.php:193
+msgid "View Review Source"
+msgstr ""
+
+#: includes/class-post-types.php:194
+msgid "View Review Sources"
+msgstr ""
+
+#: includes/class-post-types.php:195
+msgid "Search Review Sources"
+msgstr ""
+
+#: includes/class-post-types.php:204
+msgid "Review Sources list"
+msgstr ""
+
+#: includes/class-post-types.php:205
+msgid "Review Sources list navigation"
+msgstr ""
+
+#: includes/class-post-types.php:237
+msgctxt "Taxonomy General Name"
+msgid "Platforms"
+msgstr ""
+
+#: includes/class-post-types.php:238
+msgctxt "Taxonomy Singular Name"
+msgid "Platform"
+msgstr ""
+
+#: includes/class-post-types.php:239
+msgid "All Platforms"
+msgstr ""
+
+#: includes/class-post-types.php:293
+msgctxt "Taxonomy General Name"
+msgid "Review Tags"
+msgstr ""
+
+#: includes/class-post-types.php:294
+msgctxt "Taxonomy Singular Name"
+msgid "Review Tag"
+msgstr ""
+
+#: includes/class-post-types.php:296
+msgid "All Review Tags"
+msgstr ""
+
+#: includes/class-post-types.php:297
+msgid "Parent Review Tag"
+msgstr ""
+
+#: includes/class-post-types.php:298
+msgid "Parent Review Tag:"
+msgstr ""
+
+#: includes/class-post-types.php:299
+msgid "New Tag Review Name"
+msgstr ""
+
+#: includes/class-post-types.php:300
+msgid "Add New Review Tag"
+msgstr ""
+
+#: includes/class-post-types.php:301
+msgid "Edit Review Tag"
+msgstr ""
+
+#: includes/class-post-types.php:302
+msgid "Update Review Tag"
+msgstr ""
+
+#: includes/class-post-types.php:303
+msgid "View Review Tag"
+msgstr ""
+
+#: includes/class-post-types.php:304
+msgid "Separate items with commas"
+msgstr ""
+
+#: includes/class-post-types.php:305
+msgid "Add or remove items"
+msgstr ""
+
+#: includes/class-post-types.php:306
+msgid "Choose from the most used"
+msgstr ""
+
+#: includes/class-post-types.php:307
+msgid "Popular Review Tags"
+msgstr ""
+
+#: includes/class-post-types.php:308
+msgid "Search Review Tags"
+msgstr ""
+
+#: includes/class-post-types.php:309
+msgid "Not Found"
+msgstr ""
+
+#: includes/class-post-types.php:310
+msgid "No items"
+msgstr ""
+
+#: includes/class-post-types.php:311
+msgid "Review Tags list"
+msgstr ""
+
+#: includes/class-post-types.php:312
+msgid "Review Tags list navigation"
+msgstr ""
+
+#: includes/request/class-facebook-request.php:95
+#: includes/request/class-facebook-request.php:151
+msgid "Facebook page token could not be found. <a href=\"%s\">Reconnecting to Facebook</a> may fix the issue."
+msgstr ""
+
+#: includes/request/class-facebook-request.php:192
+msgid "<a href=\"%s\">Reconnecting to Facebook</a> may fix the issue."
+msgstr ""
+
+#: includes/request/class-google-places-request.php:128
+#: views/field/partials/types/platform-status.php:28
+msgid "A valid API key was entered, but billing is not enabled. As of July 16th, 2018, Google requires users to enable billing before accessing the Google Places API. %sLearn how to enable billing%s."
+msgstr ""
+
+#: includes/request/class-google-places-request.php:153
+msgid "No results found. For best results, enter the business name and location as they appear on Google. Alternatively you may enter the Place ID of the business."
+msgstr ""
+
+#: includes/request/class-google-places-request.php:181
+msgid "Invalid response structure."
+msgstr ""
+
+#: includes/request/class-google-places-request.php:205
+#: includes/request/class-trust-pilot-request.php:268
+#: includes/request/class-yelp-request.php:149
+#: includes/request/class-yp-request.php:138
+#: includes/request/class-zomato-request.php:207
+msgid "No reviews found. Although reviews may exist on the platform, none were returned from the platform API."
+msgstr ""
+
+#: includes/request/class-trust-pilot-request.php:139
+msgid "No results found. Enter the primary domain of your business as it appears on Trustpilot for best results."
+msgstr ""
+
+#: includes/request/class-yelp-request.php:95
+#: includes/request/class-yp-request.php:86
+msgid "No results found. For best results, enter the entire business name, city, and state as they appear on the platform."
+msgstr ""
+
+#: includes/request/class-zomato-request.php:103
+#: includes/request/class-zomato-request.php:173
+msgid "No results found. For best results, enter the restaurant name and city as they appear on the platform."
+msgstr ""
+
+#: includes/request/class-zomato-request.php:139
+msgid "No results found. For best results, enter the city as it appears on the platform."
+msgstr ""
+
+#: includes/routes/endpoint.php:34
+msgid "You dont have the right permissions"
+msgstr ""
+
+#: includes/routes/get-collection.php:36
+msgid "Collection ID"
+msgstr ""
+
+#: includes/routes/get-review.php:34
+msgid "Review ID"
+msgstr ""
+
+#: includes/serializer/class-collection-serializer.php:106
+msgid "Sorry, you are not allowed to move this item to the Trash."
+msgstr ""
+
+#: includes/serializer/class-collection-serializer.php:109
+msgid "There was a problem moving the collection to the Trash."
+msgstr ""
+
+#: includes/widget/class-collection-widget.php:43
+#: includes/blocks/collection/select.js:21
+#: includes/blocks/collection/select.js:43
+msgid "WP Business Reviews Collection"
+msgstr ""
+
+#: includes/widget/class-collection-widget.php:46
+msgid "Displays a collection of Reviews."
+msgstr ""
+
+#: views/admin/activation-banner.php:12
+msgid "Welcome to WP Business Reviews"
+msgstr ""
+
+#: views/admin/activation-banner.php:15
+msgid "Display your best online reviews on the most important online marketing platform—your website."
+msgstr ""
+
+#: views/admin/activation-banner.php:21
+msgid "Go to Settings"
+msgstr ""
+
+#: views/admin/activation-banner.php:27
+#: views/admin/blank-slate/wpbr-collection.php:6
+#: views/admin/blank-slate/wpbr-review.php:6
+msgid "View Tutorial"
+msgstr ""
+
+#: views/admin/blank-slate/wpbr-collection.php:3
+msgid "No collections found."
+msgstr ""
+
+#: views/admin/blank-slate/wpbr-collection.php:4
+msgid "Watch a video tutorial or jump straight into managing your platforms."
+msgstr ""
+
+#: views/admin/blank-slate/wpbr-collection.php:9
+msgid "Manage Platforms"
+msgstr ""
+
+#: views/admin/blank-slate/wpbr-review.php:3
+msgid "No reviews found."
+msgstr ""
+
+#: views/admin/blank-slate/wpbr-review.php:4
+msgid "Watch a video tutorial or add your first review manually."
+msgstr ""
+
+#: views/admin/platform-selector.php:29
+msgid "Add Your First Tag"
+msgstr ""
+
+#: views/admin/platform-selector.php:35
+#: views/admin/platform-selector.php:45
+msgid "Add %1$s Collection"
+msgstr ""
+
+#: views/admin/platform-selector.php:52
+msgid "Connect to %1$s"
+msgstr ""
+
+#: views/admin/system-info.php:18
+msgid "The system information shown below can be copied and pasted into support requests."
+msgstr ""
+
+#: views/admin/system-info.php:20
+msgid "Show System Info"
+msgstr ""
+
+#: views/admin/system-info.php:22
+msgid "Show System Info in English"
+msgstr ""
+
+#: views/admin/system-info.php:37
+#: views/admin/system-info.php:44
+msgid "Copy System Info"
+msgstr ""
+
+#: views/admin/system-info.php:49
+msgid "Table Of Contents"
+msgstr ""
+
+#: views/admin/system-info.php:124
+msgid "Return to table of contents"
+msgstr ""
+
+#: views/builder/toolbar.php:27
+msgid "Move to Trash"
+msgstr ""
+
+#: views/builder/toolbar.php:45
+msgid "Save"
+msgstr ""
+
+#: views/field/partials/types/facebook-pages-select.php:47
+msgid "No Facebook page tokens were found. <a href=\"%s\">Reconnecting to Facebook</a> should fix the issue."
+msgstr ""
+
+#: views/field/partials/types/facebook-pages.php:27
+msgid "ID: %s"
+msgstr ""
+
+#: views/field/partials/types/facebook-pages.php:36
+msgid "Disconnect Facebook"
+msgstr ""
+
+#: views/field/partials/types/facebook-pages.php:59
+msgid "Continue with Facebook"
+msgstr ""
+
+#. translators: 1: customer account link, 2: closing anchor tag, 3: support link, 4: closing anchor tag
+#: views/field/partials/types/license.php:25
+msgid "The license failed to deactivate. It is possible that this site is not currently associated with the license key. Please review your %1$slicense details%2$s and %3$scontact support%4$s for further assistance."
+msgstr ""
+
+#: views/field/partials/types/license.php:53
+msgid "You are receiving updates and support."
+msgstr ""
+
+#: views/field/partials/types/license.php:58
+msgid "Activate your license to receive important updates and support."
+msgstr ""
+
+#. translators: 1: customer account link, 2: closing anchor tag
+#: views/field/partials/types/license.php:81
+msgid "Thank you for activating your license key. This license can be found in your %1$sWP Business Reviews account%2$s, where you can also manage the active sites connected to your license."
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:13
+msgid "Connected"
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:18
+msgid "Now that you're connected, %sadd a collection%s!"
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:25
+msgid "Billing Not Enabled"
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:35
+msgid "Restricted Key Detected"
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:38
+msgid "A valid API key was entered, but it may have HTTP referrer restrictions that cannot be used with the Google Places API. Remove restrictions on the saved key or create a new key without restrictions. %sLearn how to modify restrictions%s."
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:45
+#: views/field/partials/types/platform-status.php:50
+#: views/field/partials/types/platform-status.php:55
+#: views/field/partials/types/platform-status.php:60
+#: views/field/partials/types/platform-status.php:65
+msgid "Needs Attention"
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:46
+msgid "One or more Google collections failed to refresh. Confirm that the Google Places API key is valid, has billing enabled, and is not restricting access by HTTP Referrer. New collections and automatic refreshing may not be possible until the platform is reconnected."
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:51
+msgid "One or more Facebook collections failed to refresh. Reconnect to Facebook and confirm that the \"Manage Pages\" permission has been granted for all Facebook Pages that have a collection on this site. New Facebook collections and automatic refreshing may not be possible until the platform is reconnected."
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:56
+msgid "One or more Yelp collections failed to refresh. Confirm that the Yelp API key is valid. New Yelp collections and automatic refreshing may not be possible until the platform is reconnected."
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:61
+msgid "One or more YP collections failed to refresh. Confirm that the YP API key is valid. New YP collections and automatic refreshing may not be possible until the platform is reconnected."
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:66
+msgid "One or more Zomato collections failed to refresh. Confirm that the Zomato API key is valid. New Zomato collections and automatic refreshing may not be possible until the platform is reconnected."
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:70
+msgid "Disconnected"
+msgstr ""
+
+#: views/field/partials/types/platform-status.php:85
+msgid "Last verified %s ago."
+msgstr ""
+
+#: views/field/partials/types/review-tags.php:42
+msgid "Apply Changes"
+msgstr ""
+
+#: views/field/partials/types/save.php:3
+msgid "Save Changes"
+msgstr ""
+
+#: views/plugin-settings/help-dashboard.php:4
+msgid "Plugin Docs"
+msgstr ""
+
+#: views/plugin-settings/help-dashboard.php:6
+msgid "Need help? Explore our extensive plugin documentation on our website."
+msgstr ""
+
+#: views/plugin-settings/help-dashboard.php:7
+msgid "View Documentation"
+msgstr ""
+
+#: views/plugin-settings/help-dashboard.php:11
+msgid "Support"
+msgstr ""
+
+#: views/plugin-settings/help-dashboard.php:13
+msgid "Still have questions? Get connected to our experienced team of support technicians."
+msgstr ""
+
+#: views/plugin-settings/help-dashboard.php:14
+msgid "Get Support"
+msgstr ""
+
+#: views/plugin-settings/help-dashboard.php:18
+msgid "Your Account"
+msgstr ""
+
+#: views/plugin-settings/help-dashboard.php:20
+msgid "Looking for past purchases and licenses? It's all there inside your account. "
+msgstr ""
+
+#: views/plugin-settings/help-dashboard.php:21
+msgid "View Account"
+msgstr ""
+
+#: views/plugin-settings/tabs.php:23
+msgid "Help"
+msgstr ""
+
+#: views/plugin-settings/viewer.php:2
+msgid "WP Business Reviews Help"
+msgstr ""
+
+#. translators: link to documentation
+#: views/plugin-settings/viewer.php:5
+msgid "These introductory videos will help you get up and running in minutes. To learn more, visit the %1$splugin documentation%2$s."
+msgstr ""
+
+#: views/plugin-settings/viewer.php:11
+msgid "Plugin Overview"
+msgstr ""
+
+#: views/plugin-settings/viewer.php:15
+msgid "Connecting to Google"
+msgstr ""
+
+#: views/plugin-settings/viewer.php:19
+msgid "Connecting to Facebook"
+msgstr ""
+
+#: views/plugin-settings/viewer.php:23
+msgid "Connecting to Yelp"
+msgstr ""
+
+#: views/plugin-settings/viewer.php:27
+msgid "Connecting to Zomato"
+msgstr ""
+
+#: views/widget/collection-widget-form.php:3
+msgid "Title:"
+msgstr ""
+
+#: views/widget/collection-widget-form.php:15
+msgid "Collection:"
+msgstr ""
+
+#: includes/blocks/collection/edit.js:16
+#: includes/blocks/review/edit.js:16
+msgid "There was an error while fetching data for this block"
+msgstr ""
+
+#: includes/blocks/collection/edit.js:22
+msgid "Collection Settings"
+msgstr ""
+
+#: includes/blocks/collection/edit.js:24
+msgid "Change Collection"
+msgstr ""
+
+#: includes/blocks/collection/index.js:8
+msgid "Review Collection"
+msgstr ""
+
+#: includes/blocks/collection/index.js:9
+msgid "The Reviews Collection block inserts an existing review collection onto the page. The collection presentation can be adjusted in the collection builder."
+msgstr ""
+
+#: includes/blocks/collection/index.js:13
+msgid "collection"
+msgstr ""
+
+#: includes/blocks/collection/index.js:14
+#: includes/blocks/review/index.js:13
+msgid "reviews"
+msgstr ""
+
+#: includes/blocks/collection/index.js:15
+#: includes/blocks/review/index.js:14
+msgid "business"
+msgstr ""
+
+#: includes/blocks/collection/index.js:16
+#: includes/blocks/review/index.js:15
+msgid "wpbr"
+msgstr ""
+
+#: includes/blocks/collection/select.js:24
+msgid "There are no collections at this time."
+msgstr ""
+
+#: includes/blocks/collection/select.js:47
+msgid "Select Collection"
+msgstr ""
+
+#: includes/blocks/review/edit.js:22
+msgid "Review Settings"
+msgstr ""
+
+#: includes/blocks/review/edit.js:24
+msgid "Change Review"
+msgstr ""
+
+#: includes/blocks/review/index.js:9
+msgid "Display review"
+msgstr ""
+
+#: includes/blocks/review/select.js:21
+msgid "WP Business Reviews - Collection Block"
+msgstr ""
+
+#: includes/blocks/review/select.js:24
+msgid "There are no reviews at this time."
+msgstr ""
+
+#: includes/blocks/review/select.js:43
+msgid "WP Business Reviews - Single Review Block"
+msgstr ""
+
+#: includes/blocks/review/select.js:47
+msgid "Select Review"
+msgstr ""

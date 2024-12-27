@@ -1,0 +1,14 @@
+{
+    "name": "tmm/tmm",
+    "description": "Common Used TMM features",
+    "type": "project",
+    "minimum-stability": "alpha",
+    "require": {
+        "dompdf/dompdf": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TMM\\": "./src/"
+        }
+    }
+}
