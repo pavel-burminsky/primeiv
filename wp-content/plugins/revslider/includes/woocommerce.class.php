@@ -325,6 +325,7 @@ class RevSliderWooCommerce extends RevSliderFunctions {
 		if($data === false) return $text;
 		
 		foreach($data ?? [] as $tag => $value){
+			$value = (empty($value)) ? '' : $value; //fix is null issue
 			$text = str_replace(array('%'.$tag.'%', '{{'.$tag.'}}'), $value, $text);
 		}
 		

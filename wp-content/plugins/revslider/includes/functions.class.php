@@ -344,7 +344,7 @@ class RevSliderFunctions extends RevSliderData {
 			if(@is_dir($temp) && wp_is_writable($temp)){
 				$dir = trailingslashit($temp).$path.'/';
 				if(!is_dir($dir)) @mkdir($dir, 0777, true);
-				return $dir;
+				if(is_dir($dir) && wp_is_writable($dir)) return $dir;
 			}
 		}
 	
@@ -352,18 +352,19 @@ class RevSliderFunctions extends RevSliderData {
 		if(@is_dir($temp) && wp_is_writable($temp)){
 			$dir = trailingslashit($temp).$path.'/';
 			if(!is_dir($dir)) @mkdir($dir, 0777, true);
-			return trailingslashit($temp).$path.'/';
+			if(is_dir($dir) && wp_is_writable($dir)) return $dir;
 		}
 
 		$temp_dir = get_temp_dir();
 		if(wp_is_writable($temp_dir)){
-			$dir		= trailingslashit($temp_dir).$path.'/';
+			$dir = trailingslashit($temp_dir).$path.'/';
 			if(!is_dir($dir)) @mkdir($dir, 0777, true);
-		}else{
-			$upload_dir = wp_upload_dir();
-			$dir		= $upload_dir['basedir'].'/'.$path.'/';
-			if(!is_dir($dir)) @mkdir($dir, 0777, true);
+			if(is_dir($dir) && wp_is_writable($dir)) return $dir;
 		}
+		
+		$upload_dir = wp_upload_dir();
+		$dir		= $upload_dir['basedir'].'/'.$path.'/';
+		if(!is_dir($dir)) @mkdir($dir, 0777, true);
 
 		return $dir;
 	}
@@ -431,6 +432,8 @@ class RevSliderFunctions extends RevSliderData {
 	 * before: RevSliderBase::stripslashes_deep()
 	 */
 	public static function stripslashes_deep($value){
+		if(empty($value)) return $value;
+		
 		$value = is_array($value) ? array_map(array('RevSliderFunctions', 'stripslashes_deep'), $value) : stripslashes($value);
 		
 		return $value;
@@ -2182,7 +2185,7 @@ rs-module .material-icons {
 		}
 
 		$classes = array_map(function($className) {
-			return preg_replace('/[^a-zA-Z\d_-]/', '', $className);
+			return preg_replace('/[^a-zA-Z \d_-]/', '', $className);
 		}, $classes);
 
 		return $single ? $classes[0] : $classes;

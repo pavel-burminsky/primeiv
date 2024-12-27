@@ -1,4 +1,132 @@
 <div class="slider-revolution-update-list">
+	<h3 class="version-number">Version 6.7.21 (5th November 2024)</h3>
+	<div class="newfeature"><strong style="font-weight:700">New Features</strong></div>	
+	<ul>
+		<li>Introducing new Layer processing and preparing object structure for SR7 Backend</li>
+	</ul>
+	<div class="bugfix"><strong style="font-weight:700">Bugfixes</strong></div>	
+	<ul>
+		<li>Panorama module displays blurry images on iOS X. AddOn version 6.7.4 requires core version 6.7.21 to resolve this.</li>
+		<li>Vertical carousel reverts to the original position when dragged over a long distance with an extended timer.</li>
+		<li>Carousel gets stuck in drag mode when dragged after clicking on a slide element.</li>
+		<li>Translations updated for the upcoming WordPress release to prevent a deprecation notice.</li>
+		<li>Images with foreign characters in the URL do not load when added to the homepage.</li>
+		<li>Slide direction-based animations do not work for rotations on x, y, and z axes.</li>
+		<li>WooCommerce "Add to Cart" meta URL was generated incorrectly.</li>
+		<li>Carousel slider does not function when opened as a modal.</li>
+		<li>Hover action on mobile fails when releasing outside the target element.</li>
+		<li>"Open Slider Modal" action breaks when linked to a non-existent slide.</li>
+		<li>Auto width and height calculations are incorrect for shapes with image backgrounds when image proportion is disabled and the ratio does not match the media ratio.</li>
+		<li>Cookie Usage Consent plugin breaks the slider by blocking code that links to Google Fonts.</li>
+		<li>Videos in the slider are mistakenly added to the SEO images list.</li>
+		<li>3D Parallax effect continues animating the background element even when background animation is disabled.</li>
+		<li>Removing all slides from navigation causes a JavaScript error when bullets are enabled.</li>
+		<li>Carousel set to "Justify" without slide background media creates an endless resize loop that breaks the module.</li>
+		<li>Slide order may be incorrect if the module layout is changed to "Scene."</li>
+		<li>Fullscreen Modules dont resize accurate any more. Layers are distorted.</li>
+		<li>Layers on scroll based timelines and on fixed menu modules are sometimes not clickable after initialisation</li>
+		<li>Slide direction based Out animated layers, which are not waiting on Slide end, reanimates on leaving the slide</li>
+	</ul>
+	<h3 class="version-number">Version 6.7.20 (30th September 2024)</h3>
+	<div class="newfeature"><strong style="font-weight:700">New Features</strong></div>	
+	<ul>
+		<li>Introducing the "Keep Media when Slide Unfocused" option for media layers, allowing media to continue playing when the carousel slide is no longer in focus.</li>
+	</ul>
+	<div class="bugfix"><strong style="font-weight:700">Bugfixes</strong></div>	
+	<ul>
+		<li>The custom JavaScript API variable is not defined for modal modules.</li>
+		<li>Scroll-based timeline navigation not working in modal modules.</li>
+		<li>HTML5 videos are not playing on slides beyond the first, or if more than one video was added to the page.</li>
+		<li>A black flash is visible during advanced transitions since version 6.7.19.</li>
+		<li>The carousel freezes if a video auto-paused during a slide change.</li>
+		<li>Slow dragging carousels over 50% slide width are missaligned after transition</li>
+	</ul>
+	
+	<h3 class="version-number">Version 6.7.19 (24th September 2024)</h3>
+	<div class="newfeature"><strong style="font-weight:700">New Features</strong></div>	
+	<ul>
+		<li>Deep link for external called modals added : i.e. document.dispatchEvent(new CustomEvent('popup_modal', { detail: { slide: 2 } }));</li>
+		<li>Introduced new API method forcedPause() to pause slideshows and keep them from auto resuming when in viewport again until the resume() method is called.</li>
+		<li>Introduced new V7 option Media Ignores Scroll Blur. This will allow the media to keep playing even when the module stopped out of the view port.</li>
+	</ul>
+	<div class="bugfix"><strong style="font-weight:700">Bugfixes</strong></div>	
+	<ul>
+		<li>Multiple videos on page break with JS errors</li>
+		<li>Willow filter on media looks different in SR6 and SR7</li>
+		<li>Wrapper class for module not added in SR7</li>
+		<li>Dynamic links defined by meta tags redirect to the dynamic source, rather than using the meta tag value directly</li>
+		<li>3D Layers with scroll may break full slider module since version 6.7.17</li>
+		<li>In some very very rare case migration failes if old datas are corrupt.</li>
+		<li>Restrict SVG upload to Administrators only to avoid Stored Cross-Site Scripting via SVG File uploads</li>
+		<li>Apply sanitize to SVG files to prevent Stored Cross-Site Scripting via SVG File Upload</li>
+		<li>Decrease module height also affected height in the fullscreen mode</li>
+		<li>Orientation change on mobile caused JavaScript error</li>
+		<li>Not proportional custom size image layers are resized not properly</li>
+		<li>HTML5 Video is always muted, can not be unmuted due the original controls</li>
+		<li>Gesture Zoom on mobile devices may not resize layers and modules</li>
+		<li>Mobile Vertical scroll jumps with fullheight modules when search url bar becomes hidden</li>
+		<li>Respect Module Aspect ratio is not working</li>
+		<li>Infinity Carousel glitching on auto rotation restart</li>
+		<li>Infinity Carousel randomly switching direction when slide duration is low</li>
+		<li>Slides hidden from nav caused JavaScript error in thumbs navigation</li>
+		<li>Pause on hover not working on carousel auto rotating sliders</li>
+		<li>Mouse wheel navigation skipped slide change when the page scrolled rapidly</li>
+		<li>Slide background was not showing if the appearance animation was set to No Transition</li>
+	</ul>
+
+	<h3 class="version-number">Version 6.7.18 (20th August 2024)</h3>
+	<div class="bugfix"><strong style="font-weight:700">Bugfixes</strong></div>	
+	<ul>
+		<li>The deep link URL hash does not change when the slide changes</li>
+		<li>The Mouse Wheel `CallDelay` option is undefined, making mouse operation on Mac impossible</li>
+		<li>Global layers that are forced to the background are incorrectly positioned on the stage</li>
+		<li>The number of fingers touching and swiping the screen is being ignored. Touch screens are reacting to single fingers only</li>
+		<li>Image animation combined with background color animation may fail if not all frame's background color defined correctly</li>
+		<li>Video layers have neither muted nor unmuted state at first load in SR7 Frontend, if video is set to Muted in SR6 Editor</li>
+		<li>Trying to load an absent post image in the post based slider causes an JavaScript error</li>
+		<li>Clicking on the slide's background videos will pause the playback</li>
+		<li>Streams do not have layers in v7 from the second slide onwards</li>
+		<li>Material is missing from WebGL Context clearing process</li>
+	</ul>
+	<h3 class="version-number">Version 6.7.17 (8th August 2024)</h3>
+	<div class="bugfix"><strong style="font-weight:700">Bugfixes</strong></div>	
+	<ul>
+		<li>Carousel added in a flex container without dimensions generates an endless loop breaking the page</li>
+		<li>Background coloring and background image of the module is miscalculated if the module is embeded via an shortcode in WordPress containers</li>
+	</ul>
+	<h3 class="version-number">Version 6.7.16 (5th August 2024)</h3>
+	<div class="bugfix"><strong style="font-weight:700">Bugfixes</strong></div>	
+	<ul>
+		<li>Preview is shown with SR6 engine in backend, even if the SR7 engine is selected as default rendering engine</li>
+		<li>Click on modal underlay, or outside of the modal window is not closing the modal itself in SR7</li>
+		<li>REST/Ajax calls did not add a header 200 response code</li>
+		<li>Video was not playing on carousel slider all the time when set to loop and always visible</li>
+		<li>Mobile touch navigation does not allow to scroll to content below a slider</li>
+		<li>Pause on hover not working when progress bar is disabled</li>
+		<li>Problem with loading images containing some special characters in the image name</li>
+		<li>Alternative image on mobile IE fallback settings was not functional</li>
+		<li>Simulate click action not working on mobile when touch swipe is enabled</li>
+		<li>Images with url relative to root can't be loaded</li>
+		<li>Problem with loading CDN images containing second protocol name in its url</li>
+		<li>Mouse wheel navigation options threshold and call delay have no effect</li>
+		<li>Slider does not resize correctly when orientation is switched back to portrait after landscape on mobile</li>
+	</ul>
+	<h3 class="version-number">Version 6.7.15 (10th July 2024)</h3>
+	<div class="bugfix"><strong style="font-weight:700">Bugfixes</strong></div>	
+	<ul>
+		<li>Zone positions on mobile sizes are not calculated well on some slides</li>
+		<li>Vimeo arguments are ignored in SR7 frontend on background videos</li>
+		<li>Perspective is set on layers if they dont have any rotation, breaking fonts on iOS</li>
+		<li>Deep link is not working on carousel layout</li>
+		<li>First alternative slide is not working on any layout in SR7</li>
+		<li>Video with auto height not resized properly</li>
+		<li>Static layers can not be triggered any more by normal layers via actions</li>
+		<li>Video slider are skipping slides if they are set to rewind and switch the slide at the end of the video</li>
+		<li>Content on mobile phones are offsetted after oriention change</li>
+		<li>Video overlay color settings has no effects</li>
+		<li>Images using auto width and height dimensions in columns are not respecting their parent container dimensions</li>
+	</ul>
+
 	<h3 class="version-number">Version 6.7.14 (25th June 2024)</h3>
 	<div class="bugfix"><strong style="font-weight:700">Bugfixes</strong></div>	
 	<ul>
@@ -11,9 +139,10 @@
 		<li>The ToolBarTopFunction is still using the jQuery library, producing some errors in preview pages if jQuery is not loaded</li>
 		<li>Fullscreen height on mobile is not respecting min height of content in some cases</li>
 		<li>Parallax disabled on mobile still calculates the initial offset position of parallax elements which renders all layers at the wrong position</li>
-		<li>SVG export with starting // is not processes properly</li>
+		<li>SVG export with starting // is not processed properly</li>
 		<li>Background image on module repeated even if the option is not selected</li>
 		<li>Media library image was not showing for post based slides if featured image on a post was missing</li>
+		<li>Security hardening to prevent XSS: Input sanitization and output escaping now enforced on layer actions</li>
 	</ul>
 	<h3 class="version-number">Version 6.7.13 (6th June 2024)</h3>
 	<div class="change"><strong style="font-weight:700">Changes</strong></div>

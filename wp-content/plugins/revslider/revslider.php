@@ -6,7 +6,7 @@ Description: Slider Revolution - More than just a WordPress Slider
 Author: ThemePunch
 Text Domain: revslider
 Domain Path: /languages
-Version: 6.7.14
+Version: 6.7.21
 Author URI: https://themepunch.com/?utm_source=admin&utm_medium=button&utm_campaign=srusers&utm_content=info
 */
 
@@ -17,7 +17,7 @@ if(class_exists('RevSliderFront')){
 	die('ERROR: It looks like you have more than one instance of Slider Revolution installed. Please remove additional instances for this plugin to work again.');
 }
 
-define('RS_REVISION',			'6.7.14');
+define('RS_REVISION',			'6.7.21');
 define('RS_PLUGIN_PATH',		plugin_dir_path(__FILE__));
 define('RS_PLUGIN_SLUG_PATH',	plugin_basename(__FILE__));
 define('RS_PLUGIN_FILE_PATH',	__FILE__);
@@ -25,7 +25,7 @@ define('RS_PLUGIN_SLUG',		apply_filters('set_revslider_slug', 'revslider'));
 define('RS_PLUGIN_URL',			get_sr_plugin_url());
 define('RS_PLUGIN_URL_CLEAN',	str_replace(array('http://', 'https://'), '//', RS_PLUGIN_URL));
 define('RS_DEMO',				false);
-define('RS_TP_TOOLS',			'6.7.14'); //holds the version of the tp-tools script, load only the latest!
+define('RS_TP_TOOLS',			'6.7.21'); //holds the version of the tp-tools script, load only the latest!
 
 global $SR_GLOBALS;
 
@@ -59,6 +59,7 @@ $SR_GLOBALS = array(
 	'use_table_version'		=> 6,
 	'serial'				=> 0,
 	'sliders'				=> array(),
+	'yt_api_loaded'			=> false,
 	'bad_extensions'		=> array(
 		'php', 'php2', 'php3', 'php4', 'php5', 'php6', 'php7', 'phps', 'phps', 'pht', 'phtm', 'phtml', 'pgif', 'shtml', 'htaccess', 'phar', 'inc', 'hphp', 'ctp', 'module',
 		'asp', 'aspx', 'config', 'ashx', 'asmx', 'aspq', 'axd', 'cshtm', 'cshtml', 'rem', 'soap', 'vbhtm', 'vbhtml', 'asa', 'cer', 'shtml',
@@ -244,6 +245,8 @@ try{
 		require_once(RS_PLUGIN_PATH . 'admin/revslider-admin.class.php');
 		require_once(RS_PLUGIN_PATH . 'includes/update.class.php');
 		require_once(RS_PLUGIN_PATH . 'admin/includes/tracking.class.php');
+		require_once(RS_PLUGIN_PATH . 'admin/includes/svg_sanitizer/subject.class.php');
+		require_once(RS_PLUGIN_PATH . 'admin/includes/svg-sanitizer.class.php');
 		//require_once(RS_PLUGIN_PATH . 'admin/includes/debug.php');
 		$sr_track	= RevSliderGlobals::instance()->get('RevSliderTracking');
 		$sr_admin	= RevSliderGlobals::instance()->get('RevSliderAdmin');
@@ -314,9 +317,9 @@ function get_sr_current_engine(){
 	$global	= (!is_array($global)) ? json_decode($global, true) : $global;
 	$engine	= (isset($global['getTec']) && isset($global['getTec']['engine']) && $global['getTec']['engine'] === 'SR7') ? 7 : 6;
 	$engine	= (isset($_GET['srengine']) && (intval($_GET['srengine']) === 6 || intval($_GET['srengine']) === 7)) ? intval($_GET['srengine']) : $engine;
-	if(isset($_REQUEST['action']) && isset($_REQUEST['client_action']) && isset($_REQUEST['nonce'])){ // && wp_verify_nonce($_REQUEST['nonce'], 'revslider_actions') !== false
+	/*if(isset($_REQUEST['action']) && isset($_REQUEST['client_action']) && isset($_REQUEST['nonce'])){ // && wp_verify_nonce($_REQUEST['nonce'], 'revslider_actions') !== false
 		if($_REQUEST['action'] === 'rs_ajax_action' && $_REQUEST['client_action'] === 'preview_slider') $engine = 6;
-	}
+	}*/
 
 	return $engine;
 }

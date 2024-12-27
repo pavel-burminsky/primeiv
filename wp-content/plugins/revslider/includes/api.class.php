@@ -1105,7 +1105,9 @@ class RevSliderApi extends RevSliderFunctions {
 						}
 						
 						$slider->set_slides($_slides);
-						$output = new RevSliderOutput();
+						//set_preview_mode
+						$output = ($SR_GLOBALS['front_version'] === 6) ? new RevSliderOutput() : new RevSlider7Output();
+						//$output = new RevSliderOutput();
 						$output->set_preview_mode(true);
 						$slider->init_by_data($_slider);
 						
@@ -1511,6 +1513,10 @@ class RevSliderApi extends RevSliderFunctions {
 					}
 				break;
 				case 'upload_customlibrary_item':
+					if(!current_user_can('administrator') && apply_filters('revslider_restrict_role', true)){
+						$this->ajax_response_error(__('Function only available for administrators', 'revslider'));
+					}
+
 					$obj = new RevSliderObjectLibrary();
 					
 					$return = $obj->upload_custom_item($data);
@@ -2121,6 +2127,7 @@ class RevSliderApi extends RevSliderFunctions {
 	 * @param mixed $data
 	 */
 	private function ajax_response($success, $message, $data = null){
+		http_response_code(200);
 
 		$response = array(
 			'success' => $success,
@@ -2134,7 +2141,6 @@ class RevSliderApi extends RevSliderFunctions {
 
 			$response = array_merge($response, $data);
 		}
-
 		if($this->is_rest_call()){
 			echo json_encode($response);
 			exit;

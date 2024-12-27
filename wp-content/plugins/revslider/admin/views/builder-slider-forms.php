@@ -1071,6 +1071,7 @@ foreach ($wc_sortby as $wc_val => $wc_name) {
 					<longoption><label_a ><?php _e('Next on Browser Focus (SR6)', 'revslider');?></label_a><input type="checkbox"  id="sr_gen_nextSlideOnFocus" class="sliderinput easyinit" data-r="general.nextSlideOnFocus" /></longoption>
 					<longoption><label_a ><?php _e('Disable Blur/Focus behav. (SR6)', 'revslider');?></label_a><input type="checkbox"  id="sr_gen_disableFocusListener" class="sliderinput easyinit" data-r="general.disableFocusListener" /></longoption>
 					<longoption><label_a ><?php _e('Freeze on Blur (SR7)', 'revslider');?></label_a><input type="checkbox"  id="sr_gen_freezeOnBlur" class="sliderinput easyinit" data-r="general.freezeOnBlur" /></longoption>
+					<longoption><label_a ><?php _e('Media Ignores Scroll Blur (SR7)', 'revslider');?></label_a><input type="checkbox"  id="sr_gen_mISB" class="sliderinput easyinit" data-r="general.mISB" /></longoption>
 					<longoption><label_a ><?php _e('Set Deeplink Hash in URL', 'revslider');?></label_a><input type="checkbox"  id="sr_gen_enableurlhash" class="sliderinput easyinit" data-r="general.enableurlhash" /></longoption>
 				</div><!-- END OF COLLAPSABLE-->
 				<div class="div5"></div>

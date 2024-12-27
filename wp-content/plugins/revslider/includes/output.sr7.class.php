@@ -136,6 +136,13 @@ class RevSlider7Output extends RevSliderFunctions {
 	public function set_revapi($revapi){
 		$this->revapi = $revapi;
 	}
+
+	/**
+	 * set the slider manually
+	 */
+	public function set_slider($slider){
+		$this->slider = apply_filters('revslider_set_slider', $slider, $this);
+	}
 	
 	/**
 	 * set slide data and layers
@@ -725,6 +732,8 @@ class RevSlider7Output extends RevSliderFunctions {
 			if(!empty($this->slider)) apply_filters('revslider_add_slider_base', $this->slider);
 			if(!empty($this->slider_v7)) apply_filters('revslider_add_slider_base', $this->slider_v7);
 			
+			echo $this->add_youtube_api_html();
+
 			//set slider language
 			if($this->get_preview_mode() === false){
 				$SR_wpml = RevSliderGlobals::instance()->get('RevSliderWpml');
@@ -935,6 +944,7 @@ class RevSlider7Output extends RevSliderFunctions {
 	 **/
 	public function get_slider_div(){
 		$class	= (!empty($this->slider_v7)) ? $this->slider_v7->get_param('class', '') : $this->slider->get_param('class', '');
+		$class	= (!is_array($class) && !empty($class)) ? explode(' ', $class) : $class;
 		$class	= (empty($class)) ? array() : (array)$class;
 		$modal	= $this->get_modal();
 		$id		= (!empty($this->slider_v7)) ? $this->slider_v7->get_id() : $this->slider->get_id();
@@ -1020,7 +1030,7 @@ class RevSlider7Output extends RevSliderFunctions {
 		foreach($used_images ?? [] as $image){
 			$imgsrc	 = $this->remove_http($this->get_val($image, 'src'));
 			$imgorig = $this->remove_http($this->get_val($image, 'orig'));
-			if(empty($imgsrc) || empty($imgorig)) continue;
+			if(empty($imgsrc) || empty($imgorig) || strpos(wp_check_filetype($image['src'])['type'], 'image/') === false) continue;
 
 			$lib_id	 = $this->get_val($image, 'lib_id');
 			$info	 = false;
@@ -1427,7 +1437,9 @@ class RevSlider7Output extends RevSliderFunctions {
 	 * get the Slides HTML of the Slider
 	 **/
 	public function get_slides(){
-		$slides = (!empty($this->slider_v7)) ? $this->slider_v7->get_slides() : $this->slider->get_slides(); //fetch all slides connected to the Slider (no static slide)
+		$type	= (!empty($this->slider_v7)) ? $this->slider_v7->get_param('type', 'standard') : $this->slider->get_param('type', 'standard');
+		$hero	= ($type === 'hero') ? true : false;
+		$slides = (!empty($this->slider_v7)) ? $this->slider_v7->get_slides(false, false, $hero) : $this->slider->get_slides(false, false, $hero); //fetch all slides connected to the Slider (no static slide)
 		$slides = (!empty($this->slider_v7)) ? $this->slider_v7->get_language_slides_v7($slides) : $this->slider->get_language_slides_v7($slides); //get WPML language slides
 		
 		/**
@@ -2044,6 +2056,30 @@ class RevSlider7Output extends RevSliderFunctions {
 		add_action('wp_print_footer_scripts', array($this, 'add_js'), 100);
 		
 		echo $html;
+	}
+
+	/**
+	 * check if the youtube api needs to be added, this should only be done once for all sliders
+	 * @since: 6.5.7
+	 **/
+	public function add_youtube_api_html(){
+		global $SR_GLOBALS;
+		
+		$r = '';
+
+		if($this->get_val($SR_GLOBALS, 'yt_api_loaded', false) === true) return $r; //already loaded
+		
+		if(empty($this->slider_v7)) return $r; //on the fly frontend js migration will handle it
+		if($this->slider_v7->get_param('hasYT', false) === false) return $r;
+		
+		//check global option if enabled
+		$gs = $this->get_global_settings();
+		if($this->_truefalse($this->get_val($gs, array('script', 'ytapi'), false)) === true){
+			$r = RS_T.'<script src="https://www.youtube.com/iframe_api"></script>'."\n";
+			$SR_GLOBALS['yt_api_loaded'] = true;
+		}
+		
+		return apply_filters('revslider_add_youtube_api_html', $r, $this);
 	}
 
 	/**

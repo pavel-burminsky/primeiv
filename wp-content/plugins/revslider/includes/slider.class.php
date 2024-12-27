@@ -1320,7 +1320,7 @@ class RevSliderSlider extends RevSliderFunctions {
 	}
 	
 	public function save_slider_v7($slider_id, $settings, $title, $alias){
-		global $wpdb;
+		global $wpdb, $SR_GLOBALS;
 
 		$v			= '7';
 		$settings	= $this->json_decode_slashes($settings);
@@ -2067,7 +2067,7 @@ class RevSliderSlider extends RevSliderFunctions {
 	public function get_slides_data_from_posts_v7(){
 		$posts = $this->get_post_data();
 		
-		return  $this->streamline_posts_data($posts);
+		return $this->streamline_posts_data($posts);
 	}
 
 	/**
@@ -2998,14 +2998,15 @@ class RevSliderSlider extends RevSliderFunctions {
 		$excerpt_limit		= (int)$excerpt_limit;
 
 		foreach($data as $k => $entry){
-			$template = clone $templates[$key];
-			$key++;
-			if($key == $num_temp){
-				$key		= 0;
-				$templates	= $this->get_slides(false); //reset as clone did not work properly
-				$templates	= $this->assoc_to_array($templates);
+			if(!empty($templates)){
+				$template = clone $templates[$key];
+				$key++;
+				if($key == $num_temp){
+					$key		= 0;
+					$templates	= $this->get_slides(false); //reset as clone did not work properly
+					$templates	= $this->assoc_to_array($templates);
+				}
 			}
-
 			$author						= get_user_by('ID', $this->get_val($entry, 'post_author'));
 			$post_id					= $this->get_val($entry, 'ID');
 			$cats						= $this->get_val($entry, array('source', 'post', 'category'));
@@ -3044,7 +3045,7 @@ class RevSliderSlider extends RevSliderFunctions {
 				'modified'		=> $this->convert_post_date($this->get_val($entry, 'post_modified')),
 				'numcomments'	=> $this->get_val($entry, array('comment_count')),		
 				'publish'		=> $this->convert_post_date($this->get_val($entry, 'post_date_gmt')),
-				'navthumb'		=> $this->get_thumb_url($template, $post_image_id),
+				'navthumb'		=> (!empty($templates)) ? $this->get_thumb_url($template, $post_image_id) : '',
 				'thumb'			=> ($featured_image_url_thumb !== false) ? $featured_image_url_thumb[0] : '', //$this->get_val($entry, array('picture')),
 				'thumbtag'		=> ($featured_image_url_thumb !== false) ?'<img src="'.$featured_image_url_thumb[0].'" width="'.$featured_image_url_thumb[1].'" height="'.$featured_image_url_thumb[2].'" alt="'.esc_attr($title).'" data-no-retina />' : '',//$this->get_val($entry, array('full_picture')),
 				'taglist'		=> get_the_tag_list('', ',', '', $post_id),
@@ -3391,11 +3392,13 @@ class RevSliderSlider extends RevSliderFunctions {
 		$modify_allow	= array('excerptLimit', 'maxPosts', 'maxProducts', 'count');
 		$modify_sources	= array('post', 'specific_posts', 'specific_post', 'woo', 'woocommerce', 'instagram', 'facebook', 'flickr', 'twitter', 'vimeo', 'youtube');
 		$modify_setting	= ($slider->v7) ? 'settings' : 'slider_params';
+		$type			= ($slider->v7) ? $slider->get_param('type') : $slider->get_param('type');
+		$hero			= ($type === 'hero') ? true : false;
 
 		if($slider->v7){
 			$obj = (empty($slide_ids)) ? array('settings' => $slider->get_params(), 'slides' => array(), 'id' => $slider_id) : array('slides' => array());
 
-			$slides = ($raw) ? $slider->get_slides(false, true) : $slider->get_slides_modified(false, true);
+			$slides = ($raw) ? $slider->get_slides(false, true) : $slider->get_slides_modified(false, true, $hero);
 			if($lang !== 'all' && $modify === true) $slides = $slider->get_language_slides_v7($slides);//get WPML language slides
 
 			if(empty($slides)) return $obj;
@@ -3429,7 +3432,7 @@ class RevSliderSlider extends RevSliderFunctions {
 				}
 			}
 		}else{
-			$slides = ($raw) ? $slider->get_slides() : $slider->get_slides_modified();
+			$slides = ($raw) ? $slider->get_slides() : $slider->get_slides_modified(false, false, $hero);
 			if($lang !== 'all' && $modify === true) $slides = $slider->get_language_slides_v7($slides);//get WPML language slides
 
 			$_slides = array();
